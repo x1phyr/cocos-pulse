@@ -25,20 +25,68 @@
     </nav>
 
     <h1 class="page-title">PinK &amp; Agent</h1>
-    <p class="page-deck">Agent 编辑赛道：PinK Alpha、peanut-pod、Game Agent，以及「UI 还用手搭吗」的社区温度。</p>
-    <p class="note-seed">样例聚合，后续日刊自动回填。仅收录 2026-09-08 / 09-09 已刊内容。</p>
+    <p class="page-deck">Agent 编辑赛道：PinK Alpha、peanut-pod、Game Agent / MCP Pro，以及「UI 还用手搭吗」的社区温度。</p>
+    <p class="note-seed">聚合（截至 2026-09-09）。条目来自日刊 09-08 / 09-09，并回填论坛 /latest 新鲜信号；论坛仅摘要级，不转全文。</p>
 
     <section class="block">
       <div class="block-h">
-        <h2>AGGREGATE // 条目</h2>
-        <span class="hint">FROM ISSUES</span>
+        <h2>DEEP // PinK Alpha</h2>
+        <span class="hint">楼主 + 官方口径</span>
+      </div>
+      <div class="deep-box">
+        <div class="db-label">楼主核心观点 · @weibo（官方）</div>
+        <p class="q">「这是一个 Alpha 版……请勿用于生产环境（或请做好数据备份）。」开放 HarmonyOS 原生构建、Spine/资源预览、场景参考图 + Chat/MCP 截图；管理员从回帖选人发激活码；「Beta 版发布时间还需要延后」。</p>
+        <p class="who">来源 <a href="https://forum.cocos.org/t/topic/177288" target="_blank" rel="noopener">forum #177288</a> · 下载 <a href="https://pink.sud.tech/zh-cn" target="_blank" rel="noopener">pink.sud.tech</a></p>
+      </div>
+      <div class="deep-box cyan">
+        <div class="db-label">楼下主旋律 · 社区氛围</div>
+        <p>回复 25+，几乎全是「求激活码 / 蹲码」；有人问 CLI 与 PinK 是否同步发版。当氛围条读，不当技术结论。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>DEEP // UI 还用手搭吗？</h2>
+        <span class="hint">楼主 + 高赞一句</span>
+      </div>
+      <div class="deep-box">
+        <div class="db-label">楼主核心 · @GlobalThis</div>
+        <p class="q">「大佬们现在 ui 界面还用手搭吗，还是直接用 ai 全自动了，求分享。」——和 PinK / peanut-pod / Game Agent 撞在同一条时间线上。</p>
+        <p class="who">来源 <a href="https://forum.cocos.org/t/topic/177299" target="_blank" rel="noopener">forum #177299</a></p>
+      </div>
+      <div class="deep-box cyan">
+        <div class="db-label">高赞 / 代表性回帖</div>
+        <p><span class="q">@chenyu0532</span>：「用了几次蓝湖+unity-mcp+codeX……慢，还不一定准，有这时间我自己就搭完了。」楼主回：「看到大家都还是手搭我就放心了。」另有声音认为 MCP / 规则化生成会很快普及——先搞好 MCP。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>DEEP // peanut-pod</h2>
+        <span class="hint">可验收编辑通道</span>
+      </div>
+      <div class="deep-box">
+        <div class="db-label">楼主核心 · @catfish</div>
+        <p class="q">痛点：AI 改得了脚本、碰不动 Prefab/Scene；不敢把工程交给「随便改盘」的 Agent；换 IDE 成本高；改完无法验收。peanut-pod：不换 Creator，装成宿主扩展，用 MCP 受控查资产 / 改 Prefab·Scene / 刷新预览并读错误——写源文件与 .meta，不写 library/。</p>
+        <p class="who">来源 <a href="https://forum.cocos.org/t/topic/177235" target="_blank" rel="noopener">forum #177235</a></p>
+      </div>
+      <div class="deep-box cyan">
+        <div class="db-label">楼主补充 · 业务插件 / 验收闭环</div>
+        <p>业务插件是装进 Creator 的平台插件（非 Agent 里的 Tool）；验收闭环强调预览刷新 + 控制台错误回读。楼下追问「操作场景的 MCP 已经有不少，业务插件和验收闭环能细说吗」——赛道已从「能改」进到「能验收」。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>AGGREGATE // 日刊条目</h2>
+        <span class="hint">FROM 09.08 / 09.09</span>
       </div>
       <div class="list">
         <div class="row-item">
           <span class="pill pink">09.08</span>
           <div>
             <h3><a href="https://forum.cocos.org/t/topic/177288" target="_blank" rel="noopener">PinK 0.0.1.35 Alpha 版本发布</a></h3>
-            <p>官方置顶。HarmonyOS 构建、Spine/资源预览、场景参考图 + MCP 截图；勿上生产。下载 pink.sud.tech · 来源 <a href="../issues/2026-09-08.html">日刊 09.08</a></p>
+            <p>官方置顶。HarmonyOS 构建、Spine/资源预览、场景参考图 + MCP 截图；勿上生产 · 来源 <a href="../issues/2026-09-08.html">日刊 09.08</a></p>
           </div>
         </div>
         <div class="row-item">
@@ -74,6 +122,36 @@
           <div>
             <h3><a href="https://forum.cocos.org/t/topic/177235" target="_blank" rel="noopener">peanut-pod 继续 bump</a></h3>
             <p>盯「可回滚、可验收」 · 来源 <a href="../issues/2026-09-09.html">日刊 09.09</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>FORUM+ // 同赛道新鲜信号</h2>
+        <span class="hint">截至 2026-09-09 · /latest</span>
+      </div>
+      <div class="list">
+        <div class="row-item">
+          <span class="pill plug">MCP</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/176515" target="_blank" rel="noopener">Cocos MCP Pro：AI 改坏场景后能退回来</a></h3>
+            <p>作者 @jimmymjing。痛点是「很像改对了」与 token 爆炸；v0.2.0 强调任务级撤销 + 回读校验。付费插件，利益关系已自报。· 聚合补录</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill mood">MOOD</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177302" target="_blank" rel="noopener">好久没来了。最近 cocos 发展的怎么样了</a></h3>
+            <p>回流帖问新版本 / 插件模板——给 PinK、Agent 工具做免费导流 · 见 <a href="../issues/2026-09-09.html">日刊 09.09</a></p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill mood">MOOD</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177285" target="_blank" rel="noopener">gpt6 出来了，做游戏真的还有前途么</a></h3>
+            <p>热度高、水分也高——当社区氛围条 · 见 <a href="../issues/2026-09-08.html">日刊 09.08</a></p>
           </div>
         </div>
       </div>

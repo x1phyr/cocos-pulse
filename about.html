@@ -25,42 +25,84 @@
     </nav>
 
     <h1 class="page-title">关于 Cocos Pulse</h1>
-    <p class="page-deck">听引擎的心跳 —— Night Dispatch 风格的 Cocos 生态日刊门户。</p>
+    <p class="page-deck">听引擎的心跳 —— Night Dispatch 风格的 Cocos 生态日刊门户。铁粉速览，不灌水。</p>
 
     <section class="block">
       <div class="block-h">
-        <h2>WHAT // 这是什么</h2>
-        <span class="hint">POSITIONING</span>
+        <h2>STORY // 产品故事</h2>
+        <span class="hint">WHY PULSE</span>
       </div>
       <div class="prose">
-        <p><strong style="color:var(--white)">Cocos Pulse</strong> 不是信息堆砌，是心跳速览。面向 Creator / 引擎 / 工具链关注者，把论坛热点与 GitHub 窗口内动静压成一页可读的 Night Dispatch。</p>
+        <p><strong style="color:var(--white)">Cocos Pulse</strong> 不是 Discord 瀑布流，也不是「今日热帖」搬运工。它把论坛热点与 GitHub 窗口内动静压成一页可读的 Night Dispatch：三条头条、论坛摘要、仓库心跳、版本表——工作日早上一眼扫完。</p>
         <p>品牌标题 <span class="mono">COCOS / PULSE</span>，标语「听引擎的心跳」。视觉沿用霓虹编辑风：Orbitron 标题、扫描线、斜切 masthead、ticker 与彩色 pills。</p>
+        <p>诚实约束：<strong style="color:var(--white)">不虚构日刊、不编造 PR</strong>。专题页可以跨日聚合，但必须标「聚合（截至 …）」并回链真实来源。</p>
       </div>
     </section>
 
     <section class="block">
       <div class="block-h">
-        <h2>SOURCES // 信源</h2>
+        <h2>SOURCES // 信源表</h2>
         <span class="hint">OFFICIAL + GITHUB</span>
       </div>
-      <div class="prose">
-        <ul>
-          <li><a href="https://forum.cocos.org" target="_blank" rel="noopener">forum.cocos.org</a> — 官方与社区帖（摘要级）</li>
-          <li><a href="https://github.com/cocos/cocos-engine" target="_blank" rel="noopener">cocos/cocos-engine</a> — Creator 3.x 引擎仓</li>
-          <li><a href="https://github.com/cocos/cocos4" target="_blank" rel="noopener">cocos/cocos4</a> — 下一代引擎</li>
-          <li><a href="https://github.com/cocos/cocos-cli" target="_blank" rel="noopener">cocos/cocos-cli</a> — 编辑器 / 工具链</li>
-          <li><a href="https://github.com/cocos/cocos-docs" target="_blank" rel="noopener">cocos/cocos-docs</a> — 文档仓</li>
-        </ul>
-      </div>
+      <table>
+        <thead>
+          <tr><th>SOURCE</th><th>ROLE</th><th>DEPTH</th><th>LINK</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>forum.cocos.org</td>
+            <td>官方公告 / 社区帖</td>
+            <td>摘要级（关键帖可加深楼主+高赞一句）</td>
+            <td><a href="https://forum.cocos.org" target="_blank" rel="noopener">forum</a> · <span class="mono">/latest.json</span></td>
+          </tr>
+          <tr>
+            <td>cocos/cocos-engine</td>
+            <td>Creator 3.x 引擎</td>
+            <td>PR / issue 号 + 一句话</td>
+            <td><a href="https://github.com/cocos/cocos-engine" target="_blank" rel="noopener">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>cocos/cocos4</td>
+            <td>下一代引擎</td>
+            <td>合入 / Release / OPEN PR</td>
+            <td><a href="https://github.com/cocos/cocos4" target="_blank" rel="noopener">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>cocos/cocos-cli</td>
+            <td>编辑器 / 工具链</td>
+            <td>破坏性变更与 gizmo / Inspector 连修</td>
+            <td><a href="https://github.com/cocos/cocos-cli" target="_blank" rel="noopener">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>cocos/cocos-docs</td>
+            <td>文档仓</td>
+            <td>有则记，无则写静音</td>
+            <td><a href="https://github.com/cocos/cocos-docs" target="_blank" rel="noopener">GitHub</a></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="block">
       <div class="block-h">
         <h2>CADENCE // 更新节奏</h2>
-        <span class="hint">WEEKDAYS</span>
+        <span class="hint">WEEKDAYS 09:56 CST</span>
       </div>
       <div class="prose">
         <p>工作日约 <strong style="color:var(--neon)">09:56 CST</strong>（Asia/Shanghai）出刊。覆盖自上期以来约 24–48h 窗口。周末与节假日可休刊。</p>
+        <p>专题页可另做「近 2–4 周」回填，但<strong style="color:var(--white)">不会伪装成新的日刊</strong>。近刊列表只列真实已发期号。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>DEPTH // 内容深度</h2>
+        <span class="hint">FORUM = SUMMARY</span>
+      </div>
+      <div class="prose">
+        <p>论坛默认<strong style="color:var(--white)">摘要级</strong>：标题 + 一两句速览 + 原帖链接。不转载全文。不当技术结论的氛围帖会标明「当社区氛围条」。</p>
+        <p>关键帖（如 PinK Alpha、UI 手搭论战、peanut-pod）可加深到：<strong style="color:var(--white)">楼主核心观点 + 官方/高赞一句</strong>——仍非全文 dump。</p>
+        <p>仓库侧只保留真实 PR / issue URL 与一句话说明；静音如实写「无新 commit」。</p>
       </div>
     </section>
 
@@ -70,24 +112,51 @@
         <span class="hint">NO DB · GITHUB PAGES</span>
       </div>
       <div class="prose">
-        <p>纯静态 HTML / CSS / JS，无构建步骤、无数据库、无服务端渲染。适合 GitHub Pages（项目站路径 <span class="mono">/cocos-pulse/</span>）或任意静态宿主。</p>
+        <p>纯静态 HTML / CSS / JS，无构建步骤、无数据库、无服务端渲染。</p>
         <ul>
-          <li>日刊落在 <span class="mono">issues/YYYY-MM-DD.html</span></li>
-          <li>根目录同名文件做薄跳转，保证旧链不断</li>
+          <li>仓库：<a href="https://github.com/x1phyr/cocos-pulse" target="_blank" rel="noopener">github.com/x1phyr/cocos-pulse</a></li>
+          <li>Pages：<a href="https://x1phyr.github.io/cocos-pulse/" target="_blank" rel="noopener">x1phyr.github.io/cocos-pulse/</a>（项目站路径 <span class="mono">/cocos-pulse/</span>）</li>
+          <li>日刊：<span class="mono">issues/YYYY-MM-DD.html</span>；根目录同名薄跳转保旧链</li>
           <li>相对路径引用资源，子路径部署可用</li>
-          <li>新增刊时同步首页「今日/近刊」、归档行、可选专题回填</li>
+          <li>详见仓库内 <span class="mono">DESIGN.md</span> · 站务见 <a href="changelog.html">changelog.html</a></li>
         </ul>
-        <p>详见仓库内 <span class="mono">DESIGN.md</span>。</p>
       </div>
     </section>
 
     <section class="block">
       <div class="block-h">
-        <h2>DEPTH // 论坛深度</h2>
-        <span class="hint">SUMMARY-LEVEL</span>
+        <h2>站务 // 里程碑</h2>
+        <span class="hint">REAL ONLY</span>
       </div>
-      <div class="prose">
-        <p>论坛内容只做<strong style="color:var(--white)">摘要级</strong>：标题 + 一两句速览 + 原帖链接。不转载全文，不当技术结论的氛围帖会标明「当社区氛围条」。仓库侧保留真实 PR / issue URL 与一句话说明。</p>
+      <div class="list milestone-list">
+        <div class="row-item">
+          <span class="pill cli">REPO</span>
+          <div>
+            <h3>仓库创建 · 初始静态站落地</h3>
+            <p>Night Dispatch 多页骨架、两期样例日刊（09-08 / 09-09）、专题种子、DESIGN.md。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill eng">PAGES</span>
+          <div>
+            <h3>GitHub Pages 上线</h3>
+            <p>部署根目录 <span class="mono">main</span> → <a href="https://x1phyr.github.io/cocos-pulse/" target="_blank" rel="noopener">https://x1phyr.github.io/cocos-pulse/</a>（已 verified built）。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill pink">NAV</span>
+          <div>
+            <h3>顶栏 GitHub octocat</h3>
+            <p>全站 topnav 增加仓库图标链（相对页面保留一致 markup / CSS）。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill topic">DEPTH</span>
+          <div>
+            <h3>专题 / 关于 / 首页内容加深</h3>
+            <p>论坛深读（PinK / UI 手搭 / peanut-pod）+ gh 近窗回填；本页信源表与站务清单。</p>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>历史 · Cocos Pulse</title>
+<title>站务 Changelog · Cocos Pulse</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body data-nav="archive">
+<body data-nav="about">
   <div class="stage">
     <nav class="topnav" aria-label="主导航">
       <a class="topnav-brand" href="index.html">COCOS <span>PULSE</span></a>
@@ -24,45 +24,51 @@
       </a>
     </nav>
 
-    <h1 class="page-title">历史刊</h1>
-    <p class="page-deck">按月归档的 Night Dispatch。诚实清单：目前只有两期——后续工作日追加，不补假刊。</p>
-    <div class="archive-blurb">标签取自当日真实主线（论坛置顶 / 合入 PR / 社区温度），不是 SEO 堆砌。想按赛道读，去 <a href="topics/index.html">专题</a>。</div>
+    <h1 class="page-title">站务 Changelog</h1>
+    <p class="page-deck">只记真实站点里程碑。不是日刊，不掺生态八卦。</p>
 
-    <div class="month-h">2026-09 // SEPTEMBER</div>
-    <a class="archive-row" href="issues/2026-09-09.html">
-      <span class="ad">09.09</span>
-      <span>
-        <div class="at">CLI 粒子 + Collider2D · COCOS 4 调试可插拔 · UI 还用手搭吗？</div>
-        <div class="atags">
-          <span class="pill cli">CLI</span>
-          <span class="pill eng">COCOS4</span>
-          <span class="pill pink">PINK</span>
-          <span class="pill mood">UI/AI</span>
-          <span class="pill spine">SPINE</span>
+    <section class="block">
+      <div class="block-h">
+        <h2>2026-09 // SITE</h2>
+        <span class="hint">MILESTONES</span>
+      </div>
+      <div class="list">
+        <div class="row-item">
+          <span class="pill cli">09.09</span>
+          <div>
+            <h3>内容加深：专题 / 关于 / 首页 / 归档</h3>
+            <p>论坛 PinK + UI 手搭 + peanut-pod 深读；gh 回填 cocos4 / cli / engine / docs 近窗；首页加「本周信号」；本 changelog 页上线。</p>
+          </div>
         </div>
-        <p style="margin:10px 0 0;color:var(--fog);font-size:13px;line-height:1.55">工具链连修粒子 Inspector / Collider2D gizmo；#330 调试渲染改回调；论坛 PinK 续热 + peanut-pod + Spine 加速器。</p>
-      </span>
-      <span class="ago">OPEN →</span>
-    </a>
-    <a class="archive-row" href="issues/2026-09-08.html">
-      <span class="ad">09.08</span>
-      <span>
-        <div class="at">PinK 0.0.1.35 Alpha 官宣 · 4 / CLI 连轴 · 3.x 引擎仓静音</div>
-        <div class="atags">
-          <span class="pill pink">PINK</span>
-          <span class="pill eng">COCOS4</span>
-          <span class="pill cli">CLI</span>
-          <span class="pill bug">3.X</span>
-          <span class="pill ohos">OHOS</span>
+        <div class="row-item">
+          <span class="pill pink">09.09</span>
+          <div>
+            <h3>顶栏 GitHub octocat</h3>
+            <p>commit <span class="mono">76ffdf7</span> — 全站 topnav 仓库图标链。</p>
+          </div>
         </div>
-        <p style="margin:10px 0 0;color:var(--fog);font-size:13px;line-height:1.55">官方置顶 Alpha（HarmonyOS / Spine 预览 / MCP 截图）；cocos4 alpha.32、cli alpha.40；engine 仅 #19220。</p>
-      </span>
-      <span class="ago">OPEN →</span>
-    </a>
+        <div class="row-item">
+          <span class="pill eng">09.08–09</span>
+          <div>
+            <h3>初始站 + Pages</h3>
+            <p>commit <span class="mono">4bc39a6</span> 初始静态站；Pages 指向 <span class="mono">main</span> 根目录，公开 URL <a href="https://x1phyr.github.io/cocos-pulse/" target="_blank" rel="noopener">x1phyr.github.io/cocos-pulse/</a>。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill mood">ISSUES</span>
+          <div>
+            <h3>真实日刊仅两期</h3>
+            <p><a href="issues/2026-09-08.html">2026-09-08</a> · <a href="issues/2026-09-09.html">2026-09-09</a>。未发明第三期。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p style="margin:16px 0"><a href="about.html">← 返回关于</a></p>
 
     <footer class="site-footer">
       <div>COCOS PULSE · NIGHT DISPATCH · WEEKDAYS 09:56 CST</div>
-      <div class="sig">COCOS PULSE · ARCHIVE // 2026</div>
+      <div class="sig">COCOS PULSE · CHANGELOG // 2026</div>
     </footer>
   </div>
   <script src="assets/site.js"></script>

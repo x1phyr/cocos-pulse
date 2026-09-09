@@ -25,12 +25,24 @@
     </nav>
 
     <h1 class="page-title">Spine</h1>
-    <p class="page-deck">与 Spine 相关的日刊信号：PinK 预览能力、Store 加速器插件。</p>
-    <p class="note-seed">样例聚合，后续日刊自动回填。仅收录 2026-09-08 / 09-09 已刊内容。</p>
+    <p class="page-deck">与 Spine 相关的信号：PinK 预览能力、Store 加速器插件、引擎仓里的 Spine 议题。</p>
+    <p class="note-seed">聚合（截至 2026-09-09）。日刊种子 + 论坛 /latest + engine issues（近约 4 周窗口内可见项）。</p>
 
     <section class="block">
       <div class="block-h">
-        <h2>AGGREGATE // 条目</h2>
+        <h2>DEEP // Store 加速器</h2>
+        <span class="hint">楼主核心</span>
+      </div>
+      <div class="deep-box">
+        <div class="db-label">楼主核心 · @wingcd</div>
+        <p class="q">多功能 Spine 加速器：零 Spine 运行时依赖；GPU 蒙皮、单 drawcall；多动画/多角色合图烘焙；低帧率烘焙 + GPU 补帧；挂点 sockets；动画事件派发；外描边。楼下有人问「重写了 spine 运行时？」楼主回「相当于是的」。</p>
+        <p class="who">来源 <a href="https://forum.cocos.org/t/topic/177289" target="_blank" rel="noopener">forum #177289</a> · 见 <a href="../issues/2026-09-09.html">日刊 09.09</a></p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>AGGREGATE // 日刊条目</h2>
         <span class="hint">FROM ISSUES</span>
       </div>
       <div class="list">
@@ -38,7 +50,7 @@
           <span class="pill spine">09.08</span>
           <div>
             <h3><a href="https://forum.cocos.org/t/topic/177288" target="_blank" rel="noopener">PinK Alpha：Spine / 资源预览</a></h3>
-            <p>0.0.1.35 官宣能力之一；与场景参考图、MCP 截图同列 · 来源 <a href="../issues/2026-09-08.html">日刊 09.08</a></p>
+            <p>0.0.1.35 官宣能力之一；资源编辑器完整 Spine 预览 + 引擎运行时交互 · 来源 <a href="../issues/2026-09-08.html">日刊 09.08</a></p>
           </div>
         </div>
         <div class="row-item">
@@ -46,6 +58,36 @@
           <div>
             <h3><a href="https://forum.cocos.org/t/topic/177289" target="_blank" rel="noopener">多功能 Spine 加速器上架 Store</a></h3>
             <p>零 Spine 运行时依赖、GPU 蒙皮合图烘焙；讨论升温 · 来源 <a href="../issues/2026-09-09.html">日刊 09.09</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>ENGINE // Spine 相关 issue</h2>
+        <span class="hint">cocos-engine · 近窗</span>
+      </div>
+      <div class="list">
+        <div class="row-item">
+          <span class="pill bug">ISSUE</span>
+          <div>
+            <h3><a href="https://github.com/cocos/cocos-engine/issues/19217" target="_blank" rel="noopener">#19217</a> 模拟器使用 Spine 4.2（3.8.8）</h3>
+            <p>2026-08-28 开立，仍 OPEN。正式线 Spine 版本诉求的一个窗口样本 · 聚合补录</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill bug">ISSUE</span>
+          <div>
+            <h3><a href="https://github.com/cocos/cocos-engine/issues/19193" target="_blank" rel="noopener">#19193</a> Add support for Spine Runtime 4.3</h3>
+            <p>2026-07-25 开立，仍 OPEN——版本线落后话题未散 · 聚合补录</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill bug">ISSUE</span>
+          <div>
+            <h3><a href="https://github.com/cocos/cocos-engine/issues/19195" target="_blank" rel="noopener">#19195</a> spine._skeleton 可见性吐槽</h3>
+            <p>社区希望去掉下划线前缀、正式暴露关键内部句柄 · 聚合补录</p>
           </div>
         </div>
       </div>
