@@ -39,3 +39,7 @@
 - 论坛默认摘要级；重点帖 = 楼主要点 + 官方/高赞一句
 - 不编假 PR / 假帖
 - 平静日：三头条可写「较平静」+ 仍值得盯的旧热点，勿灌水
+
+## CI/CD
+
+推送 `data/*.json` 会触发 `.github/workflows/render.yml` 自动渲染并回写站点；`.github/workflows/pages.yml` 部署 Pages。
