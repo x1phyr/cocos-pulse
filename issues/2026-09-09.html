@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cocos Pulse · 2026-09-09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/site.css" />
+</head>
+<body data-nav="today">
+  <div class="stage">
+    <nav class="topnav" aria-label="主导航">
+      <a class="topnav-brand" href="../index.html">COCOS <span>PULSE</span></a>
+      <ul class="topnav-links">
+        <li><a href="2026-09-09.html" data-section="today">今日</a></li>
+        <li><a href="../archive.html" data-section="archive">历史</a></li>
+        <li><a href="../topics/index.html" data-section="topics">专题</a></li>
+        <li><a href="../about.html" data-section="about">关于</a></li>
+      </ul>
+    </nav>
+
+    <div class="issue-nav">
+      <a href="2026-09-08.html">← 上一刊 09.08</a>
+      <a href="../archive.html">历史</a>
+      <span class="disabled">下一刊 →</span>
+    </div>
+
+    <div class="mast">
+      <div class="mast-main">
+        <div class="kicker">
+          <span class="live">SIGNAL LIVE</span>
+          <span>// COCOS PULSE · NIGHT DISPATCH</span>
+          <span>ASIA/SHANGHAI</span>
+        </div>
+        <h1>COCOS<br /><span class="slash">PULSE</span></h1>
+        <p class="deck">Cocos Pulse —— 听引擎的心跳。自上期日报以来：工具链（CLI）继续狂奔，COCOS 4 把调试渲染器改成可插拔，论坛里 Agent / UI / PinK 三条线还在吵。</p>
+      </div>
+      <div class="mast-side">
+        <div class="stamp">
+          <div class="lbl">ISSUE DATE</div>
+          <div class="big">09.09</div>
+          <div class="sub">2026 · 自上期约 24h · 工作日刊</div>
+        </div>
+        <div class="issue-meta">
+          <div class="row"><span>论坛</span><b>forum.cocos.org</b></div>
+          <div class="row"><span>引擎</span><b>engine / cocos4</b></div>
+          <div class="row"><span>工具链</span><b>cocos-cli</b></div>
+          <div class="row"><span>推送</span><b>工作日 09:56</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="related-topics">
+      <span class="rt-label">相关专题</span>
+      <a href="../topics/pink.html">PINK</a>
+      <a href="../topics/spine.html">SPINE</a>
+      <a href="../topics/cocos4-cli.html">COCOS4 / CLI</a>
+      <a href="../topics/creator-3x.html">CREATOR 3.X</a>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span><b>CLI</b> PARTICLE INSPECTOR · COLLIDER2D GIZMO · SIMULATOR PR OPEN</span>
+        <span><b>COCOS4</b> GEOMETRY/DEBUG RENDERER CALLBACKS · WEBGPU LAYOUT FIX</span>
+        <span><b>PINK</b> ALPHA STILL PINNED · 25 REPLIES</span>
+        <span><b>FORUM</b> UI BY HAND OR AI · PEANUT-POD · SPINE ACCEL STORE</span>
+        <span><b>ENGINE 3.x</b> QUIET · #19220 STILL THE ONLY NEW ISSUE</span>
+        <span><b>CLI</b> PARTICLE INSPECTOR · COLLIDER2D GIZMO · SIMULATOR PR OPEN</span>
+        <span><b>COCOS4</b> GEOMETRY/DEBUG RENDERER CALLBACKS · WEBGPU LAYOUT FIX</span>
+        <span><b>PINK</b> ALPHA STILL PINNED · 25 REPLIES</span>
+        <span><b>FORUM</b> UI BY HAND OR AI · PEANUT-POD · SPINE ACCEL STORE</span>
+        <span><b>ENGINE 3.x</b> QUIET · #19220 STILL THE ONLY NEW ISSUE</span>
+      </div>
+    </div>
+
+    <div class="heads">
+      <article class="head feature">
+        <div class="idx"><em>01</em> / HEADLINE</div>
+        <h3>CLI 粒子 + Collider2D 连修</h3>
+        <p>合入粒子 Inspector metadata、Collider2D gizmo / 局部撤销；同时开着 Simulator、华为 AGC hook、动画图预览对齐——工具链没睡。</p>
+      </article>
+      <article class="head" style="--glow: rgba(61,231,255,.3)">
+        <div class="idx"><em>02</em> / SIGNAL</div>
+        <h3>COCOS 4 调试渲染可插拔</h3>
+        <p><span class="mono">#330</span> Geometry / DebugRenderer 改回调注册已合；顺手修了 WebGPU pipeline layout 顺序。</p>
+      </article>
+      <article class="head" style="--glow: rgba(255,200,87,.28)">
+        <div class="idx"><em>03</em> / FORUM</div>
+        <h3>UI 还用手搭吗？</h3>
+        <p>Agent 赛道（PinK / peanut-pod / Game Agent）继续升温；有人直接问：界面还要不要手搓。</p>
+      </article>
+    </div>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>FORUM // 论坛</h2>
+        <span class="hint">OFFICIAL + COMMUNITY · SINCE 09.08</span>
+      </div>
+      <div class="list">
+        <div class="row-item">
+          <span class="pill pink">PINK</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177288" target="_blank" rel="noopener">PinK 0.0.1.35 Alpha 仍置顶热议</a></h3>
+            <p>官方置顶续命。回复已到 25+，楼下主旋律还是蹲激活码 / 问 Beta 节奏。下载：<a href="https://pink.sud.tech/zh-cn" target="_blank" rel="noopener">pink.sud.tech</a></p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill mood">UI / AI</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177299" target="_blank" rel="noopener">ui界面搭建还用手吗？</a></h3>
+            <p>新帖直球：手搭还是 AI 全自动？和 Agent 工具潮撞在同一条时间线上。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill pink">AGENT</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177235" target="_blank" rel="noopener">peanut-pod：给 Creator 接可验收的 Agent 编辑通道</a></h3>
+            <p>今早仍有 bump。和 PinK / Game Agent 同一赛道，盯「可回滚、可验收」。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill store">STORE</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177289" target="_blank" rel="noopener">多功能 Spine 加速器上架 Store</a></h3>
+            <p>零 Spine 运行时依赖、GPU 蒙皮合图烘焙；今早讨论升温。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill eng">3.X</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177298" target="_blank" rel="noopener">分享一下队列的妙用</a> · <a href="https://forum.cocos.org/t/topic/177303" target="_blank" rel="noopener">插件页能优化下吗</a></h3>
+            <p>一则回合制队列干货继续回帖；一则扩展中心「返回/刷新」要滑回顶部才能点——小痛点大折磨。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill ohos">OHOS</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/175479" target="_blank" rel="noopener">Cocos 3.8.8 JS 无法调用 ArkTS</a></h3>
+            <p>HarmonyOS Next 云调试老帖今日再 bump——鸿蒙互通仍是社区敏感神经。</p>
+          </div>
+        </div>
+        <div class="row-item">
+          <span class="pill mood">MOOD</span>
+          <div>
+            <h3><a href="https://forum.cocos.org/t/topic/177302" target="_blank" rel="noopener">好久没来了。最近 cocos 发展的怎么样了</a></h3>
+            <p>回流帖：问新版本 / 好用插件模板——给 PinK、Agent 工具做免费导流。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>REPOS // 引擎与仓库</h2>
+        <span class="hint">GITHUB · SINCE 2026-09-08</span>
+      </div>
+      <div class="repo">
+        <div class="name">cocos/cocos-engine</div>
+        <ul>
+          <li>窗口内无新 commit / PR。</li>
+          <li><span class="pill bug">BUG</span> <a href="https://github.com/cocos/cocos-engine/issues/19220" target="_blank" rel="noopener">#19220</a> — 冻结 Color 作 <span class="mono">@property</span> 默认值会被永久改写（仍为窗口内唯一新 issue）。</li>
+        </ul>
+      </div>
+      <div class="repo">
+        <div class="name">cocos/cocos4 · ACTIVE</div>
+        <ul>
+          <li><a href="https://github.com/cocos/cocos4/pull/330" target="_blank" rel="noopener">#330</a> <span class="pill eng">MERGED</span> GeometryRenderer / DebugRenderer 改回调注册（可插拔扩展）</li>
+          <li><a href="https://github.com/cocos/cocos4/pull/329" target="_blank" rel="noopener">#329</a> <span class="pill eng">MERGED</span> WebGPU pipeline layout 顺序修复</li>
+          <li><a href="https://github.com/cocos/cocos4/pull/331" target="_blank" rel="noopener">#331</a> OPEN 自动格式化 PR</li>
+        </ul>
+      </div>
+      <div class="repo">
+        <div class="name">cocos/cocos-cli · VERY ACTIVE</div>
+        <ul>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/930" target="_blank" rel="noopener">#930</a> <span class="pill cli">MERGED</span> Collider2D gizmo 编辑 + scoped undo</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/928" target="_blank" rel="noopener">#928</a> <span class="pill cli">MERGED</span> 补齐粒子 Inspector 条件展示 metadata</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/926" target="_blank" rel="noopener">#926</a> <span class="pill cli">MERGED</span> particle 测试</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/913" target="_blank" rel="noopener">#913</a> <span class="pill cli">MERGED</span> 保留 embedded player track metadata</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/927" target="_blank" rel="noopener">#927</a> OPEN <span class="pill cli">FEAT</span> add simulator</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/931" target="_blank" rel="noopener">#931</a> OPEN 华为 AGC <span class="mono">onAfterCompressSettings</span> hook</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/932" target="_blank" rel="noopener">#932</a> OPEN 对齐 animation graph / scene preview metadata</li>
+          <li><a href="https://github.com/cocos/cocos-cli/pull/929" target="_blank" rel="noopener">#929</a> OPEN 字段 Reset 撤销与粒子组件重置</li>
+        </ul>
+      </div>
+      <div class="repo">
+        <div class="name">cocos/cocos-docs</div>
+        <ul><li>窗口内无提交 / PR。</li></ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-h">
+        <h2>RELEASES // 版本与发布</h2>
+        <span class="hint">TAGS + NOTES</span>
+      </div>
+      <table>
+        <thead>
+          <tr><th>ARTIFACT</th><th>STATUS</th><th>LINK</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PinK 0.0.1.35 Alpha</td>
+            <td>论坛置顶续热</td>
+            <td><a href="https://forum.cocos.org/t/topic/177288" target="_blank" rel="noopener">公告</a> · <a href="https://pink.sud.tech/zh-cn" target="_blank" rel="noopener">下载</a></td>
+          </tr>
+          <tr>
+            <td><span class="mono">cocos4 4.0.0-alpha.32</span></td>
+            <td>GitHub Release（Latest）</td>
+            <td><a href="https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32" target="_blank" rel="noopener">Release</a></td>
+          </tr>
+          <tr>
+            <td><span class="mono">cocos4 alpha.33</span></td>
+            <td>仅有 tag · 无 Release 页</td>
+            <td><a href="https://github.com/cocos/cocos4/releases" target="_blank" rel="noopener">Releases</a></td>
+          </tr>
+          <tr>
+            <td><span class="mono">cocos-cli 0.0.1-alpha.40</span></td>
+            <td>GitHub Release（Latest）</td>
+            <td><a href="https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.40" target="_blank" rel="noopener">Release</a></td>
+          </tr>
+          <tr>
+            <td><span class="mono">cocos-cli alpha.41</span></td>
+            <td>仅有 tag · 无 Release 页</td>
+            <td><a href="https://github.com/cocos/cocos-cli/releases" target="_blank" rel="noopener">Releases</a></td>
+          </tr>
+          <tr>
+            <td>Creator 3.x / engine</td>
+            <td>窗口内无新版</td>
+            <td>正式仍为 3.8.8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="issue-nav">
+      <a href="2026-09-08.html">← 上一刊 09.08</a>
+      <span class="disabled">下一刊 →</span>
+    </div>
+
+    <footer class="site-footer">
+      <div>COCOS PULSE · NIGHT DISPATCH · WEEKDAYS 09:56 CST</div>
+      <div class="sig">COCOS PULSE · END OF TRANSMISSION // 09.09.2026</div>
+    </footer>
+  </div>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
