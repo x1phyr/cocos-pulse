@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-10",
+  "date_mmdd": "09.10",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "一句话主线：今天生态在吵什么 / 仓库在合什么。",
+  "prev": { "date": "2026-09-09", "mmdd": "09.09" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "CLI · 示例关键词",
+    "COCOS4 · 示例关键词",
+    "PINK · 示例关键词",
+    "FORUM · 示例关键词",
+    "ENGINE 3.x · 示例关键词"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "头条标题",
+      "body": "两三句铁粉口吻摘要。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "信号标题",
+      "body": "仓库或版本信号。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛/第三轴标题",
+      "body": "社区气氛或重点帖。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "帖子标题",
+      "url": "https://forum.cocos.org/t/topic/177288",
+      "summary": "一行要点。重点帖可加：楼主核心观点 + 官方/高赞一句。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE|QUIET",
+      "items_html": [
+        "无新提交；或带真实链接的条目"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/330\">#330</a> 说明"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": []
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": ["窗口内无提交。"]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK / cocos4 / cli …",
+      "status": "状态",
+      "link_html": "<a href=\"...\">链接</a>"
+    }
+  ],
+  "home_blurb": "近刊列表用的一行主线",
+  "home_tags": ["CLI", "PINK", "3.X"],
+  "archive_title": "历史页标题线（短）"
+}

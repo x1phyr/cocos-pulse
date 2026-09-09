@@ -161,3 +161,17 @@ cocos-pulse/
 - [ ] 部署到 Pages 后确认子路径下 CSS/JS 仍相对可用  
 
 — END OF DESIGN —
+
+---
+
+## 7. 每日更新模版
+
+路径：`templates/` + `scripts/render_issue.py` + `data/YYYY-MM-DD.json`
+
+1. 复制 `templates/issue.example.json` → `data/当天日期.json` 并填真实内容  
+2. `python3 scripts/render_issue.py data/YYYY-MM-DD.json` → 生成 `issues/` 日刊与根跳转  
+3. 手工或脚本同步更新 `index.html`、`archive.html`、上一刊 next 链接  
+4. push → GitHub Pages；聊天再发摘要  
+
+字段与纪律见 `templates/README.md`。日刊视觉壳固定为 `templates/issue.html`（Night Dispatch）。
+
