@@ -84,6 +84,21 @@ code, .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
   border-bottom-color: var(--neon);
 }
 
+.topnav-github {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; margin-left: 4px;
+  border: 1px solid var(--line);
+  color: var(--fog);
+  transition: color .15s, border-color .15s, box-shadow .15s;
+}
+.topnav-github:hover {
+  color: var(--neon);
+  border-color: rgba(0,255,163,.45);
+  box-shadow: 0 0 16px rgba(0,255,163,.15);
+  text-decoration: none;
+}
+.topnav-github svg { display: block; }
+
 /* ── Masthead ── */
 .mast {
   display: grid;
