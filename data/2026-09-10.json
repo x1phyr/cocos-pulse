@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-10",
+  "date_mmdd": "09.10",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "Cocos Pulse —— 听引擎的心跳。自上期以来：CLI 把反射探针烘焙合进主线，光照探针 / Lightmap 一串 PR 排队；论坛里 AI 焦虑帖刷屏，PinK 与可回滚 MCP 仍是置顶级心跳。",
+  "prev": { "date": "2026-09-09", "mmdd": "09.09" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "CLI · REFLECTION PROBE MERGED · LIGHT PROBE / LIGHTMAP OPEN",
+    "ENGINE · #19220 CLOSED · #19222 OPEN",
+    "PINK · 0.0.1.35 STILL PINNED · 32+ REPLIES",
+    "FORUM · GPT6 ANXIETY · MCP UNDO · UI BY HAND?",
+    "COCOS4 · WINDOW QUIET · alpha.32 STILL LATEST RELEASE"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "CLI：反射探针已合，光照线开闸",
+      "body": "合入 <span class=\"mono\">#891</span> 反射探针烘焙；同时开着 Light Probe / Lightmap、探针 gizmo、节点序列化批量创建——场景工具链从「能改」往「能烤」迈了一步。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "Engine：Color 默认值坑关闭",
+      "body": "<span class=\"mono\">#19220</span> 冻结 Color 作 <span class=\"mono\">@property</span> 默认值被改写——已关。窗口内另冒出空壳 PR <span class=\"mono\">#19222</span>；cocos4 日刊窗静音。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：AI 焦虑 × 可回滚编辑",
+      "body": "「gpt6 出来了，做游戏还有前途吗」刷到 60+ 楼；另一边 MCP 插件死磕「AI 改坏场景能退回来」，PinK Alpha 置顶续热。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.35 Alpha 仍置顶热议",
+      "url": "https://forum.cocos.org/t/topic/177288",
+      "summary": "官方置顶续命，回复已过 30。楼主强调 Alpha 勿上生产；本版亮点含 HarmonyOS 原生构建透传 CLI、Prefab 自动 Canvas、构建结束 Hook。楼下主旋律仍是蹲激活码。下载：<a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>",
+      "deep": true
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "gpt6出来了，做游戏真的还有前途么",
+      "url": "https://forum.cocos.org/t/topic/177285",
+      "summary": "今早仍在狂 bump（60+ 回复）。楼主一句「想法越值钱」——技术门槛焦虑帖变成社区情绪晴雨表。",
+      "deep": false
+    },
+    {
+      "pill": "STORE",
+      "pill_class": "store",
+      "title": "Cocos MCP 插件：AI 改坏场景先能退回来",
+      "url": "https://forum.cocos.org/t/topic/176515",
+      "summary": "今日再升温。楼主核心观点：AI 写脚本敢放手，动场景最怕「假成功」——所以先做可回滚编辑通道（Cocos MCP Pro）。和 peanut-pod / PinK 同一赛道。",
+      "deep": true
+    },
+    {
+      "pill": "UI / AI",
+      "pill_class": "mood",
+      "title": "ui界面搭建还用手吗？",
+      "url": "https://forum.cocos.org/t/topic/177299",
+      "summary": "直球帖继续回：手搭还是 AI 全自动？和 Agent / MCP 工具潮撞在同一条时间线。",
+      "deep": false
+    },
+    {
+      "pill": "STORE",
+      "pill_class": "store",
+      "title": "GreenPackFramework：纯数据逻辑的异类框架",
+      "url": "https://forum.cocos.org/t/topic/177319",
+      "summary": "窗口内新帖。作者用「复刻卡牌游戏」压力测试框架组织方式——强调逻辑组织，不卷渲染细枝。",
+      "deep": false
+    },
+    {
+      "pill": "AGENT",
+      "pill_class": "pink",
+      "title": "Game Agent v0.3.3 发布（含活动）",
+      "url": "https://forum.cocos.org/t/topic/177296",
+      "summary": "Creator 内 AI 助手继续发版；同赛道 0.3.2 长帖仍高热。Agent 编辑通道已是 Store 区常驻话题。",
+      "deep": false
+    },
+    {
+      "pill": "SPINE",
+      "pill_class": "spine",
+      "title": "多功能 Spine 加速器上架 Store",
+      "url": "https://forum.cocos.org/t/topic/177289",
+      "summary": "零 Spine 运行时依赖、GPU 蒙皮合图烘焙——窗口内讨论仍在。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "LIGHT",
+      "items_html": [
+        "<span class=\"pill eng\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19220\" target=\"_blank\" rel=\"noopener\">#19220</a> — 冻结 Color 作 <span class=\"mono\">@property</span> 默认值被永久改写（已关）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19222\" target=\"_blank\" rel=\"noopener\">#19222</a> — V3.8.2 qgh（空壳/草稿感 PR，刚开）",
+        "<a href=\"https://github.com/cocos/cocos-engine/pull/19221\" target=\"_blank\" rel=\"noopener\">#19221</a> support sudv2 — 关闭未合",
+        "老帖 bump：<a href=\"https://github.com/cocos/cocos-engine/issues/17085\" target=\"_blank\" rel=\"noopener\">#17085</a> batcher-2d walk 非递归 · <a href=\"https://github.com/cocos/cocos-engine/issues/17612\" target=\"_blank\" rel=\"noopener\">#17612</a> invalidateChildren 性能"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / PR。",
+        "最新正式 Release 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.32</a>（另有 tag alpha.33 无 Release 页）。"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "VERY ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/891\" target=\"_blank\" rel=\"noopener\">#891</a> <span class=\"pill cli\">MERGED</span> feat(scene): reflection probe baking",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/929\" target=\"_blank\" rel=\"noopener\">#929</a> <span class=\"pill cli\">MERGED</span> 字段 Reset 撤销与粒子组件重置",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/932\" target=\"_blank\" rel=\"noopener\">#932</a> <span class=\"pill cli\">MERGED</span> 对齐 animation graph / scene preview metadata",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/895\" target=\"_blank\" rel=\"noopener\">#895</a> OPEN Light Probe + Lightmap baking",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/935\" target=\"_blank\" rel=\"noopener\">#935</a> OPEN light probe gizmo",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/934\" target=\"_blank\" rel=\"noopener\">#934</a> OPEN 节点序列化 + atomic batch creation",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/927\" target=\"_blank\" rel=\"noopener\">#927</a> OPEN simulator · <a href=\"https://github.com/cocos/cocos-cli/pull/931\" target=\"_blank\" rel=\"noopener\">#931</a> OPEN 华为 AGC hook · <a href=\"https://github.com/cocos/cocos-cli/pull/933\" target=\"_blank\" rel=\"noopener\">#933</a> OPEN anchored node creation"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": ["窗口内无提交 / PR。"]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.35 Alpha",
+      "status": "论坛置顶续热",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177288\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.32</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 alpha.33</span>",
+      "status": "仅有 tag · 无 Release 页",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases\" target=\"_blank\" rel=\"noopener\">Releases</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.40</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.40\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli alpha.41</span>",
+      "status": "仅有 tag · 无 Release 页",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases\" target=\"_blank\" rel=\"noopener\">Releases</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新版",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "CLI 反射探针合入 · Engine Color 坑关闭 · 论坛 AI 焦虑与可回滚 MCP",
+  "home_tags": ["CLI", "PINK", "ENGINE"],
+  "archive_title": "CLI 场景烘焙线 · Color 坑关 · AI 焦虑帖"
+}

@@ -199,7 +199,6 @@ def patch_prev_next(data: dict) -> None:
         r'<span class="disabled">下一刊 →</span>|<a href="[^"]+\.html">下一刊 [^<]+ →</a>',
         new_next,
         t,
-        count=1,
     )
     if n:
         path.write_text(t2, encoding="utf-8")
@@ -225,7 +224,7 @@ def sync_nav_today(latest: str) -> None:
             href = f"issues/{latest}.html"
         t2 = re.sub(
             r'(<a href=")[^"]+(" data-section="today">今日</a>)',
-            rf"\1{href}\2",
+            rf"\g<1>{href}\g<2>",
             t,
         )
         if t2 != t:
