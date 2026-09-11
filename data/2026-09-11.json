@@ -1,0 +1,171 @@
+{
+  "date": "2026-09-11",
+  "date_mmdd": "09.11",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "Cocos Pulse —— 听引擎的心跳。自上期以来：CLI 光照探针 gizmo 合入，clearCache 破性改接口；cocos4 爆出 RenderGraph 多 Pass 共享 UBO 不刷新，修复 PR 已开；论坛侧 GreenPack 上架、Cursor 一人上线小游戏续热，PinK 置顶仍在要码。",
+  "prev": { "date": "2026-09-10", "mmdd": "09.10" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "CLI · LIGHT PROBE GIZMO MERGED · CLEARCACHE BREAK",
+    "COCOS4 · #332 UBO MULTI-PASS · #333 FIX OPEN",
+    "ENGINE · BLOOM / SPINE / MASK ISSUES CLOSED",
+    "PINK · 0.0.1.35 STILL PINNED · 37 REPLIES",
+    "STORE · GREENPACK LIVE · SPINE ACCEL · MCP UNDO"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "CLI：光照探针 gizmo 合入，构建 API 破性收口",
+      "body": "合入 <span class=\"mono\">#935</span> light probe gizmo（多模式编辑）；同窗 <span class=\"mono\">#919</span> 把 <span class=\"mono\">clearCache</span> 改成 options 对象（break）。鸿蒙 / 华为 AGC 构建线也在补钩子——场景烘焙与原生构建两边一起推。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4：多 Pass 共享 UBO 卡住不刷新",
+      "body": "新开 <span class=\"mono\">#332</span>：自定义管线里 pass-rate UBO 被多个 Pass 共享时，只有第一个 Pass 每帧拿到新值。修复 PR <span class=\"mono\">#333</span> 已开（把 layout name 打进 cache key）。昨日安静的 cocos4，今天响了一枪。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：上架潮 × 一人公司 × PinK 要码",
+      "body": "GreenPackFramework 审核过关上架；Cursor+Codex 20 天一人上线微信小游戏续热；PinK Alpha 置顶回复破 37，楼下主旋律仍是蹲激活码。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.35 Alpha 仍置顶",
+      "url": "https://forum.cocos.org/t/topic/177288",
+      "summary": "官方置顶续命，回复 37 / 浏览 1600+。楼下继续刷激活码；楼主口径不变：Alpha 勿上生产。下载：<a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>",
+      "deep": true
+    },
+    {
+      "pill": "STORE",
+      "pill_class": "store",
+      "title": "GreenPackFramework 已上架",
+      "url": "https://forum.cocos.org/t/topic/177329",
+      "summary": "窗口内新帖。楼主强调：纯数据逻辑层，不含 UI/素材开箱包；卡牌示例只负责演示「规则怎么接线」。Store：<a href=\"https://store.cocos.com/app/detail/9488\" target=\"_blank\" rel=\"noopener\">detail/9488</a>",
+      "deep": true
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "一个人，4 个岗位，20 天：Cursor+Codex 上线微信小游戏",
+      "url": "https://forum.cocos.org/t/topic/177267",
+      "summary": "续热到 24 楼 / 1800+ 浏览。楼主用 Cursor + Codex 一人扛美术策划程序运营，100 关 + 编辑器 + 广告 + 云存档。楼下在问 token 账单。",
+      "deep": false
+    },
+    {
+      "pill": "SPINE",
+      "pill_class": "spine",
+      "title": "多功能 Spine 加速器上架 Store",
+      "url": "https://forum.cocos.org/t/topic/177289",
+      "summary": "今早仍在 bump（18 回复）。讨论落到：高版本带物理飘带的 Spine，能否烘焙回不支持的引擎版本跑。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "分享一下抽象对象的思路",
+      "url": "https://forum.cocos.org/t/topic/177339",
+      "summary": "窗口内新帖。楼主从卡牌「无目标」出发：把看不见的区域也抽象成目标，减少特殊分支。楼下帮分清「自然语言抽象」vs abstract 关键字。",
+      "deep": false
+    },
+    {
+      "pill": "STORE",
+      "pill_class": "store",
+      "title": "Cocos MCP 插件：AI 改坏场景先能退回来",
+      "url": "https://forum.cocos.org/t/topic/176515",
+      "summary": "窗口内再升温。作者更新上手教程与横屏改界面演示；有人追问：能直接读写场景 JSON，为何还要 MCP？",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "自定义构建 hooks 跑不进？",
+      "url": "https://forum.cocos.org/t/topic/177336",
+      "summary": "新帖：3.8.7 扩展只跑到 Build、hooks 不进。作者自查后在「构建调试工具」输出里找到原因。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "LIGHT",
+      "items_html": [
+        "窗口内无新 commit；几条老 issue 收口：",
+        "<span class=\"pill eng\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19070\" target=\"_blank\" rel=\"noopener\">#19070</a> — bloom 开启后 renderRoot2D 节点不可见",
+        "<span class=\"pill eng\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19059\" target=\"_blank\" rel=\"noopener\">#19059</a> — Mac 模拟器 <span class=\"mono\">sp.spine.wasmUtil</span> undefined",
+        "<span class=\"pill eng\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-engine/issues/18637\" target=\"_blank\" rel=\"noopener\">#18637</a> — 原生 Mask 问题（v3.8.6）",
+        "<a href=\"https://github.com/cocos/cocos-engine/pull/19222\" target=\"_blank\" rel=\"noopener\">#19222</a> V3.8.2 qgh — 仍 OPEN（空壳感未消）"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/332\" target=\"_blank\" rel=\"noopener\">#332</a> — [RenderGraph] 多 Pass 共享 UBO 不刷新（仅首 Pass 更新）",
+        "<span class=\"pill cli\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/333\" target=\"_blank\" rel=\"noopener\">#333</a> — fix：cache key 带上 layout name",
+        "<a href=\"https://github.com/cocos/cocos4/pull/322\" target=\"_blank\" rel=\"noopener\">#322</a> Multithreading — 窗口内有更新、仍 OPEN",
+        "最新正式 Release 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.32</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "VERY ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/935\" target=\"_blank\" rel=\"noopener\">#935</a> <span class=\"pill cli\">MERGED</span> feat(scene): light probe gizmo",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/919\" target=\"_blank\" rel=\"noopener\">#919</a> <span class=\"pill cli\">MERGED</span> [break] clearCache → options 对象",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/937\" target=\"_blank\" rel=\"noopener\">#937</a> <span class=\"pill cli\">MERGED</span> hide harmonyos-next make/run stages",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/931\" target=\"_blank\" rel=\"noopener\">#931</a> <span class=\"pill cli\">MERGED</span> fix(huawei-agc): onAfterCompressSettings hook",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/940\" target=\"_blank\" rel=\"noopener\">#940</a> OPEN [break] terrain 默认 layer + paint falloff",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/939\" target=\"_blank\" rel=\"noopener\">#939</a> OPEN web-mobile previewUrl · <a href=\"https://github.com/cocos/cocos-cli/pull/938\" target=\"_blank\" rel=\"noopener\">#938</a> OPEN harmonyos Texture2D 崩溃",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/895\" target=\"_blank\" rel=\"noopener\">#895</a> OPEN Light Probe + Lightmap · <a href=\"https://github.com/cocos/cocos-cli/pull/934\" target=\"_blank\" rel=\"noopener\">#934</a> OPEN 节点序列化批量恢复"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "LIGHT",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/issues/3326\" target=\"_blank\" rel=\"noopener\">#3326</a> — docs issue at Creating Scripts（内容偏噪声，待分流）",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.35 Alpha",
+      "status": "论坛置顶续热",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177288\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "GreenPackFramework",
+      "status": "Store 新品上架",
+      "link_html": "<a href=\"https://store.cocos.com/app/detail/9488\" target=\"_blank\" rel=\"noopener\">Store</a> · <a href=\"https://forum.cocos.org/t/topic/177329\" target=\"_blank\" rel=\"noopener\">帖</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.32</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.40</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.40\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新版",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "CLI 探针 gizmo 合入 · cocos4 多 Pass UBO 坑 · GreenPack 上架",
+  "home_tags": ["CLI", "COCOS4", "PINK"],
+  "archive_title": "探针 gizmo · RenderGraph UBO · Store 上架潮"
+}
