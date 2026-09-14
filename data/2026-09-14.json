@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-14",
+  "date_mmdd": "09.14",
+  "year": "2026",
+  "window": "自上期约 3 天 · 含周末 · 工作日刊",
+  "deck": "Cocos Pulse —— 听引擎的心跳。周末跨到周一：PinK 0.0.1.36 Alpha 上线（编辑器内预览 + 动画曲线编辑器）；CLI 合入 Light Probe/Lightmap 烘焙与原生 Simulator；论坛新运营万籁带 5 组邀请码报到，iOS 5.6「疑似隐藏功能」长文已结案。",
+  "prev": { "date": "2026-09-11", "mmdd": "09.11" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "PINK · 0.0.1.36 ALPHA · IN-EDITOR PREVIEW",
+    "CLI · #895 LIGHTPROBE+LIGHTMAP · #927 SIMULATOR",
+    "COCOS4 · #334 MERGED · #335 TEXARRAY WEBGL2",
+    "FORUM · 万籁带码报到 · iOS 5.6 结案",
+    "ENGINE · #19223 OPENPASS DROP · 3.8.8 STILL"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "PinK 0.0.1.36：编辑器内预览 + 动画曲线编辑器",
+      "body": "周六官方置顶发布 <span class=\"mono\">0.0.1.36 Alpha</span>：新增编辑器内游戏预览（分辨率/旋转/Stats，停预览不回写场景）、动画曲线编辑器（关键帧/Bezier/撤销重做）、进程级 OpenTelemetry Runtime；CLI 侧合并 V0.0.1 Alpha.40，并带华为 AGC 构建 Schema（break）。口径不变：Alpha 勿上生产，Beta 仍延后。楼下继续刷码。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "CLI：探针烘焙合入，原生 Simulator 落地",
+      "body": "周末窗口连合：<span class=\"mono\">#895</span> [break] Light Probe + Lightmap 烘焙全链路；<span class=\"mono\">#927</span> 原生 Simulator（预览资源/场景/Pink 接口）；<span class=\"mono\">#940</span> [break] terrain 默认 layer + paint falloff；另有 <span class=\"mono\">#652</span> package.json 判工程、<span class=\"mono\">#943</span> 单测并行。工具链这周末没闲着。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：新运营带码报到 × iOS 5.6 长文结案",
+      "body": "周一早，社区运营「万籁」报到帖随机掉落 5 组 PinK 邀请码（周五前开奖），回复瞬间过 20；另有 Creator 2.4.5 上架踩 Guideline 5.6「疑似隐藏功能」的排查长文——最终申诉通过，指向引擎默认远程脚本能力链，值得每个上架党收藏。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.36 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177355",
+      "summary": "官方置顶（至 9/27）。亮点：编辑器内预览、动画曲线编辑器、OpenTelemetry、PolygonCollider2D 重生顶点、Joint2D Gizmo / 2D 标尺；合并 CLI alpha.40。楼下主旋律仍是「给个激活码」。下载：<a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "【新人报到】带资进组混脸熟（随机掉落 PinK 邀请码）",
+      "url": "https://forum.cocos.org/t/topic/177357",
+      "summary": "窗口内新帖（今早）。新社区运营万籁@SUD：无筛选随机发 5 组邀请码，周五下班前开奖；楼下有人喊「多修 bug」她当场记下要反馈引擎组。半天近 25 楼 / 200+ 浏览。",
+      "deep": true
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "[已解决] iOS 5.6「疑似隐藏功能」：远程脚本能力链排查",
+      "url": "https://forum.cocos.org/t/topic/177345",
+      "summary": "Creator 2.4.5 单机买断两次秒拒 Guideline 5.6，申诉后通过。楼主用 strings 指出默认引擎里 AssetsManagerEx / evalString 等明文能力链；建议最小能力构建、模块可选编译。19 回复 / 近 600 浏览。",
+      "deep": true
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "有没有谁觉得 COCOS 的论坛，越来越死气了",
+      "url": "https://forum.cocos.org/t/topic/177351",
+      "summary": "周末新帖，14 楼 / 720 浏览。吐槽流量与氛围；和周一运营报到形成有趣对照——社区自己也在找节奏。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "3D 模型在安卓上出现黑色撕裂黑线",
+      "url": "https://forum.cocos.org/t/topic/177350",
+      "summary": "窗口内新帖，已标采纳答案。安卓端黑线撕裂；楼下给排查方向，6 回复 / 280+ 浏览。",
+      "deep": false
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "一句话让豆包用 Cocos 做了个小游戏",
+      "url": "https://forum.cocos.org/t/topic/177352",
+      "summary": "周末新帖，求建议。AI 一句话出小游戏 demo，244 浏览——和 PinK「全链路 Agent」叙事同屏出现。",
+      "deep": false
+    },
+    {
+      "pill": "UI/AI",
+      "pill_class": "mood",
+      "title": "ui 界面搭建还用手吗？",
+      "url": "https://forum.cocos.org/t/topic/177299",
+      "summary": "续热到 17 楼 / 1500+ 浏览。手搭 vs AI 生成 UI 的老辩题，周一早还在 bump。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "LIGHT",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-engine/pull/19223\" target=\"_blank\" rel=\"noopener\">#19223</a> <span class=\"pill cli\">MERGED</span> Remove platform adaptation for openpass",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19107\" target=\"_blank\" rel=\"noopener\">#19107</a> — 3.8.7 Jenkins 命令行构建改 meta 找不到资源（论坛连环帖）",
+        "<span class=\"pill eng\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19144\" target=\"_blank\" rel=\"noopener\">#19144</a> Particle 2D color interpolation · <a href=\"https://github.com/cocos/cocos-engine/issues/16448\" target=\"_blank\" rel=\"noopener\">#16448</a> Line color update",
+        "正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/334\" target=\"_blank\" rel=\"noopener\">#334</a> <span class=\"pill cli\">MERGED</span> TerrainInfo 加 <span class=\"mono\">@visible(false)</span>",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/335\" target=\"_blank\" rel=\"noopener\">#335</a> — [RenderGraph] Texture array 未在 WebGL2 实现",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/332\" target=\"_blank\" rel=\"noopener\">#332</a> 多 Pass 共享 UBO · 修复 PR <a href=\"https://github.com/cocos/cocos4/pull/333\" target=\"_blank\" rel=\"noopener\">#333</a> 仍 OPEN",
+        "最新正式 Release 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.32</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "VERY ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/895\" target=\"_blank\" rel=\"noopener\">#895</a> <span class=\"pill cli\">MERGED</span> [break] Light Probe + Lightmap baking",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/927\" target=\"_blank\" rel=\"noopener\">#927</a> <span class=\"pill cli\">MERGED</span> feat(simulator): 原生 Simulator",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/940\" target=\"_blank\" rel=\"noopener\">#940</a> <span class=\"pill cli\">MERGED</span> [break] terrain 默认 layer + paint falloff",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/652\" target=\"_blank\" rel=\"noopener\">#652</a> <span class=\"pill cli\">MERGED</span> package.json 作为工程存在唯一判据",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/943\" target=\"_blank\" rel=\"noopener\">#943</a> <span class=\"pill cli\">MERGED</span> 单测并行 + CI 去重构建",
+        "Latest Release 仍为 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.40\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.40</a>（PinK .36 已声明合并）"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / issue / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.36 Alpha",
+      "status": "论坛置顶新版",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177355\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.32</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.32\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.40</span>",
+      "status": "GitHub Release（Latest）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.40\" target=\"_blank\" rel=\"noopener\">Release</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新版",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "PinK .36 上线 · CLI 探针烘焙+Simulator · iOS 5.6 结案",
+  "home_tags": ["PINK", "CLI", "3.X"],
+  "archive_title": "PinK .36 · CLI 烘焙/Simulator · iOS 5.6"
+}
