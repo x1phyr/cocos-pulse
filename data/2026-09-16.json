@@ -1,0 +1,161 @@
+{
+  "date": "2026-09-16",
+  "date_mmdd": "09.16",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "工具链正式页补齐：cocos-cli Release 挂上 0.0.1-alpha.41（tag 已到 .42），Localization 三连合入；cocos4 Release 页追上 alpha.33（tag 仍领先到 .34）。引擎 #19226 Texture2D 引用平衡已合。论坛侧邀请码帖破 120 楼、eCPM 吐槽冲到 70+，另有 AI+Game Agent 实战新帖。",
+  "prev": { "date": "2026-09-15", "mmdd": "09.15" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "CLI · RELEASE .41 · TAG .42 · LOCALIZATION TRIO",
+    "COCOS4 · RELEASE .33 · TAG .34 · BONE.ACTIVE PR",
+    "ENGINE · #19226 TEXTURE2D MERGED",
+    "FORUM · 邀请码 120+ · eCPM 70+",
+    "AI · GAME AGENT 小游戏实战帖"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "CLI：Release 追上 alpha.41，Localization 三连落地",
+      "body": "昨夜到今早，<span class=\"mono\">cocos-cli</span> 正式 Release Latest 从 .40 跳到 <span class=\"mono\">0.0.1-alpha.41</span>；仓库 tag 已到 <span class=\"mono\">0.0.1-alpha.42</span>。窗口内连合 <span class=\"mono\">#923</span> 内置 Localization runtime/preview/builder、<span class=\"mono\">#946</span> light probe 轻量查询，以及 follow-up <span class=\"mono\">#949</span>：老项目带 legacy Localization Editor 时，冷启动/Preview 跳过旧插件挂载，避免新旧 runtime 串台。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 Release .33 上架 · 引擎 Texture2D 引用修好",
+      "body": "<span class=\"mono\">cocos4</span> GitHub Release 今早挂出 <span class=\"mono\">4.0.0-alpha.33</span>（changelog 含 WebGPU compute、particle2d 预览等）；tag 线仍停在 <span class=\"mono\">alpha.34</span>。另开 <span class=\"mono\">#340</span> reset bone.active after updateCache；多线程 <span class=\"mono\">#322</span> 仍在推进。引擎侧昨记为 OPEN 的 <span class=\"mono\">#19226</span> 已合——平衡 Texture2D image 依赖引用。正式版仍为 <span class=\"mono\">3.8.8</span>。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：邀请码 120+ 楼 · eCPM 70+ · AI 实战帖上新",
+      "body": "万籁报到帖续热到 123 楼 / 1700+ 浏览，另起「求个 Pink 邀请码」分流。微信 eCPM 吐槽贴从昨 35+ 冲到 72 楼 / 1300+ 浏览。夜间新帖分享用 Cocos + Game Agent 做竖屏小游戏：从搭界面到自动试玩、测改闭环，附开源仓与 B 站录像。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "【新人报到】带资进组混脸熟（随机掉落 PinK 邀请码）",
+      "url": "https://forum.cocos.org/t/topic/177357",
+      "summary": "续热：123 楼 / 1710+ 浏览。运营万籁仍在派码气氛里；楼下继续刷码与提 bug。和「求个 Pink 邀请码」分流帖同屏——码荒没退烧。",
+      "deep": true
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "还有比我的 eCPM 低的吗",
+      "url": "https://forum.cocos.org/t/topic/177361",
+      "summary": "窗口内最吵商业贴：微信小游戏 eCPM 个位数吐槽，已到 72 楼 / 1330+ 浏览。楼下互晒后台，共识偏「提游戏质量 / 买量用户质量」，有人直言 eCPM 单独参考价值弱。",
+      "deep": true
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "用 AI 在 Cocos 里做一款小游戏：从搭界面，到自动试玩、测试和修复",
+      "url": "https://forum.cocos.org/t/topic/177383",
+      "summary": "昨夜新帖。楼主用 Creator + Game Agent 做竖屏小游戏，强调 AI 跑游戏、点界面、看结果、改完再验的闭环；附 B 站录像与开源仓 <a href=\"https://github.com/qq865738120/zhaoyun_adou\" target=\"_blank\" rel=\"noopener\">zhaoyun_adou</a>。",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "求个 Pink 邀请码",
+      "url": "https://forum.cocos.org/t/topic/177374",
+      "summary": "窗口内新开求码帖，楼下「同求」连刷；与万籁报到帖形成双轨码荒。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "创建项目报错",
+      "url": "https://forum.cocos.org/t/topic/177367",
+      "summary": "空工程红屏续聊到 13 楼。多版本复现；楼下继续盯路径空格、集显/驱动与安装路径。",
+      "deep": false
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "有没有谁觉得 COCOS 的论坛，越来越死气了",
+      "url": "https://forum.cocos.org/t/topic/177351",
+      "summary": "人气吐槽帖仍在 bump（26 楼 / 1750+）。对照本周邀请码与 eCPM 刷屏——死气论和热闹帖同屏，挺 Splitscreen。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.36 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177355",
+      "summary": "置顶仍在；下载 <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-engine/pull/19226\" target=\"_blank\" rel=\"noopener\">#19226</a> <span class=\"pill cli\">MERGED</span> fix: balance Texture2D image dependency references",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19227\" target=\"_blank\" rel=\"noopener\">#19227</a> / <a href=\"https://github.com/cocos/cocos-engine/pull/19225\" target=\"_blank\" rel=\"noopener\">#19225</a> privatize pal and platforms（窗口内无新推进）",
+        "正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "GitHub Release Latest 今早挂到 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.33</a>（tag 线仍有 <span class=\"mono\">4.0.0-alpha.34</span>）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/340\" target=\"_blank\" rel=\"noopener\">#340</a> reset bone.active after updateCache（关 engine#18923）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/322\" target=\"_blank\" rel=\"noopener\">#322</a> Multithreading（窗口内仍有更新）",
+        "窗口内无新 merge commit"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "VERY ACTIVE",
+      "items_html": [
+        "GitHub Release Latest → <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.41</a>；tag 已到 <span class=\"mono\">0.0.1-alpha.42</span>",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/949\" target=\"_blank\" rel=\"noopener\">#949</a> <span class=\"pill cli\">MERGED</span> Skip legacy project Localization mounts and Preview execution",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/923\" target=\"_blank\" rel=\"noopener\">#923</a> <span class=\"pill cli\">MERGED</span> built-in localization runtime / preview / builder hooks",
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/946\" target=\"_blank\" rel=\"noopener\">#946</a> <span class=\"pill cli\">MERGED</span> lightweight light probe settings query"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "LIGHT",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/issues/3327\" target=\"_blank\" rel=\"noopener\">#3327</a> 「快速上手：制作第一个 2D 游戏」求视频版教程",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.41</span>",
+      "status": "Release Latest 已更新；tag 另有 .42",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">Release .41</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.33</span>",
+      "status": "Release Latest 今早挂上；tag 仍领先到 .34",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">Release .33</a> · <a href=\"https://github.com/cocos/cocos4/commits/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">tag .34</a>"
+    },
+    {
+      "artifact": "PinK 0.0.1.36 Alpha",
+      "status": "论坛置顶仍有效",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177355\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新版",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "CLI Release .41 · Localization 三连 · 论坛码荒+eCPM",
+  "home_tags": ["CLI", "COCOS4", "PINK"],
+  "archive_title": "CLI .41 · cocos4 Release .33 · 论坛热"
+}

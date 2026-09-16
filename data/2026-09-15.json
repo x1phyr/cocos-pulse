@@ -4,9 +4,20 @@
   "year": "2026",
   "window": "自上期约 24h · 工作日刊",
   "deck": "工具链连跳：cocos4 打到 4.0.0-alpha.34，CLI 合入 alpha.41 / bump 至 alpha.42；引擎补 createMesh 步长与 32-bit index。论坛侧万籁邀请码帖破百楼，微信 eCPM 吐槽贴刷屏，另有迁移 skills 与视频纹理插件新帖。",
-  "prev": { "date": "2026-09-14", "mmdd": "09.14" },
-  "next": null,
-  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "prev": {
+    "date": "2026-09-14",
+    "mmdd": "09.14"
+  },
+  "next": {
+    "date": "2026-09-16",
+    "mmdd": "09.16"
+  },
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
   "ticker": [
     "CLI · ALPHA.41 TAG · BUMP .42 · NODE SERIALIZE",
     "COCOS4 · 4.0.0-ALPHA.34 · NOISE OPT",
@@ -160,6 +171,10 @@
     }
   ],
   "home_blurb": "CLI/cocos4 双 bump · mesh 修复 · 邀请码破百楼",
-  "home_tags": ["CLI", "COCOS4", "PINK"],
+  "home_tags": [
+    "CLI",
+    "COCOS4",
+    "PINK"
+  ],
   "archive_title": "CLI .41/.42 · cocos4 .34 · 论坛 eCPM"
 }
