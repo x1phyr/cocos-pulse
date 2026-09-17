@@ -1,0 +1,169 @@
+{
+  "date": "2026-09-17",
+  "date_mmdd": "09.17",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "仓库主线落在 cocos4：#341 把 native 渲染队列排序压成两次 uint64 比较（微基准约 1.8x）。CLI 昨夜 Localization 风暴后窗口安静，Release 仍停 .41 / tag .42，拖放建节点等 PR 在排队。论坛邀请码帖冲到 147 楼；eCPM 吐槽冷却；3.8.8 BuiltinPipeline 与节点树调试插件上新。",
+  "prev": { "date": "2026-09-16", "mmdd": "09.16" },
+  "next": null,
+  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "ticker": [
+    "COCOS4 · #341 RENDER QUEUE SORT MERGED",
+    "CLI · RELEASE .41 · TAG .42 · DND PR OPEN",
+    "ENGINE · QUIET · 3.8.8 HOLD",
+    "FORUM · 邀请码 147 · eCPM 冷却",
+    "3.X · BUILTINPIPELINE · NODE TREE PLUGIN"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cocos4：#341 渲染队列排序提速合入",
+      "body": "今早 <span class=\"mono\">cocos4</span> 合入 <span class=\"mono\">#341</span>：native 不透明/透明渲染队列比较器，从每次比 3～4 个字段改成插入时预打包 <span class=\"mono\">primaryKey</span> / <span class=\"mono\">secondaryKey</span> 两个 uint64，比较器只做两次比较。作者给出微基准（clang -O2，n=1000）约 <span class=\"mono\">1.83x</span> / <span class=\"mono\">1.77x</span>。GitHub Release Latest 仍为昨挂的 <span class=\"mono\">4.0.0-alpha.33</span>，tag 线仍有 <span class=\"mono\">alpha.34</span>；<span class=\"mono\">#340</span> bone.active、<span class=\"mono\">#322</span> 多线程继续 OPEN。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "CLI 喘息日：Release 仍 .41 · 拖放建节点等 PR 排队",
+      "body": "昨夜 Localization 三连之后，窗口内 <span class=\"mono\">cocos-cli</span> 无新 merge。Release Latest 仍是 <span class=\"mono\">0.0.1-alpha.41</span>，tag 仍停 <span class=\"mono\">.42</span>。仍在推进的 OPEN：<span class=\"mono\">#950</span> 场景拖放创建节点、<span class=\"mono\">#942</span> 递归隐藏 builder 平台 schema、<span class=\"mono\">#939</span> web-mobile 构建结果暴露 previewUrl。引擎仓窗口静音；正式版仍为 <span class=\"mono\">3.8.8</span>。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：邀请码 147 楼 · eCPM 冷却 · 3.x 管线坑与调试插件",
+      "body": "万籁报到帖续热到 147 楼 / 2400+ 浏览，楼下仍在求码并追问正式版排期。微信 eCPM 吐槽贴停在约 71 楼，窗口内几乎没新楼。技术侧新帖：3.8.8 关掉 BuiltinPipeline Settings 后 release 帧率才正常；另有人用 AI 做了浏览器节点树调试插件（preview-template 网盘分享）。PinK <span class=\"mono\">0.0.1.36</span> 置顶仍在 bump。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "【新人报到】带资进组混脸熟（随机掉落 PinK 邀请码）",
+      "url": "https://forum.cocos.org/t/topic/177357",
+      "summary": "续热：147 楼 / 2410+ 浏览（昨约 123/1710）。运营万籁帖仍是码荒主战场；最新楼在问「正式版还要多久」。与「求个 Pink 邀请码」分流帖同屏。",
+      "deep": true
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "3.8.8 的 BuiltinPipeline Settings debug 性能好于 release",
+      "url": "https://forum.cocos.org/t/topic/177386",
+      "summary": "楼主：手机上 release 只有个位数 FPS，debug 预览 30+；对比 3.8.2 正常。最终关摄像机上 BuiltinPipeline Settings 后打包帧率恢复。3 楼内确认复现路径。",
+      "deep": true
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "Cocos3.x 浏览器调试节点树",
+      "url": "https://forum.cocos.org/t/topic/177396",
+      "summary": "新帖。楼主用 AI 写了基于 3.x 的节点树调试插件（初代），解压 preview-template 到项目根即可；附百度网盘 zip，求反馈迭代。",
+      "deep": true
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "还有比我的 eCPM 低的吗",
+      "url": "https://forum.cocos.org/t/topic/177361",
+      "summary": "昨冲到 70+ 后本窗冷却：约 71 楼 / 1500 浏览，末楼停在昨午后。商业吐槽热度暂时让位给码荒与 3.x 实操帖。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.36 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177355",
+      "summary": "置顶仍在 bump（24 楼 / 1070+）。下载 <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>。",
+      "deep": false
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "用 AI 复刻《赵云与阿斗》微信小游戏教程",
+      "url": "https://forum.cocos.org/t/topic/177383",
+      "summary": "昨记 AI+Game Agent 实战帖标题已改为此；3 楼 / 590+ 浏览，附 B 站与开源仓，续看中。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "cocos 3.8.8 jdk 配置要 17 吗",
+      "url": "https://forum.cocos.org/t/topic/177388",
+      "summary": "新建帖问 Android/JDK 版本；5 楼内讨论 3.8.8 构建环境要求。",
+      "deep": false
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "【真实求助】Cocos 前端因参与游戏项目涉刑事案件，寻求建议",
+      "url": "https://forum.cocos.org/t/topic/177395",
+      "summary": "窗口内冲顶求助帖（约 40 楼 / 500+ 浏览）。非技术向，社区气氛帖——仅作信源标记，不展开案情。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / merge",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19227\" target=\"_blank\" rel=\"noopener\">#19227</a> / <a href=\"https://github.com/cocos/cocos-engine/pull/19225\" target=\"_blank\" rel=\"noopener\">#19225</a> privatize pal and platforms（无新推进）",
+        "正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/341\" target=\"_blank\" rel=\"noopener\">#341</a> <span class=\"pill cli\">MERGED</span> perf(pipeline): reduce render queue sort to two packed key compares（native · ~1.8x）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/340\" target=\"_blank\" rel=\"noopener\">#340</a> reset bone.active after updateCache（窗口内有更新）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/322\" target=\"_blank\" rel=\"noopener\">#322</a> Multithreading（仍 OPEN）",
+        "Release Latest 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.33</a>；tag 线有 <span class=\"mono\">4.0.0-alpha.34</span>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "LIGHT",
+      "items_html": [
+        "窗口内无新 merge；Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.41</a>，tag <span class=\"mono\">0.0.1-alpha.42</span>",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/950\" target=\"_blank\" rel=\"noopener\">#950</a> feat(scene): support creating nodes via drag-and-drop",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/942\" target=\"_blank\" rel=\"noopener\">#942</a> hide platform schema options recursively",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/939\" target=\"_blank\" rel=\"noopener\">#939</a> expose previewUrl in web-mobile build exit result"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/issues/3327\" target=\"_blank\" rel=\"noopener\">#3327</a> 「快速上手：制作第一个 2D 游戏」求视频版教程（无新评论）",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos4</span> / pipeline",
+      "status": "无新 Release；#341 已合入主线，正式页仍停 alpha.33",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/pull/341\" target=\"_blank\" rel=\"noopener\">#341</a> · <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">Release .33</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.41</span>",
+      "status": "窗口内无新版；tag 仍有 .42",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">Release .41</a>"
+    },
+    {
+      "artifact": "PinK 0.0.1.36 Alpha",
+      "status": "论坛置顶仍有效",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177355\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新版",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cocos4 #341 排序提速 · CLI 喘息 · 邀请码 147 楼",
+  "home_tags": ["COCOS4", "CLI", "PINK"],
+  "archive_title": "cocos4 #341 · CLI 喘息 · 码荒续热"
+}

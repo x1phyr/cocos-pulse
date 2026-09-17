@@ -4,9 +4,20 @@
   "year": "2026",
   "window": "自上期约 24h · 工作日刊",
   "deck": "工具链正式页补齐：cocos-cli Release 挂上 0.0.1-alpha.41（tag 已到 .42），Localization 三连合入；cocos4 Release 页追上 alpha.33（tag 仍领先到 .34）。引擎 #19226 Texture2D 引用平衡已合。论坛侧邀请码帖破 120 楼、eCPM 吐槽冲到 70+，另有 AI+Game Agent 实战新帖。",
-  "prev": { "date": "2026-09-15", "mmdd": "09.15" },
-  "next": null,
-  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "prev": {
+    "date": "2026-09-15",
+    "mmdd": "09.15"
+  },
+  "next": {
+    "date": "2026-09-17",
+    "mmdd": "09.17"
+  },
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
   "ticker": [
     "CLI · RELEASE .41 · TAG .42 · LOCALIZATION TRIO",
     "COCOS4 · RELEASE .33 · TAG .34 · BONE.ACTIVE PR",
@@ -156,6 +167,10 @@
     }
   ],
   "home_blurb": "CLI Release .41 · Localization 三连 · 论坛码荒+eCPM",
-  "home_tags": ["CLI", "COCOS4", "PINK"],
+  "home_tags": [
+    "CLI",
+    "COCOS4",
+    "PINK"
+  ],
   "archive_title": "CLI .41 · cocos4 Release .33 · 论坛热"
 }
