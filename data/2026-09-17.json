@@ -4,9 +4,20 @@
   "year": "2026",
   "window": "自上期约 24h · 工作日刊",
   "deck": "仓库主线落在 cocos4：#341 把 native 渲染队列排序压成两次 uint64 比较（微基准约 1.8x）。CLI 昨夜 Localization 风暴后窗口安静，Release 仍停 .41 / tag .42，拖放建节点等 PR 在排队。论坛邀请码帖冲到 147 楼；eCPM 吐槽冷却；3.8.8 BuiltinPipeline 与节点树调试插件上新。",
-  "prev": { "date": "2026-09-16", "mmdd": "09.16" },
-  "next": null,
-  "topics": ["pink", "spine", "cocos4-cli", "creator-3x"],
+  "prev": {
+    "date": "2026-09-16",
+    "mmdd": "09.16"
+  },
+  "next": {
+    "date": "2026-09-18",
+    "mmdd": "09.18"
+  },
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
   "ticker": [
     "COCOS4 · #341 RENDER QUEUE SORT MERGED",
     "CLI · RELEASE .41 · TAG .42 · DND PR OPEN",
@@ -164,6 +175,10 @@
     }
   ],
   "home_blurb": "cocos4 #341 排序提速 · CLI 喘息 · 邀请码 147 楼",
-  "home_tags": ["COCOS4", "CLI", "PINK"],
+  "home_tags": [
+    "COCOS4",
+    "CLI",
+    "PINK"
+  ],
   "archive_title": "cocos4 #341 · CLI 喘息 · 码荒续热"
 }

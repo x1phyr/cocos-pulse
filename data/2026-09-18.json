@@ -1,0 +1,182 @@
+{
+  "date": "2026-09-18",
+  "date_mmdd": "09.18",
+  "year": "2026",
+  "window": "自上期约 24h · 工作日刊",
+  "deck": "论坛主线切到 OpenPaaS：官方说明 Dashboard 入口已上线，PinK 可完整跑通、Creator 敬请期待。仓库侧 cocos4 合入 #343（native LOD 距离 int 截断），CLI #951 地形去重合入 alpha.42 线；Release 仍停 .33 / .41。邀请码报到帖续到 160+ 楼。",
+  "prev": {
+    "date": "2026-09-17",
+    "mmdd": "09.17"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "FORUM · OPENPAAS DASHBOARD 入口说明",
+    "COCOS4 · #343 LOD INT TRUNCATION MERGED",
+    "CLI · #951 TERRAIN DEDUP · .41 HOLD",
+    "ENGINE · #19228 DROP OPENPAAS DIR · 3.8.8",
+    "PINK · 邀请码 160+ · AGENT VS PINK"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "论坛：OpenPaaS 官方说明落地 · Dashboard 入口不是 bug",
+      "body": "运营万籁置顶发帖：Dashboard 里 OpenPaaS 入口已上线，是 COCOS 与 SUD 打通生态的能力升级——「做得出来」靠 Creator/PinK，「发得更广」靠 OpenPaaS（宣称统一分发到 3000+ 流量场景）。PinK 侧可完整跑通适配+打包上传；Creator 各版本一键接入「即将支持」。同窗引擎仓合入 <span class=\"mono\">#19228</span> 删除 openpaas 平台目录（目标 v3.8.9），命名空间上要和论坛 OpenPaaS 产品线分清。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 #343 LOD 截断修复合入 · CLI #951 地形去重合入 .42 线",
+      "body": "<span class=\"mono\">cocos4</span> 合入 <span class=\"mono\">#343</span>：native <span class=\"mono\">LODGroup::getScreenUsagePercentage</span> 里 <span class=\"mono\">auto distance = 0</span> 推成 int，float 距离向零截断导致切换点错位；改为 <span class=\"mono\">float</span> 与 JS 对齐。另开 <span class=\"mono\">#344</span> Label 超长异常（OPEN）。CLI <span class=\"mono\">#951</span> 地形点去重从二次扫描换成无碰撞键，已合入 <span class=\"mono\">v0.0.1-alpha.42</span> 分支（未上 main）；Release Latest 仍 <span class=\"mono\">.41</span>，新 issue <span class=\"mono\">#952</span> 报 alpha.41 postinstall 缺 engine 包。引擎窗口仅此一单；正式仍 <span class=\"mono\">3.8.8</span>。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "码荒 160+ · 赛博斗蛐蛐 Agent vs PinK · 求助帖冲顶",
+      "body": "万籁报到帖续热到约 161 楼 / 2900+ 浏览。新帖「赛博斗蛐蛐」用同一 GPT-5.6 Sol 对比 Game Agent 与 PinK 做 Hello World / 贪吃蛇 / 平台跳跃，强调差异在交互与工程组织而非模型本身。刑事案件求助帖窗口内冲到约 137 楼 / 2500 浏览——非技术向，仅作信源标记。PinK <span class=\"mono\">0.0.1.36</span> 置顶仍在。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "OFFICIAL",
+      "pill_class": "cli",
+      "title": "OpenPaaS ｜关于 COCOS Dashboard 更新 OpenPaaS 入口的说明",
+      "url": "https://forum.cocos.org/t/topic/177423",
+      "summary": "官方置顶（约 16 楼 / 420+）。万籁：入口不是 bug；OpenPaaS=应用内游戏 All-In-One，登录/支付/广告抽象 + 统一分发。PinK 可跑通（附开发文档与上传文档）；Creator「即将支持」。FAQ：不影响现有项目、不强制打包、上线需软著（备案可代申请）。同区早前「Hello，OpenPaaS！」占位帖已关闭。",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "【新人报到】带资进组混脸熟（随机掉落 PinK 邀请码）",
+      "url": "https://forum.cocos.org/t/topic/177357",
+      "summary": "续热：约 161 楼 / 2920+ 浏览（昨约 147/2410）。码荒主战场未降温；OpenPaaS 说明帖也在提醒「暂未获码请关注论坛随机掉落」。",
+      "deep": true
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "【赛博斗蛐蛐】同样的模型，Game Agent 与 PinK 的差别在哪里？",
+      "url": "https://forum.cocos.org/t/topic/177429",
+      "summary": "新帖。统一 GPT-5.6 Sol / 高推理，对比 Hello World、贪吃蛇、素材搭平台关；结论偏向交互设计与工程组织差异，而非「谁模型更强」。约 180 浏览。",
+      "deep": true
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "这是啥？",
+      "url": "https://forum.cocos.org/t/topic/177400",
+      "summary": "Dashboard 冒出 OpenPaaS 入口时的懵圈贴（约 15 楼 / 690+），已与官方说明帖互链；情绪从「这啥」转到「冲」。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.36 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177355",
+      "summary": "置顶仍有效（约 26 楼 / 1260+）。下载 <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">pink.sud.tech</a>。",
+      "deep": false
+    },
+    {
+      "pill": "MOOD",
+      "pill_class": "mood",
+      "title": "【真实求助】Cocos 前端因参与游戏项目涉刑事案件，寻求建议",
+      "url": "https://forum.cocos.org/t/topic/177395",
+      "summary": "窗口内冲顶（约 137 楼 / 2490+）。非技术向——仅作信源标记，不展开案情。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "Cocos Dashboard 2.2.2 更新了 新出的是神马",
+      "url": "https://forum.cocos.org/t/topic/177408",
+      "summary": "与 OpenPaaS 同波：用户发现 Dashboard 2.2.2 新入口；社区指去官网下最新版可自动更新。约 8 楼 / 400+。",
+      "deep": false
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "让 Codex 直接生成 PSD 难吗？提示词其实很简单",
+      "url": "https://forum.cocos.org/t/topic/177433",
+      "summary": "今早新帖，AI 出 PSD 工作流分享；浏览尚浅，续看。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "LIGHT",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-engine/pull/19228\" target=\"_blank\" rel=\"noopener\">#19228</a> <span class=\"pill cli\">MERGED</span> fix(openpaas): 删除 openpaas 平台目录（合入 <span class=\"mono\">v3.8.9</span>）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19227\" target=\"_blank\" rel=\"noopener\">#19227</a> / <a href=\"https://github.com/cocos/cocos-engine/pull/19225\" target=\"_blank\" rel=\"noopener\">#19225</a> privatize pal and platforms（无新推进）",
+        "正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/343\" target=\"_blank\" rel=\"noopener\">#343</a> <span class=\"pill cli\">MERGED</span> fix(scene): LOD screen usage distance truncated to int（native · 与 JS 对齐）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/344\" target=\"_blank\" rel=\"noopener\">#344</a> Label length will cause abnormal font display（超长 Label）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/340\" target=\"_blank\" rel=\"noopener\">#340</a> reset bone.active · <a href=\"https://github.com/cocos/cocos4/pull/322\" target=\"_blank\" rel=\"noopener\">#322</a> Multithreading（#322 窗口内有更新）",
+        "Release Latest 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.33</a>；tag 线有 <span class=\"mono\">alpha.34</span>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/951\" target=\"_blank\" rel=\"noopener\">#951</a> <span class=\"pill cli\">MERGED</span> perf(scene): avoid quadratic terrain point deduplication（合入 <span class=\"mono\">v0.0.1-alpha.42</span> 分支，未上 main）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/issues/952\" target=\"_blank\" rel=\"noopener\">#952</a> alpha.41 报错（postinstall 缺 <span class=\"mono\">packages/engine</span>）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/944\" target=\"_blank\" rel=\"noopener\">#944</a> [break] decouple Engine SDK + parallel compat tests（今早仍有更新）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/950\" target=\"_blank\" rel=\"noopener\">#950</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/942\" target=\"_blank\" rel=\"noopener\">#942</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/939\" target=\"_blank\" rel=\"noopener\">#939</a> 拖放建节点等仍排队",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.41</a>；tag <span class=\"mono\">.42</span>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "LIGHT",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3328\" target=\"_blank\" rel=\"noopener\">#3328</a> fix(doc): 「Cocos Crateor」错别字 → Cocos Creator",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos4</span> / LOD",
+      "status": "无新 Release；#343 已合入 v4.0.0，正式页仍停 alpha.33",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/pull/343\" target=\"_blank\" rel=\"noopener\">#343</a> · <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.33\" target=\"_blank\" rel=\"noopener\">Release .33</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.41</span>",
+      "status": "无新 GitHub Release；#951 落在 .42 分支",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.41\" target=\"_blank\" rel=\"noopener\">Release .41</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/951\" target=\"_blank\" rel=\"noopener\">#951</a>"
+    },
+    {
+      "artifact": "PinK 0.0.1.36 Alpha",
+      "status": "论坛置顶仍有效；OpenPaaS 打包文档已挂出",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177355\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "窗口内无新正式版；#19228 落 v3.8.9 线",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "OpenPaaS 官方说明 · cocos4 #343 · CLI #951",
+  "home_tags": [
+    "OPENPAAS",
+    "COCOS4",
+    "CLI"
+  ],
+  "archive_title": "OpenPaaS 说明 · cocos4 #343 · CLI #951"
+}
