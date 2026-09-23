@@ -1,0 +1,184 @@
+{
+  "date": "2026-09-23",
+  "date_mmdd": "09.23",
+  "year": "2026",
+  "window": "自上期（09-22 早约 10:06）至今日早 · 约 24h 工作日刊",
+  "deck": "官方发 PinK 邀请码渠道盘点；民间测评烧掉约 ¥50.98 体验金做环形倒计时 Demo。仓库侧 cocos4 合入 Button 组件级事件 API（#356）与 HDR 浮点目标输出（#351），新开 V8 promise 迭代器修复 #357；引擎新开 web-mobile super accessor 递归坑 #19232（与上期 SkinnedMesh 同源）。",
+  "prev": {
+    "date": "2026-09-22",
+    "mmdd": "09.22"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "PINK · 官方邀请码渠道盘点 · 测评 ¥50.98",
+    "COCOS4 · #356/#351 MERGED · #357 V8 OPEN",
+    "ENGINE · #19232 SUPER ACCESSOR 递归 · #19233 Spine 关",
+    "CLI · 窗口安静 · #959 叠字仍 OPEN",
+    "FORUM · .37 公告续热 · OpenPaaS 60 楼"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "C姐发码攻略：沙发 / 脸熟 / 干货定向 / 布道师五组码",
+      "body": "官方运营 <a href=\"https://forum.cocos.org/t/topic/177536\" target=\"_blank\" rel=\"noopener\">【保姆级盘点】PinK 邀请码全获取渠道</a>（约 20 楼 / 390+）昨晚上新：公告帖抢沙发稳出码、日常活跃随机掉落、高质量观点定向发放、优质创作可@申请、已获码的「民间布道师」发测评可领 5 组码自由分配；并预告征稿与线下沙龙重启。同日 <a href=\"https://forum.cocos.org/t/topic/177520\" target=\"_blank\" rel=\"noopener\">PinK 使用测评</a>（约 17 楼 / 700+）用 .37 + Cocos 4 跑环形倒计时 Demo，花掉约 ¥50.98 体验金——结论是场景操作强、token 贵、分辨率硬指标易漏。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 双合入：Button on/off · HDR 浮点目标；引擎再开 super accessor 坑",
+      "body": "上期还 OPEN 的 <a href=\"https://github.com/cocos/cocos4/pull/356\" target=\"_blank\" rel=\"noopener\">#356</a> 已合：Button 组件级 <span class=\"mono\">on/off/targetOff</span>（关 <a href=\"https://github.com/cocos/cocos4/issues/104\" target=\"_blank\" rel=\"noopener\">#104</a>）。另合 <a href=\"https://github.com/cocos/cocos4/pull/351\" target=\"_blank\" rel=\"noopener\">#351</a> HDR 输出按浮点 render target 实际格式判定。新开 <a href=\"https://github.com/cocos/cocos4/pull/357\" target=\"_blank\" rel=\"noopener\">#357</a> 修 V8 移除 handled promise 时迭代器失效。引擎侧新开 <a href=\"https://github.com/cocos/cocos-engine/issues/19232\" target=\"_blank\" rel=\"noopener\">#19232</a>：3.8.8 web-mobile 构建把 <span class=\"mono\">super.accessor=</span> 改写成真递归（与上期 SkinnedMesh #19230 同族）；#19233 ByteDance Spine 显示问题已关。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": ".37 公告爬到 31 楼 · 用途辩 59 楼 · 软著 vs Maker 新辩",
+      "body": "<a href=\"https://forum.cocos.org/t/topic/177498\" target=\"_blank\" rel=\"noopener\">PinK 0.0.1.37 Alpha</a> 续热约 31 楼 / 830+（上期约 25/540）。用途辩帖约 59 楼 / 2340+。新帖吐槽上线要软著、对比 TapTap Maker；另有 3.8.8 Spine json 引用新坑与 Agent 用 CC0 素材目录分享。OpenPaaS Dashboard 说明帖约 60 楼 / 2190+。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "OFFICIAL",
+      "pill_class": "pink",
+      "title": "【保姆级盘点】PinK 邀请码全获取渠道盘点（内含概率提升攻略）",
+      "url": "https://forum.cocos.org/t/topic/177536",
+      "summary": "官方（约 20 楼 / 390）。楼主万籁梳理五条路径：公告抢沙发、活跃随机掉落、干货定向、创作申请、布道师发测评领 5 组码；强调纯「求码」通过率极低。沙发位秒没，官方回「请看私信」。",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 使用测评之 C姐已经原谅我了",
+      "url": "https://forum.cocos.org/t/topic/177520",
+      "summary": "深度实测（约 17 楼 / 709）：.37 + Cocos 4 做 750×1500 环形倒计时，体验金约 ¥50.98。楼主结论：场景操作优于 Codex+MCP，但 token 贵、生图与引擎语义断层、设计分辨率硬指标被吞；高赞讨论指向「先能用再优化 token」。官方前排点赞行动力。",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.37 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177498",
+      "summary": "置顶公告续热约 31 楼 / 835（上期约 25/549）。反馈与求码跟帖仍在。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "正使用cocos的你，看清楚pink的主要用途以及后续发展了吗？",
+      "url": "https://forum.cocos.org/t/topic/177473",
+      "summary": "用途/成本辩论续到约 59 楼 / 2347（上期约 57/1922）。",
+      "deep": false
+    },
+    {
+      "pill": "OFFICIAL",
+      "pill_class": "cli",
+      "title": "OpenPaaS ｜关于 COCOS Dashboard 更新 OpenPaaS 入口的说明",
+      "url": "https://forum.cocos.org/t/topic/177423",
+      "summary": "续热约 60 楼 / 2191（上期约 59/1949）。",
+      "deep": false
+    },
+    {
+      "pill": "STORE",
+      "pill_class": "store",
+      "title": "上线游戏需要软著，就凭这一项干不过taptap Maker",
+      "url": "https://forum.cocos.org/t/topic/177516",
+      "summary": "新辩（约 16 楼 / 572）：对比国内上架软著门槛与 TapTap Maker 热度。",
+      "deep": false
+    },
+    {
+      "pill": "SPINE",
+      "pill_class": "spine",
+      "title": "3.8.8 spine 的json 文件引用问题",
+      "url": "https://forum.cocos.org/t/topic/177540",
+      "summary": "新坑（约 1 楼 / 120）：3.8.8 下 Spine json 引用异常，待跟帖。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "mood",
+      "title": "Kura：给 Agent 用的 CC0 小游戏素材目录（kuroneko.chat/assets）",
+      "url": "https://forum.cocos.org/t/topic/177535",
+      "summary": "分享贴（约 2 楼 / 239）：面向 Agent 的 CC0 小游戏素材目录。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19232\" target=\"_blank\" rel=\"noopener\">#19232</a> web-mobile 构建改写 super accessor setter → 真递归（3.8.8 / H5；与上期 #19230 同族）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19231\" target=\"_blank\" rel=\"noopener\">#19231</a> 388 label blurred",
+        "<a href=\"https://github.com/cocos/cocos-engine/issues/19233\" target=\"_blank\" rel=\"noopener\">#19233</a> <span class=\"pill cli\">CLOSED</span> Spine ByteDance 平台显示异常",
+        "窗口内无新 commit / PR 合入；正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/356\" target=\"_blank\" rel=\"noopener\">#356</a> <span class=\"pill cli\">MERGED</span> feat(ui): Button 组件级 <span class=\"mono\">on/off/targetOff</span>（关 <a href=\"https://github.com/cocos/cocos4/issues/104\" target=\"_blank\" rel=\"noopener\">#104</a>；上期 OPEN）",
+        "<a href=\"https://github.com/cocos/cocos4/pull/351\" target=\"_blank\" rel=\"noopener\">#351</a> <span class=\"pill cli\">MERGED</span> fix(shader): HDR 输出按浮点 render target 实际格式",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/357\" target=\"_blank\" rel=\"noopener\">#357</a> fix(v8): 移除 handled promise 时迭代器失效（今早仍有更新）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/322\" target=\"_blank\" rel=\"noopener\">#322</a> Multithreading 有更新",
+        "主线 version <span class=\"mono\">4.0.0-alpha.35</span>；GitHub Release Latest 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">α.34</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 PR / commit。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/issues/959\" target=\"_blank\" rel=\"noopener\">#959</a> Pink game app 启动叠字（自 09-21）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/944\" target=\"_blank\" rel=\"noopener\">#944</a> decouple Engine SDK",
+        "主线 <span class=\"mono\">0.0.1-alpha.43</span>；GitHub Release Latest 仍为 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">α.42</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3328\" target=\"_blank\" rel=\"noopener\">#3328</a> fix(doc): 「Cocos Crateor」→ Cocos Creator（自 09-17 无新推进）",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.37 Alpha",
+      "status": "无新版本号；公告帖续热 + 官方发码攻略",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177498\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://forum.cocos.org/t/topic/177536\" target=\"_blank\" rel=\"noopener\">邀请码攻略</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.34</span>",
+      "status": "Release Latest 仍 .34；主线 α.35，窗口内无新 Release 页",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">Release .34</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.42</span>",
+      "status": "Release Latest 仍 .42；主线 α.43，窗口内无新 tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">Release .42</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "无新正式版；#19232 新开 web-mobile accessor 递归",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "官方发码攻略 · PinK 测评 ¥50 · Button/HDR 合入",
+  "home_tags": [
+    "PINK",
+    "COCOS4",
+    "ENGINE",
+    "FORUM"
+  ],
+  "archive_title": "发码攻略 · 测评 ¥50 · Button/HDR"
+}
