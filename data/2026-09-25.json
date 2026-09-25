@@ -1,0 +1,202 @@
+{
+  "date": "2026-09-25",
+  "date_mmdd": "09.25",
+  "year": "2026",
+  "window": "自上期（09-24 早约 10:11）至今日早 · 约 24h 工作日刊",
+  "deck": "仓库双合：cocos4 audio 退出崩溃 #360 合入（对引擎 #19176），cli 预览 play/pause/step #961 合入；引擎侧一夜甩出 15 个 OpenPaaS override PR（3.6.3～3.8.8+patch.1）。论坛 PinK「等码无望」破解晒场、咸鱼绳子消除辩续热，另有 Creator 3.x「给 AI 装眼睛和双手」插件帖抬头。",
+  "prev": {
+    "date": "2026-09-24",
+    "mmdd": "09.24"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "COCOS4 · #360 AUDIO MERGED · #361 SPINE iOS OPEN",
+    "CLI · #961 PREVIEW MERGED · #960 ZIP STILL OPEN",
+    "ENGINE · 15× OPENPAAS OVERRIDE PRs",
+    "PINK · 等码无望破解晒 · 咸鱼辩续",
+    "FORUM · AI 眼睛双手插件 · Spine→VAT"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "双合：cocos4 audio #360 · cli 预览 play/pause/step #961；ZIP 导出 #960 仍 OPEN",
+      "body": "上期还 OPEN 的 <a href=\"https://github.com/cocos/cocos4/pull/360\" target=\"_blank\" rel=\"noopener\">#360</a> 已合：fix(audio) 迭代器失效 / 退出崩溃，对准引擎 <a href=\"https://github.com/cocos/cocos-engine/issues/19176\" target=\"_blank\" rel=\"noopener\">#19176</a>（iOS AudioCache destroy）。cli 侧 <a href=\"https://github.com/cocos/cocos-cli/pull/961\" target=\"_blank\" rel=\"noopener\">#961</a>（break）同窗合入：把编辑器内预览的 play/pause/step 语义收回 scene 进程，修帧时钟与画布输入漂移。对接 PinK 的 <a href=\"https://github.com/cocos/cocos-cli/pull/960\" target=\"_blank\" rel=\"noopener\">#960</a> <span class=\"mono\">assets.exportAssetPackage</span> 仍 OPEN。另新开 <a href=\"https://github.com/cocos/cocos4/issues/361\" target=\"_blank\" rel=\"noopener\">#361</a>：3.8.6 Spine 在 iOS 浏览器顶点错乱，关 VAO 可绕过。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "引擎一夜 15 连发：OpenPaaS engine overrides · 3.6.3～3.8.8+patch.1",
+      "body": "窗口内无引擎主线 commit，但 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+openpaas+created%3A%3E%3D2026-09-24\" target=\"_blank\" rel=\"noopener\">#19234～#19248</a> 一口气开了 15 个 <span class=\"mono\">feat(openpaas)</span>：为 v3.6.3 / 3.7.x / 3.8.0～3.8.8 的 <span class=\"mono\">+patch.1</span> 配 engine overrides 与 npm patches（作者 qiuguohua，自动化脚本生成）。正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>；#19176 / #19232 / #19231 无新推进。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "PinK「等码无望」破解晒场 · 咸鱼辩续 · AI 眼睛双手插件抬头",
+      "body": "新帖 <a href=\"https://forum.cocos.org/t/topic/177572\" target=\"_blank\" rel=\"noopener\">等码无望，我自会出手</a>（约 19 楼 / 466）楼主晒 Astra 绕过邀请码进 PinK、接三方模型修 3.x demo；跟帖喊「明目张胆破解」，官方 @wanlai_sud 回「你哪有一直求码！就一次！」。咸鱼绳子消除 <a href=\"https://forum.cocos.org/t/topic/177559\" target=\"_blank\" rel=\"noopener\">#177559</a> 续到约 15 楼 / 860。另有 <a href=\"https://forum.cocos.org/t/topic/177570\" target=\"_blank\" rel=\"noopener\">给 AI 装眼睛和双手</a>（约 15 楼 / 473）推 Creator 3.x 视觉+操控插件，以及 Spine→VAT 真机对比与资源查询工具分享。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "等码无望，我自会出手",
+      "url": "https://forum.cocos.org/t/topic/177572",
+      "summary": "新辩（约 19 楼 / 466）：楼主称求码无望，用 Astra 绕过邀请进 PinK，接三方模型后导入 3.x demo 爆红再让 Agent 修。跟帖直呼破解；官方万籁回「你哪有一直求码！就一次！」",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "pink做的绳子消除竟然上咸鱼了",
+      "url": "https://forum.cocos.org/t/topic/177559",
+      "summary": "续热约 15 楼 / 860（上期约 9/460）。楼主仍喊闲鱼「纯杀猪」举报；跟帖争论是否逆向二次开发。",
+      "deep": false
+    },
+    {
+      "pill": "UI/AI",
+      "pill_class": "mood",
+      "title": "给AI安装眼睛和双手，让Cocos开发游戏更省心，效果更出众！",
+      "url": "https://forum.cocos.org/t/topic/177570",
+      "summary": "新帖（约 15 楼 / 473）：楼主推 Creator 3.x 插件，让 AI 自跑游戏、截图、读日志、操控并修 bug；自称配 DeepSeek 后「喝茶刷抖音」即可。跟帖求购与「该不该给 Godot 做同款」建议。",
+      "deep": true
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "正使用cocos的你，看清楚pink的主要用途以及后续发展了吗？",
+      "url": "https://forum.cocos.org/t/topic/177473",
+      "summary": "用途辩续约 62 楼 / 3021（上期约 60/2766）。结构观察与成本争论仍在。",
+      "deep": false
+    },
+    {
+      "pill": "PINK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.37 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177498",
+      "summary": "置顶公告续约 40 楼 / 1374（上期约 39/1160）。无新版本号。",
+      "deep": false
+    },
+    {
+      "pill": "OFFICIAL",
+      "pill_class": "pink",
+      "title": "【保姆级盘点】PinK 邀请码全获取渠道盘点（内含概率提升攻略）",
+      "url": "https://forum.cocos.org/t/topic/177536",
+      "summary": "官方发码攻略续约 31 楼 / 803（上期约 29/660）。与「等码无望」帖形成对照。",
+      "deep": false
+    },
+    {
+      "pill": "SPINE",
+      "pill_class": "spine",
+      "title": "【分享】Spine 转 VAT（顶点动画贴图）：Creator 3.8.7 真机 debug / release 性能对比",
+      "url": "https://forum.cocos.org/t/topic/177569",
+      "summary": "新分享（约 4 楼 / 228）：同屏几百 Spine 扛不住时离线烘焙成 VAT，贴真机 debug/release 对比数据。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "【工具分享】Cocos Creator 资源查询与定位工具",
+      "url": "https://forum.cocos.org/t/topic/177575",
+      "summary": "新工具帖（约 2 楼 / 150）：资源查询助手，主打 2.x；3.x 暂未支持，仍开发中。",
+      "deep": false
+    },
+    {
+      "pill": "FORUM",
+      "pill_class": "mood",
+      "title": "[正规军下场]给论坛提个建议，能不能增加个暗黑色的主题？",
+      "url": "https://forum.cocos.org/t/topic/177574",
+      "summary": "暗色主题建议续议（约 4 楼 / 193）；另有同源帖 #177564 约 20 楼。官方有跟。",
+      "deep": false
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "iOS27微信小游戏卡死",
+      "url": "https://forum.cocos.org/t/topic/177458",
+      "summary": "续热约 15 楼 / 1009。iOS / 微信小游戏卡死排查仍在。",
+      "deep": false
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "窗口内无主线 commit；一夜开出 15 个 OpenPaaS override PR：<a href=\"https://github.com/cocos/cocos-engine/pull/19234\" target=\"_blank\" rel=\"noopener\">#19234</a>～<a href=\"https://github.com/cocos/cocos-engine/pull/19248\" target=\"_blank\" rel=\"noopener\">#19248</a>（v3.6.3 / 3.7.x / 3.8.0～3.8.8 <span class=\"mono\">+patch.1</span>，均 OPEN）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19176\" target=\"_blank\" rel=\"noopener\">#19176</a> iOS AudioCache destroy（cocos4 #360 已对其合入）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19232\" target=\"_blank\" rel=\"noopener\">#19232</a> web-mobile super accessor 递归",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19231\" target=\"_blank\" rel=\"noopener\">#19231</a> 388 label blurred",
+        "正式 Release 仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos4/pull/360\" target=\"_blank\" rel=\"noopener\">#360</a> <span class=\"pill cli\">MERGED</span> fix(audio): 迭代器失效 / 退出崩溃（对引擎 <a href=\"https://github.com/cocos/cocos-engine/issues/19176\" target=\"_blank\" rel=\"noopener\">#19176</a>）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/361\" target=\"_blank\" rel=\"noopener\">#361</a> 3.8.6 Spine 在 iOS 浏览器顶点错乱（关 VAO 可绕过）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/358\" target=\"_blank\" rel=\"noopener\">#358</a> Oppo 小游戏本地服读缓存失败 → 黑屏",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/issues/319\" target=\"_blank\" rel=\"noopener\">#319</a> 强烈建议开源 engine-pal / engine-platforms（窗口有讨论更新）",
+        "主线 version <span class=\"mono\">4.0.0-alpha.35</span>；GitHub Release Latest 仍为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">α.34</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<a href=\"https://github.com/cocos/cocos-cli/pull/961\" target=\"_blank\" rel=\"noopener\">#961</a> <span class=\"pill cli\">MERGED</span> [break] fix(scene): 预览 play/pause/step 语义收回 scene 进程",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/960\" target=\"_blank\" rel=\"noopener\">#960</a> [feat] <span class=\"mono\">assets.exportAssetPackage</span> 导出资源及依赖 ZIP（对接 PinK）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/issues/959\" target=\"_blank\" rel=\"noopener\">#959</a> Pink game app 启动叠字",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/944\" target=\"_blank\" rel=\"noopener\">#944</a> decouple Engine SDK",
+        "主线 <span class=\"mono\">0.0.1-alpha.43</span>；GitHub Release Latest 仍为 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">α.42</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3328\" target=\"_blank\" rel=\"noopener\">#3328</a> fix(doc): 「Cocos Crateor」→ Cocos Creator（自 09-17 无新推进）",
+        "窗口内无新 commit / release。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.37 Alpha",
+      "status": "无新版本号；等码无望破解晒与咸鱼辩续热，发码帖仍在",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177498\" target=\"_blank\" rel=\"noopener\">公告</a> · <a href=\"https://forum.cocos.org/t/topic/177536\" target=\"_blank\" rel=\"noopener\">邀请码攻略</a> · <a href=\"https://pink.sud.tech/zh-cn\" target=\"_blank\" rel=\"noopener\">下载</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.34</span>",
+      "status": "Release Latest 仍 .34；主线 α.35，窗口合入 #360，无新 Release 页",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">Release .34</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.42</span>",
+      "status": "Release Latest 仍 .42；主线 α.43，窗口合入 #961，#960 仍 OPEN",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">Release .42</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "无新正式版；OpenPaaS +patch.1 override 批量开 PR，正式仍 3.8.8",
+      "link_html": "正式仍为 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cocos4 #360 / cli #961 双合 · OpenPaaS 15 PR · PinK 等码辩",
+  "home_tags": [
+    "COCOS4",
+    "CLI",
+    "OPENPAAS",
+    "PINK"
+  ],
+  "archive_title": "audio/预览双合 · OpenPaaS 连发 · 等码辩"
+}
