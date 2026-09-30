@@ -8,7 +8,10 @@
     "date": "2026-09-28",
     "mmdd": "09.28"
   },
-  "next": null,
+  "next": {
+    "date": "2026-09-30",
+    "mmdd": "09.30"
+  },
   "topics": [
     "pink",
     "spine",
