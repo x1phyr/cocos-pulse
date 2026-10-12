@@ -8,7 +8,10 @@
     "date": "2026-10-08",
     "mmdd": "10.08"
   },
-  "next": null,
+  "next": {
+    "date": "2026-10-12",
+    "mmdd": "10.12"
+  },
   "topics": [
     "creator-3x",
     "cocos4-cli",

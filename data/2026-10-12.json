@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-12",
+  "date_mmdd": "10.12",
+  "year": "2026",
+  "window": "自上期（10-09 早约 10:50）至今日（10-12）早约 10:10 · 约 3 自然日（含周末）",
+  "deck": "跨周末这三天，主角是 cocos-cli：周四周五新开 #971～#978 八条 PR（scene 网格/视图同步、Creator 场景视图设置导入、动画剪辑刷新、资源节点创建修复、日志降级），合入只有 #972 一条；engine 和 cocos4 基本静音，docs 合了一条扩展共享说明。论坛被一位个人开发者的 cocos ai copilot 刷屏，三天连发 v0.1.0→v0.1.2；AI 焦虑帖续烧，iOS 27 微信小游戏卡死有了「高性能+」解法。PinK 仍是 .38。",
+  "prev": {
+    "date": "2026-10-09",
+    "mmdd": "10.09"
+  },
+  "next": null,
+  "topics": [
+    "cocos4-cli",
+    "creator-3x",
+    "pink"
+  ],
+  "ticker": [
+    "CLI · #971～#978 NEW · #972 MERGED",
+    "ENGINE · 周末静音 · OpenPaaS 9 仍 OPEN",
+    "DOCS · #3329 扩展共享说明",
+    "FORUM · cocos ai copilot v0.1.2",
+    "WX · iOS27 卡死 → 高性能+"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cli 开 PR 潮：#971～#978 八条新开，#972 合入",
+      "body": "engine 歇着，cli 仓接着跑：10-09～10-10 新开 8 条 PR，scene 方向占大头。<a href=\"https://github.com/cocos/cocos-cli/pull/971\" target=\"_blank\" rel=\"noopener\">#971</a> 修 scene 网格边界与视图模式同步、<a href=\"https://github.com/cocos/cocos-cli/pull/973\" target=\"_blank\" rel=\"noopener\">#973</a> 把 Creator 个人场景视图设置导入 CLI、<a href=\"https://github.com/cocos/cocos-cli/pull/974\" target=\"_blank\" rel=\"noopener\">#974</a> 外部导入后刷新动画剪辑、<a href=\"https://github.com/cocos/cocos-cli/pull/975\" target=\"_blank\" rel=\"noopener\">#975</a> 修 Scene 资源刷新接口传递加载失败、<a href=\"https://github.com/cocos/cocos-cli/pull/976\" target=\"_blank\" rel=\"noopener\">#976</a> 修从引擎导出创建资源节点；<a href=\"https://github.com/cocos/cocos-cli/pull/977\" target=\"_blank\" rel=\"noopener\">#977</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/978\" target=\"_blank\" rel=\"noopener\">#978</a> 把脚本类与 scene manager 注册日志降到 debug。唯一合入是 <a href=\"https://github.com/cocos/cocos-cli/pull/972\" target=\"_blank\" rel=\"noopener\">#972</a> fix(builder): 标记 API 发起的构建（10-09 15:25 CST），正好配上期新开的构建画像 <a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a>（仍 OPEN）。Release Latest 仍 α.42。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "论坛：个人版 cocos ai copilot 三天连发 v0.1.0→v0.1.2",
+      "body": "一位个人开发者的 AI 插件成了周末话题。楼主 923480732 的 <a href=\"https://forum.cocos.org/t/topic/177666\" target=\"_blank\" rel=\"noopener\">v0.1.0 正式免费发布</a>（27 楼 / 1308）自述「Deepseek/GPT 当脑子 + codex/mcp 当手」，基于 funplay 免费 MCP 改造，加了预览模式内鼠标点击、拖拽；GitHub 免费，商店 1 元。楼下有人提醒不能接第三方聚合 API。10-10 又连发 <a href=\"https://forum.cocos.org/t/topic/177711\" target=\"_blank\" rel=\"noopener\">v0.1.1</a> 与 <a href=\"https://forum.cocos.org/t/topic/177715\" target=\"_blank\" rel=\"noopener\">v0.1.2（自动更新）</a>。官方 PinK 仍停在 <a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">.38 Alpha</a>，Beta 未公告。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "AI 焦虑帖续烧 · iOS 27 微信卡死找到「高性能+」解",
+      "body": "AI 话题和平台兼容两条线同时冒烟。<a href=\"https://forum.cocos.org/t/topic/177702\" target=\"_blank\" rel=\"noopener\">自从有了 AI 后，对知识失去了兴趣</a>（29 楼）一句「每天让 AI 写 bug」引出一串自嘲；Stroustrup 谈 AI 编码的<a href=\"https://forum.cocos.org/t/topic/177714\" target=\"_blank\" rel=\"noopener\">访谈总结</a>被拿来当嘴替。实用向：<a href=\"https://forum.cocos.org/t/topic/177458\" target=\"_blank\" rel=\"noopener\">iOS27 微信小游戏卡死</a>（3.8.7，22 楼）楼下实测只有「高性能模式」会卡，去掉或改成<a href=\"https://developers.weixin.qq.com/minigame/dev/guide/performance/perf-high-performance-plus.html\" target=\"_blank\" rel=\"noopener\">高性能+</a>即稳。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "AI",
+      "pill_class": "cli",
+      "title": "cocos ai copilot v0.1.0（正式免费发布！！）",
+      "url": "https://forum.cocos.org/t/topic/177666",
+      "deep": true,
+      "summary": "10-08 发帖，约 27 楼 / 1308。楼主：纯个人爱好，Deepseek/GPT 思考 + codex/mcp 写代码与生成资产，在 funplay 免费 MCP 上加了预览模式点击/拖拽；GitHub 免费、商店 1 元。关键回复：有人指出不能用第三方聚合网站 API。"
+    },
+    {
+      "pill": "AI",
+      "pill_class": "cli",
+      "title": "cocos ai copilot v0.1.1 / v0.1.2（自动更新）",
+      "url": "https://forum.cocos.org/t/topic/177715",
+      "summary": "10-10 同一作者连发 两版，v0.1.2 应要求加自动更新，商店新版待审。另见 v0.1.1 帖 177711。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "iOS27微信小游戏卡死",
+      "url": "https://forum.cocos.org/t/topic/177458",
+      "deep": true,
+      "summary": "3.8.7 项目，iOS 升 27 后玩一会卡死（22 楼 / 2034）。10-10 楼下实测：仅「高性能模式」卡死，去掉或改用微信「高性能+」模式未复现。"
+    },
+    {
+      "pill": "闲聊",
+      "pill_class": "eng",
+      "title": "自从有了AI后，对知识失去了兴趣",
+      "url": "https://forum.cocos.org/t/topic/177702",
+      "summary": "10-09 新帖，29 楼 / 1292。楼主「无心研究引擎底层，每天让 AI 写 bug」，楼下多是自嘲与职业焦虑段子。"
+    },
+    {
+      "pill": "闲聊",
+      "pill_class": "eng",
+      "title": "Bjarne Stroustrup 访谈中关于 AI 编码观点总结",
+      "url": "https://forum.cocos.org/t/topic/177714",
+      "summary": "10-10 转述 C++ 之父对 AI 编码的看法，与上面 AI 焦虑帖、「随波逐流还是保持清醒」帖互相引用。"
+    },
+    {
+      "pill": "整活",
+      "pill_class": "eng",
+      "title": "认知撕裂，不会觉得cocos就只能用来做游戏吧？",
+      "url": "https://forum.cocos.org/t/topic/177696",
+      "summary": "15 楼 / 1282。楼主把 Cocos 当矢量壁纸开发框架用，贴了演示与 win32_webview 源码分支。"
+    },
+    {
+      "pill": "技术",
+      "pill_class": "cli",
+      "title": "Cocos实现锥形灯体积光-基于Volumetric Lights for Unity 5",
+      "url": "https://forum.cocos.org/t/topic/177716",
+      "summary": "10-10 新帖：移植 SlightlyMad/VolumetricLights 到 Cocos，依赖离屏 Framebuffer 取深度图，附截图与视频。"
+    },
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "【免费】帮 10 个 Creator 3.x 小游戏项目跑包体报告",
+      "url": "https://forum.cocos.org/t/topic/177713",
+      "summary": "「包体医生」插件作者招 10 个项目免费验证：主包 TOP20、安全删除分级、图片可省多少，瞄准 4M 主包痛点。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "bug",
+      "title": "OpenPaaS ｜关于 COCOS Dashboard 更新 OpenPaaS 入口的说明",
+      "url": "https://forum.cocos.org/t/topic/177423",
+      "summary": "老楼周末仍在涨（约 73 楼 / 6320），最后回复 10-11。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无合入、无新 PR / issue。",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS 同系列仍挂 9 条（<a href=\"https://github.com/cocos/cocos-engine/pull/19238\" target=\"_blank\" rel=\"noopener\">#19238</a>、<a href=\"https://github.com/cocos/cocos-engine/pull/19240\" target=\"_blank\" rel=\"noopener\">#19240</a>～#19243、#19245～#19248）；#19240 10-09 有新评论",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 PR / issue / Release。",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">α.34</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/972\" target=\"_blank\" rel=\"noopener\">#972</a> fix(builder): mark API-initiated builds（10-09 15:25 CST）",
+        "<span class=\"pill cli\">NEW</span> scene：<a href=\"https://github.com/cocos/cocos-cli/pull/971\" target=\"_blank\" rel=\"noopener\">#971</a> 网格边界/视图模式同步 · <a href=\"https://github.com/cocos/cocos-cli/pull/973\" target=\"_blank\" rel=\"noopener\">#973</a> 导入 Creator 场景视图设置 · <a href=\"https://github.com/cocos/cocos-cli/pull/975\" target=\"_blank\" rel=\"noopener\">#975</a> 资源刷新失败传递 · <a href=\"https://github.com/cocos/cocos-cli/pull/976\" target=\"_blank\" rel=\"noopener\">#976</a> 引擎导出建资源节点",
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/974\" target=\"_blank\" rel=\"noopener\">#974</a> 外部导入后刷新动画剪辑 · <a href=\"https://github.com/cocos/cocos-cli/pull/977\" target=\"_blank\" rel=\"noopener\">#977</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/978\" target=\"_blank\" rel=\"noopener\">#978</a> 注册日志降为 debug",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a> 构建性能画像仍挂",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">α.42</a>，无新 tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3329\" target=\"_blank\" rel=\"noopener\">#3329</a> 3.8 文档补充「按编辑器版本共享扩展」中英文说明（10-09 18:10 CST）"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.38 Alpha",
+      "status": "仍为最新；10 月 Beta 暂未公告",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">公告 .38</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.42</span>",
+      "status": "Release Latest 仍 .42；窗口内合入 1 PR，无新 tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">Release .42</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.34</span>",
+      "status": "Release Latest 仍 .34",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">Release .34</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "GitHub 无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cli #971～#978 新开 · #972 合入 · ai copilot 连发 · iOS27 卡死解",
+  "home_tags": [
+    "CLI",
+    "FORUM",
+    "3.X",
+    "AI"
+  ],
+  "archive_title": "cli 开 PR 潮 · ai copilot 刷屏 · 周末合刊"
+}
