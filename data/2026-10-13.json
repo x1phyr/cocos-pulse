@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-13",
+  "date_mmdd": "10.13",
+  "year": "2026",
+  "window": "自上期（10-12 早约 10:00）至今日（10-13）早约 10:00 · 约 24h",
+  "deck": "周一这天仓库突然又吵起来：engine 再开 OpenPaaS 第二波 #19253～#19271 共 19 条（覆盖 3.0.0～3.6.2+patch.1），旧挂 9 条仍 OPEN；cli 消化上期 scene PR，合入 #976/#977/#978，并新开 #980；cocos4 合入 #368 后打上 α.36 tag，#367 DPR 上限配置仍 OPEN。论坛主线是「如何回退版本」热帖与 3.8.7 打包多出 SUD 构建项吐槽；PinK 仍停 .38。",
+  "prev": {
+    "date": "2026-10-12",
+    "mmdd": "10.12"
+  },
+  "next": null,
+  "topics": [
+    "creator-3x",
+    "cocos4-cli",
+    "pink"
+  ],
+  "ticker": [
+    "ENGINE · OpenPaaS #19253～#19271 NEW",
+    "CLI · #976/#977/#978 MERGED · #980 NEW",
+    "COCOS4 · tag α.36 · #367 DPR OPEN",
+    "FORUM · 如何回退版本",
+    "PINK · 仍 .38 Alpha"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "OpenPaaS 第二波：#19253～#19271 十九条新开",
+      "body": "上期还说引擎周末静音，周一上午 OpenPaaS 又刷了一屏。qiuguohua 在约 11:28～12:00 CST 连开 <a href=\"https://github.com/cocos/cocos-engine/pull/19253\" target=\"_blank\" rel=\"noopener\">#19253</a>～<a href=\"https://github.com/cocos/cocos-engine/pull/19271\" target=\"_blank\" rel=\"noopener\">#19271</a> 共 19 条，标题统一是 feat(openpaas): configure engine overrides and npm patches，版本段从 v3.0.0+patch.1 一路铺到 v3.6.2+patch.1；窗口内均未合入。上期挂着的 9 条（<a href=\"https://github.com/cocos/cocos-engine/pull/19238\" target=\"_blank\" rel=\"noopener\">#19238</a>、<a href=\"https://github.com/cocos/cocos-engine/pull/19240\" target=\"_blank\" rel=\"noopener\">#19240</a>～#19243、#19245～#19248，覆盖 3.6.3～3.8.4）仍 OPEN，OpenPaaS 相关 OPEN 合计约 28。正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cli 消化周末 PR：#976/#977/#978 合入 · cocos4 打上 α.36",
+      "body": "上期新开的 scene 账，周一开始还。cli 合入 <a href=\"https://github.com/cocos/cocos-cli/pull/977\" target=\"_blank\" rel=\"noopener\">#977</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/978\" target=\"_blank\" rel=\"noopener\">#978</a>（注册日志降 debug，约 11:55 CST）与 <a href=\"https://github.com/cocos/cocos-cli/pull/976\" target=\"_blank\" rel=\"noopener\">#976</a>（引擎导出建资源节点，14:40 CST）；另有升级向 <a href=\"https://github.com/cocos/cocos-cli/pull/979\" target=\"_blank\" rel=\"noopener\">#979</a> 合入，以及草稿 <a href=\"https://github.com/cocos/cocos-cli/pull/980\" target=\"_blank\" rel=\"noopener\">#980</a>「从宿主 runtime 加载完整 native 模块」新开。<a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a>～#971/#973～#975 仍 OPEN。cocos4 侧 <a href=\"https://github.com/cocos/cocos4/pull/368\" target=\"_blank\" rel=\"noopener\">#368</a> engine upgrade 合入后，同日打上 tag <span class=\"mono\">4.0.0-alpha.36</span>（17:49 CST）；<a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> feat(screen): 暴露 Web 启动 DPR 上限配置仍 OPEN。Release Latest 仍 α.34 / cli α.42，无新 GitHub Release。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：「如何回退版本」热帖 · 打包多出 SUD 构建项",
+      "body": "升级余波还在烧。<a href=\"https://forum.cocos.org/t/topic/177728\" target=\"_blank\" rel=\"noopener\">关于如何回退版本</a>（约 8 楼 / 360+）楼主贴出各版编辑器整包下载链，自测 3.8.7 Win 可加回 Dashboard；楼下吐槽「没风险提示、还要用户自己找回退」。同主题早些时候的 <a href=\"https://forum.cocos.org/t/topic/177720\" target=\"_blank\" rel=\"noopener\">3.8.7更新的打包功能</a> 抱怨每次打包默认多一个 SUD 构建项，「一两年没更，一更是广告」。PinK 仍 <a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">.38 Alpha</a>，昨夜还有人求激活码；AI 焦虑帖、ai copilot 楼下续聊，短写不灌。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "关于如何回退版本",
+      "url": "https://forum.cocos.org/t/topic/177728",
+      "deep": true,
+      "summary": "10-12 16:54 CST 新帖，约 8 楼 / 360+。楼主整理各版 Creator 整包 zip（含 3.8.7/3.8.8），解压后在 Dashboard 添加即可，自测 3.8.7 Win 可用。JeremyRen 回「3.8.x 命令行打包逻辑没改」并留企微；楼下批评缺官方回退教程与风险提示。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "3.8.7更新的打包功能",
+      "url": "https://forum.cocos.org/t/topic/177720",
+      "deep": true,
+      "summary": "10-12 早帖（约 7 楼 / 436）。楼主：国庆后更新，每次打包默认多出一个 SUD 构建项目，找不到关闭项；有人说「回收站里文件夹还原就好」。与回退帖互为情绪燃料。"
+    },
+    {
+      "pill": "闲聊",
+      "pill_class": "eng",
+      "title": "自从有了AI后，对知识失去了兴趣",
+      "url": "https://forum.cocos.org/t/topic/177702",
+      "summary": "续上期：约 33 楼 / 1640+，今日仍有回复；短记不展开。"
+    },
+    {
+      "pill": "AI",
+      "pill_class": "cli",
+      "title": "cocos ai copilot v0.1.1（新功能，来了！）",
+      "url": "https://forum.cocos.org/t/topic/177711",
+      "summary": "续热：今日有人问能否关掉 HTTPS 校验以接公司内网 HTTP 中转；楼主此前已指向 v0.1.2 自动更新。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.38 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177616",
+      "summary": "仍为最新公告；10-12 夜仍有求码，Beta 未公告。"
+    },
+    {
+      "pill": "作品",
+      "pill_class": "eng",
+      "title": "微信小游戏《数字寻踪》上线",
+      "url": "https://forum.cocos.org/t/topic/177729",
+      "summary": "独立开发者数独益智小游戏上线帖；另有同作重复发帖 177730。"
+    },
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "【免费】帮 10 个 Creator 3.x 小游戏项目跑包体报告",
+      "url": "https://forum.cocos.org/t/topic/177713",
+      "summary": "上期已报；窗口内仍有轻量回复，短记。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">NEW</span> OpenPaaS 第二波 19 条：<a href=\"https://github.com/cocos/cocos-engine/pull/19253\" target=\"_blank\" rel=\"noopener\">#19253</a>～<a href=\"https://github.com/cocos/cocos-engine/pull/19271\" target=\"_blank\" rel=\"noopener\">#19271</a>（v3.0.0～v3.6.2+patch.1 overrides，约 11:28～12:00 CST，均 OPEN）",
+        "<span class=\"pill bug\">OPEN</span> 上期同系列仍挂 9 条（<a href=\"https://github.com/cocos/cocos-engine/pull/19238\" target=\"_blank\" rel=\"noopener\">#19238</a>、<a href=\"https://github.com/cocos/cocos-engine/pull/19240\" target=\"_blank\" rel=\"noopener\">#19240</a>～#19243、#19245～#19248）；OpenPaaS 相关 OPEN 约 28",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19252\" target=\"_blank\" rel=\"noopener\">#19252</a> aabbWithOBB SAT 轴遗漏（窗口内有更新）",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>；窗口内无合入"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/368\" target=\"_blank\" rel=\"noopener\">#368</a> engine upgrade（10-12 17:42 CST）",
+        "<span class=\"pill cli\">TAG</span> <span class=\"mono\">4.0.0-alpha.36</span>（10-12 17:49 CST，llsansun）；GitHub Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">α.34</a>",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> feat(screen): expose startup DPR cap configuration for Web（对 engine #19231）"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/977\" target=\"_blank\" rel=\"noopener\">#977</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/978\" target=\"_blank\" rel=\"noopener\">#978</a> 注册日志降 debug（约 11:55 CST）· <a href=\"https://github.com/cocos/cocos-cli/pull/976\" target=\"_blank\" rel=\"noopener\">#976</a> 引擎导出建资源节点（14:40 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/979\" target=\"_blank\" rel=\"noopener\">#979</a> cli upgrade（19:34 CST）",
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/980\" target=\"_blank\" rel=\"noopener\">#980</a> [feat] Load complete native modules from a host runtime provider（draft）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a>（draft）· <a href=\"https://github.com/cocos/cocos-cli/pull/971\" target=\"_blank\" rel=\"noopener\">#971</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/973\" target=\"_blank\" rel=\"noopener\">#973</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/974\" target=\"_blank\" rel=\"noopener\">#974</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/975\" target=\"_blank\" rel=\"noopener\">#975</a>（draft）",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">α.42</a>，无新 tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 PR / issue / 合入。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.38 Alpha",
+      "status": "仍为最新；10 月 Beta 暂未公告",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">公告 .38</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.36</span>（tag）",
+      "status": "窗口内新打 tag；GitHub Release Latest 仍 α.34",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.34\" target=\"_blank\" rel=\"noopener\">Release .34</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.42</span>",
+      "status": "Release Latest 仍 .42；窗口内合入多 PR，无新 tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.42\" target=\"_blank\" rel=\"noopener\">Release .42</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "GitHub 无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "OpenPaaS 19 新开 · cli #976/#977/#978 合入 · cocos4 α.36 · 回退帖",
+  "home_tags": [
+    "ENGINE",
+    "CLI",
+    "COCOS4",
+    "FORUM"
+  ],
+  "archive_title": "OpenPaaS 第二波 · cli 消化周末 PR · 回退帖"
+}
