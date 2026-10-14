@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-14",
+  "date_mmdd": "10.14",
+  "year": "2026",
+  "window": "自上期（10-13 早约 10:00）至今日（10-14）早约 10:05 · 约 24h",
+  "deck": "版本线终于动了：cli GitHub Release Latest 跳到 α.43，同日再打 tag α.44（尚无 Release）；合入破坏性 #981 动画图注册修复，并新开 scene 平移缩放 #982/#983 与四层 API 文档 #985。cocos4 Release Latest 追上 α.35（tag α.36 仍无 Release，#367 仍 OPEN）。engine 静音，OpenPaaS 约 28 条仍 OPEN。论坛升级余波续烧——构建面板消失质疑、无升级按钮；PinK 公告仍 .38，但 cli α.44 changelog 已把最低 PinK 写到 .39。",
+  "prev": {
+    "date": "2026-10-13",
+    "mmdd": "10.13"
+  },
+  "next": null,
+  "topics": [
+    "cocos4-cli",
+    "creator-3x",
+    "pink"
+  ],
+  "ticker": [
+    "CLI · Release α.43 · tag α.44 · #981 MERGED",
+    "COCOS4 · Release Latest → α.35",
+    "ENGINE · OpenPaaS ~28 仍 OPEN · 静音",
+    "FORUM · 构建面板？· 无升级按钮",
+    "PINK · 公告仍 .38 · cli 要 .39"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cli 版本线跳动：Release Latest α.43 · 新打 tag α.44 · #981 合入",
+      "body": "上期还说 Latest 停在 α.42，这窗突然两级跳。GitHub Release Latest 于 10-13 约 11:35 CST 发布为 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.43</a>；当晚约 19:18 CST 再打 tag <span class=\"mono\">0.0.1-alpha.44</span>（llsansun，尚无对应 GitHub Release），changelog 汇总 #961/#969/#967/#976～#978 等，并写明引擎引用 α.36、最低 PinK 升到 0.0.1.39。窗口内合入破坏性 <a href=\"https://github.com/cocos/cocos-cli/pull/981\" target=\"_blank\" rel=\"noopener\">#981</a>（动画图/变体注册类型与继承链，约 15:48 CST，落在 α.44 tag 之后，下一刀再说）；新开 <a href=\"https://github.com/cocos/cocos-cli/pull/982\" target=\"_blank\" rel=\"noopener\">#982</a>/<a href=\"https://github.com/cocos/cocos-cli/pull/983\" target=\"_blank\" rel=\"noopener\">#983</a> scene 2D/3D 平移与光标缩放，以及 <a href=\"https://github.com/cocos/cocos-cli/pull/985\" target=\"_blank\" rel=\"noopener\">#985</a> 四层 HTML API 文档生成器（今早仍有更新）与 issue <a href=\"https://github.com/cocos/cocos-cli/issues/984\" target=\"_blank\" rel=\"noopener\">#984</a> MCP tool docs。草稿 <a href=\"https://github.com/cocos/cocos-cli/pull/980\" target=\"_blank\" rel=\"noopener\">#980</a> 与 #970/#971/#973～#975 仍 OPEN。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 Release Latest → α.35 · engine 继续静音",
+      "body": "cocos4 侧 GitHub Release Latest 于 10-13 约 11:26 CST 发布为 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>（上期仍 α.34）；tag <span class=\"mono\">4.0.0-alpha.36</span> 仍在、尚无 Release 页。<a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> Web 启动 DPR 配置仍 OPEN（窗口内有更新）。engine 窗口内零合入零新开，OpenPaaS overrides 相关约 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">28 条仍 OPEN</a>（含上期第二波 #19253～#19271）；正式版仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>。docs 继续静音。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：构建面板没了？· 无升级按钮 · AI/法环闲聊",
+      "body": "升级余波换皮续烧，两则新帖都围着 3.8.8 编辑器体验转：构建面板去哪了、为什么没有升级按钮。<a href=\"https://forum.cocos.org/t/topic/177739\" target=\"_blank\" rel=\"noopener\">Cocos Creator 3.8.8 的构建面板取消了吗</a> 有人喊「publish」有人劝「不要升级」；同主题 <a href=\"https://forum.cocos.org/t/topic/177740\" target=\"_blank\" rel=\"noopener\">Dashboard 已是 2.2.2 但 installer 里 3.8.8 没有升级按钮</a>，楼下称本地添加/自定义引擎常见、补丁版幸亏没升。闲聊向 <a href=\"https://forum.cocos.org/t/topic/177736\" target=\"_blank\" rel=\"noopener\">AI 浪潮下程序员结局（法环梗）</a> 与预算 3w 找人做汉字启蒙 App 帖热闹一阵。PinK 公告仍 <a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">.38 Alpha</a>（昨夜仍有互动），但对照 cli α.44 已写最低 .39——铁粉先记一笔，Beta/.39 未在论坛官宣。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "Cocos Creator 3.8.8的构建面板取消了吗，怎么没有了？",
+      "url": "https://forum.cocos.org/t/topic/177739",
+      "deep": true,
+      "summary": "10-13 17:55 CST 新帖，约 4 楼 / 280+。楼主找不到构建面板；楼下回「publish」，另有人连升级按钮都没有；今早有人喊「不要升级」。与无升级按钮帖同属升级余波。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "为什么我的cocos dashboard已经是2.2.2了 但是installer里的cocos creator3.8.8没有升级按钮",
+      "url": "https://forum.cocos.org/t/topic/177740",
+      "deep": true,
+      "summary": "10-13 18:09 CST，约 3 楼 / 200+。楼主两台机器不一致耽误产物兼容；楼下称像 bug、本地添加/自定义引擎常无升级按钮，论坛下的 3.8.8 补丁版亦然，「幸亏没升，升了打包会有问题」。"
+    },
+    {
+      "pill": "闲聊",
+      "pill_class": "eng",
+      "title": "如果AI浪潮下程序员的职业生涯就如同法环破碎，那么最终大家会迈入什么结局",
+      "url": "https://forum.cocos.org/t/topic/177736",
+      "summary": "10-13 新帖，约 7 楼 / 480+。法环结局梗聊 AI 时代职业路径；情绪帖，短记。"
+    },
+    {
+      "pill": "外包",
+      "pill_class": "eng",
+      "title": "找人开发汉字学习app预算3w",
+      "url": "https://forum.cocos.org/t/topic/177732",
+      "summary": "10-13 新帖，约 15 楼 / 690+。对标洪恩/宝宝巴士识字 App，预算 3w；楼下吐槽「成本加个 0」。"
+    },
+    {
+      "pill": "AI",
+      "pill_class": "cli",
+      "title": "有什么AI工具可以生成动画,像spine这种",
+      "url": "https://forum.cocos.org/t/topic/177737",
+      "summary": "10-13 新帖；有人试 Codex 能出但丑且慢，另有豆包视频→帧动画路线。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.38 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177616",
+      "summary": "仍为最新公告；窗口内有轻量互动。对照 cli α.44 changelog 已写最低 PinK 0.0.1.39，论坛尚未官宣 .39/Beta。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "关于如何回退版本",
+      "url": "https://forum.cocos.org/t/topic/177728",
+      "summary": "上期热帖；窗口初仍有回复，整包回退教程续挂。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开 PR。",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS overrides 相关约 28 条仍挂（含 <a href=\"https://github.com/cocos/cocos-engine/pull/19253\" target=\"_blank\" rel=\"noopener\">#19253</a>～<a href=\"https://github.com/cocos/cocos-engine/pull/19271\" target=\"_blank\" rel=\"noopener\">#19271</a> 第二波与旧批）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19252\" target=\"_blank\" rel=\"noopener\">#19252</a> aabbWithOBB SAT 轴遗漏",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">RELEASE</span> GitHub Release Latest → <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>（10-13 约 11:26 CST；上期仍 α.34）",
+        "<span class=\"pill eng\">TAG</span> <span class=\"mono\">4.0.0-alpha.36</span> 仍在，尚无对应 GitHub Release 页",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> feat(screen): configure Web DPR through startup settings（窗口内有更新）",
+        "窗口内无新合入 / 新 commit"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">RELEASE</span> Latest → <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.43</a>（10-13 约 11:35 CST）",
+        "<span class=\"pill cli\">TAG</span> <span class=\"mono\">0.0.1-alpha.44</span>（10-13 约 19:18 CST，llsansun；尚无 Release；changelog 含 #961/#969/#967/#976～#978/#960/#965/#972/#979，引擎引用 α.36，最低 PinK .39）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/981\" target=\"_blank\" rel=\"noopener\">#981</a> [break] fix(assets): 动画图及变体注册类型与继承链（约 15:48 CST；晚于 α.44 指向的 commit）",
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/982\" target=\"_blank\" rel=\"noopener\">#982</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/983\" target=\"_blank\" rel=\"noopener\">#983</a> scene 2D/3D 平移与光标居中缩放 · <a href=\"https://github.com/cocos/cocos-cli/pull/985\" target=\"_blank\" rel=\"noopener\">#985</a> four-layer HTML API docs · issue <a href=\"https://github.com/cocos/cocos-cli/issues/984\" target=\"_blank\" rel=\"noopener\">#984</a> MCP tool docs",
+        "<span class=\"pill bug\">OPEN</span> draft <a href=\"https://github.com/cocos/cocos-cli/pull/980\" target=\"_blank\" rel=\"noopener\">#980</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/971\" target=\"_blank\" rel=\"noopener\">#971</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/973\" target=\"_blank\" rel=\"noopener\">#973</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/974\" target=\"_blank\" rel=\"noopener\">#974</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/975\" target=\"_blank\" rel=\"noopener\">#975</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 PR / issue / 合入。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.38 Alpha",
+      "status": "论坛公告仍为最新；cli α.44 已写最低依赖 .39，.39/Beta 未官宣",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">公告 .38</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.43</span>（Release）· <span class=\"mono\">α.44</span>（tag）",
+      "status": "窗口内 Latest 发布为 .43；同日打 .44 tag，尚无 Release 页",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">Release .43</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.35</span>（Release）· <span class=\"mono\">α.36</span>（tag）",
+      "status": "窗口内 Latest 发布为 .35；.36 tag 仍无 Release",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">Release .35</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "GitHub 无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cli Release α.43 · tag α.44 · #981 · cocos4 Latest α.35 · 升级余波",
+  "home_tags": [
+    "CLI",
+    "COCOS4",
+    "FORUM",
+    "PINK"
+  ],
+  "archive_title": "cli α.43/α.44 · cocos4 Latest α.35 · 升级余波续"
+}
