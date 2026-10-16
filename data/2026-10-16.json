@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-16",
+  "date_mmdd": "10.16",
+  "year": "2026",
+  "window": "自上期（10-15 早约 10:00）至今日（10-16）早约 10:00 · 约 24h",
+  "deck": "合入日过后是拆分日：cli 窗口内零合入，但 DecviL 抛出巨型 breaking #990——把私有 scene 编辑器 runtime（Camera/Gizmo/拖拽/预览/模拟器）抽到 pink-scene-editor-extension，CLI 保留 104 个 scene MCP 与离屏烘焙，配对版本写死 α.44。engine 侧新开 #19272 微信 PC 小游戏鼠标事件（基于 v3.8.7）与 OpenPaaS #19273（v3.7.3+patch.1），OPEN 计数 28→29；四仓仍零 Release/零 tag。论坛 PinK 仍卡 .38，hellopink 扫码失效、退回老版本/PaaS 用不惯与 3.8.8 coming soon 卡构建并行；Codex vibe 小游戏两连发。",
+  "prev": {
+    "date": "2026-10-15",
+    "mmdd": "10.15"
+  },
+  "next": null,
+  "topics": [
+    "cocos4-cli",
+    "pink",
+    "creator-3x"
+  ],
+  "ticker": [
+    "CLI · #990 NEW · 抽离私有编辑器 runtime",
+    "ENGINE · #19272 微信 PC 鼠标 · OpenPaaS 29",
+    "VERSION · 四仓零 Release / 零 tag",
+    "FORUM · hellopink 扫码失效 · 退回老版本",
+    "PINK · 仍 .38 · Beta 未兑现"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cli #990 大拆分：私有编辑器 runtime 抽走 · standalone CLI 保住 104 个 MCP · 配对 α.44",
+      "body": "昨天九连合刚落袋，今天 main 零合入，但窗口内最大一枪来了：DecviL 晚上抛出巨型 breaking PR，把私有 scene 编辑器 runtime 整段抽走。<a href=\"https://github.com/cocos/cocos-cli/pull/990\" target=\"_blank\" rel=\"noopener\">#990</a>[break] refactor(scene)——+6508 / −59313、381 文件，约 21:06 CST 开出，今早仍 OPEN。把 Camera、Gizmo、Operation、PreviewPlay、拖拽落点、浏览器预览、模拟器会话等编辑器专用服务抽到独立仓 <span class=\"mono\">pink-scene-editor-extension</span>；CLI 侧留下 scene/Prefab/节点组件、撤销重做、资源脚本、烘焙后端与离屏 WebGL/Canvas，并保住全部 104 个 scene MCP（含 13 个探针/光照图工具）。公开入口收敛为 <span class=\"mono\">cocos-cli/host/...</span>，配对 PinK runtime 版本写死 <span class=\"mono\">0.0.1-alpha.44</span>。昨日新开的 <a href=\"https://github.com/cocos/cocos-cli/pull/987\" target=\"_blank\" rel=\"noopener\">#987</a>/<a href=\"https://github.com/cocos/cocos-cli/pull/988\" target=\"_blank\" rel=\"noopener\">#988</a>/<a href=\"https://github.com/cocos/cocos-cli/pull/989\" target=\"_blank\" rel=\"noopener\">#989</a> 落盘一致性三连仍 OPEN；<a href=\"https://github.com/cocos/cocos-cli/pull/983\" target=\"_blank\" rel=\"noopener\">#983</a> 3D 平移、<a href=\"https://github.com/cocos/cocos-cli/pull/985\" target=\"_blank\" rel=\"noopener\">#985</a> 四层 API 文档未合。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "engine 两新开：微信 PC 小游戏鼠标 · OpenPaaS 第 29 条 · 四仓零合入零发版",
+      "body": "版本线继续原地踏步：四仓窗口内零合入、零新 Release、零新 tag，昨天那 9 条 cli 合入仍堆在 α.44 之后。engine 新开两条——<a href=\"https://github.com/cocos/cocos-engine/pull/19272\" target=\"_blank\" rel=\"noopener\">#19272</a> 微信 PC 小游戏平台鼠标事件未模拟触控（基于 v3.8.7，+13/−7），以及 OpenPaaS 补洞 <a href=\"https://github.com/cocos/cocos-engine/pull/19273\" target=\"_blank\" rel=\"noopener\">#19273</a> v3.7.3+patch.1；旧 overrides 批量刷新时间戳，OPEN 计数从约 28 升到 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29</a>。cli Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.43</a>、<span class=\"mono\">α.44</span> 仍仅 tag；cocos4 Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>、<span class=\"mono\">α.36</span> 仍仅 tag，<a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> Web DPR 与 docs <a href=\"https://github.com/cocos/cocos-docs/pull/3330\" target=\"_blank\" rel=\"noopener\">#3330</a> 均未动；engine 正式仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：hellopink 扫码失效 · 退回老版本 / PaaS 用不惯 · PinK 仍卡 .38",
+      "body": "升级余波没散干净，PinK 入口又添堵：hellopink 扫不了码、有人嫌 PaaS 发布想退回、3.8.8 coming soon 卡构建，Alpha .38 公告楼下继续求码。新帖 <a href=\"https://forum.cocos.org/t/topic/177762\" target=\"_blank\" rel=\"noopener\">hellopink 扫码无效</a>（2.4.12 构建后识别不了二维码，提审后编辑器二维码栏消失），官方侧回「进 Op 接入技术服务群」。<a href=\"https://forum.cocos.org/t/topic/177766\" target=\"_blank\" rel=\"noopener\">如何退回老版本，paas 的发布真是用不惯</a> 楼主要传统发布口；回复有人说卸了重装，也有人觉得「多一层 UI 一下就适应」。另有 <a href=\"https://forum.cocos.org/t/topic/177763\" target=\"_blank\" rel=\"noopener\">3.8.8 构建卡在 coming soon</a>、<a href=\"https://forum.cocos.org/t/topic/177761\" target=\"_blank\" rel=\"noopener\">鸿蒙原生 wss 无 SNI</a>。轻量向：Codex vibe 两连发——<a href=\"https://forum.cocos.org/t/topic/177757\" target=\"_blank\" rel=\"noopener\">《六角迷林》</a>与今早 <a href=\"https://forum.cocos.org/t/topic/177769\" target=\"_blank\" rel=\"noopener\">《拼单快餐铺》</a>。<a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">PinK .38</a> 仍为最新公告（约 70 楼），.39/Beta 未官宣。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "hellopink扫码无效，不能测试",
+      "url": "https://forum.cocos.org/t/topic/177762",
+      "deep": true,
+      "summary": "10-15 21:12 CST，2 楼 / 160。2.4.12 构建后 hellopink 识别不了二维码；楼主称提审后编辑器「弹出二维码」栏消失，没法截图发码。今早官方侧 AyaYu 回「进官方 Op 接入的技术服务群去问」。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "如何退回老版本，paas的发布真是用不惯。",
+      "url": "https://forum.cocos.org/t/topic/177766",
+      "deep": true,
+      "summary": "10-15 22:25 CST，3 楼 / 230+。楼主要「最传统的那个发布方式口」；回复：卸载重装编辑器；也有人觉得「和老的没区别，多一层 UI 一下就适应」。升级余波换皮再续。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "coming soon为什么3.8.8构建一直卡在这边",
+      "url": "https://forum.cocos.org/t/topic/177763",
+      "summary": "10-15 21:22 CST，1 楼 / 130+。3.8.8 构建卡在 coming soon 界面，尚无有效回复。"
+    },
+    {
+      "pill": "OHOS",
+      "pill_class": "ohos",
+      "title": "鸿蒙wss连接异常",
+      "url": "https://forum.cocos.org/t/topic/177761",
+      "deep": true,
+      "summary": "10-15 18:36 CST，4 楼 / 200+。Creator 3.8.7 + nova12：安卓 https/wss 均有 SNI，鸿蒙 https 有 SNI 但 wss 没有导致失败；楼主临时在 Istio Gateway 做兼容。楼下称 2.4 微信小游戏鸿蒙端正常；楼主补刀原生打包用的 libwebsockets 各平台不同。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.38 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177616",
+      "summary": "仍为最新公告（约 70 楼）；窗口内继续求码/问公测。.39 与 Beta 仍未官宣（cli #990 / α.44 changelog 已对齐 PinK runtime）。"
+    },
+    {
+      "pill": "Showcase",
+      "pill_class": "cli",
+      "title": "用codex制作微信小游戏《六角迷林》欢迎试玩指点！！！",
+      "url": "https://forum.cocos.org/t/topic/177757",
+      "summary": "10-15 16:37 CST，6 楼 / 350+。六边形扫雷，认证备案过、接激励广告；自称「新手小白全部由 Codex 引导」。楼下问微信备案天数，楼主答「工作日十多天了巨慢」。"
+    },
+    {
+      "pill": "Showcase",
+      "pill_class": "cli",
+      "title": "分享纯vibe的小游戏《拼单快餐铺》",
+      "url": "https://forum.cocos.org/t/topic/177769",
+      "summary": "10-16 09:59 CST，1 楼。Codex + Creator 微信小游戏，自称纯 vibe 从创意到落地。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19272\" target=\"_blank\" rel=\"noopener\">#19272</a> 微信 PC 小游戏平台鼠标事件未模拟触控（base v3.8.7，+13/−7，qiuguohua）",
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19273\" target=\"_blank\" rel=\"noopener\">#19273</a> OpenPaaS overrides for v3.7.3+patch.1",
+        "窗口内无合入；旧 OpenPaaS PR 批量刷新时间戳。",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS overrides 相关 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29 条</a>（昨约 28，今日 +#19273）",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / 合入 / 新开 PR / 新 tag。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> Web DPR 启动配置（docs #3330 仍挂）",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>；<span class=\"mono\">4.0.0-alpha.36</span> 仍仅 tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/990\" target=\"_blank\" rel=\"noopener\">#990</a> [break] refactor(scene): 抽离私有编辑器 runtime，保留 standalone CLI / 104 MCP（+6508/−59313，381 文件，DecviL，约 21:06 CST）",
+        "窗口内无合入、无新 commit 进 main。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/987\" target=\"_blank\" rel=\"noopener\">#987</a> 源文件已变拒绝保存 · <a href=\"https://github.com/cocos/cocos-cli/pull/988\" target=\"_blank\" rel=\"noopener\">#988</a> headless 设计分辨率 · <a href=\"https://github.com/cocos/cocos-cli/pull/989\" target=\"_blank\" rel=\"noopener\">#989</a> discard / reload-from-disk",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/983\" target=\"_blank\" rel=\"noopener\">#983</a> 3D 平移缩放 · <a href=\"https://github.com/cocos/cocos-cli/pull/985\" target=\"_blank\" rel=\"noopener\">#985</a> 四层 API 文档 · draft <a href=\"https://github.com/cocos/cocos-cli/pull/975\" target=\"_blank\" rel=\"noopener\">#975</a> · <a href=\"https://github.com/cocos/cocos-cli/pull/973\" target=\"_blank\" rel=\"noopener\">#973</a> · draft <a href=\"https://github.com/cocos/cocos-cli/pull/970\" target=\"_blank\" rel=\"noopener\">#970</a>",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.43</a>；<span class=\"mono\">0.0.1-alpha.44</span> 仍仅 tag（#990 正文写配对 runtime α.44）"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3330\" target=\"_blank\" rel=\"noopener\">#3330</a> docs(4.0): Web DPR 启动配置文档（关联 cocos4#367）仍挂"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.38 Alpha",
+      "status": "论坛公告仍为最新；.39/Beta 未官宣；hellopink 扫码失效帖出现",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177616\" target=\"_blank\" rel=\"noopener\">公告 .38</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.43</span>（Release）· <span class=\"mono\">α.44</span>（tag）",
+      "status": "窗口内无变化；#990 配对写死 α.44，尚未发版",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.43\" target=\"_blank\" rel=\"noopener\">Release .43</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-alpha.35</span>（Release）· <span class=\"mono\">α.36</span>（tag）",
+      "status": "窗口内无变化",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">Release .35</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine",
+      "status": "GitHub 无新正式版；3.8.8 仍为正式；#19272 基于 v3.8.7",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cli #990 抽离私有编辑器 runtime · engine 微信 PC 鼠标 / OpenPaaS 29 · PinK 仍 .38",
+  "home_tags": [
+    "CLI",
+    "ENGINE",
+    "FORUM",
+    "PINK"
+  ],
+  "archive_title": "cli #990 大拆分 · OpenPaaS 29 · hellopink 扫码失效"
+}
