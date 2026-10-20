@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-20",
+  "date_mmdd": "10.20",
+  "year": "2026",
+  "window": "自上期（10-19 周一早约 10:00）至今日（10-20 周二）早约 10:00 · 约 24h",
+  "deck": "Beta 前夜的一天：周一下午 cocos4 先把版本抬到 4.0.0-beta.0 并打 tag，二十多分钟后 cli 连合 #998（引擎依赖切到 4.0.0-beta.0）与 #994（CLI 抬到 0.2.0-beta.0），还拉出 v0.2.0-beta.0 分支；傍晚 cli 0.0.1-alpha.44 正式发 Release 转 Latest。论坛同步迎来 PinK 0.0.1.39 Alpha，公告第一次写明「本月转 Beta、公测免激活码」。engine / docs 窗口内零提交，OpenPaaS 仍 29 条 OPEN；论坛另有 OpenPaaS 上架冲刺季、2.4.15 打包提速补丁与 Game Agent 0.4.1 叫板 MCP。",
+  "prev": {
+    "date": "2026-10-19",
+    "mmdd": "10.19"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "PINK · 0.0.1.39 Alpha · 本月转 Beta",
+    "COCOS4 · tag 4.0.0-beta.0",
+    "CLI · #994 MERGED · 0.2.0-beta.0",
+    "CLI · α.44 Release → Latest",
+    "FORUM · OpenPaaS 上架冲刺季"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "PinK 0.0.1.39 Alpha 发布 · cli α.44 转正 Latest · 官方首次写明「本月转 Beta、公测免码」",
+      "body": "上周大家在 .38 公告楼下天天问 39 来没来，周一下午它终于来了，而且公告尾巴第一次把 Beta 的时间点写进了正文。<a href=\"https://forum.cocos.org/t/topic/177798\" target=\"_blank\" rel=\"noopener\">PinK 0.0.1.39 Alpha</a>（10-19 16:26 CST，wanlai_sud）更新日志：图形项目数据设置、项目资源及依赖导出 ZIP、API 构建打标、Button 组件级事件 API，编辑器内预览播放 / 暂停 / 单步逻辑调整（兼容性变更），外加 2D 网格视口同步、隐藏预览 Canvas 重复渲染、SkinnedMeshBatchRenderer 递归、HDR 浮点 RT、骨骼重建后 GPU 骨骼缓冲未重绑、V8 Promise / 音频迭代器失效等一串 cocos4 修复——与当天 17:32 CST 转正的 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">cli 0.0.1-alpha.44 Release</a>（#961/#965/#960/#969/#967/#972/#976～#979/#995）基本一一对应，印证了 α.44 changelog 里「最低 PinK .39」。公告结尾：「PinK 将于本月转入 Beta 版……Beta 版将开启公开测试，不再需要激活码。」楼下 23 楼仍是一片求码，也有人「不等码了 等 beta 了」，还有人翻出「这个月还剩两周」。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "Beta 版本号三连：cocos4 tag 4.0.0-beta.0 · cli #998 切引擎依赖 · #994 抬到 0.2.0-beta.0",
+      "body": "PinK 公告里的 Beta 不是空话，GitHub 周一下午四十多分钟里，引擎和 CLI 的版本号一起跨进了 beta 段。cocos4 由 star-e 开 <a href=\"https://github.com/cocos/cocos4/pull/369\" target=\"_blank\" rel=\"noopener\">#369</a> bump version to <span class=\"mono\">4.0.0-beta.0</span>（14:15 CST 合入，仅动 package.json / lock），机器人 <a href=\"https://github.com/cocos/cocos4/pull/370\" target=\"_blank\" rel=\"noopener\">#370</a> 14:31 跟进生成代码，tag <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a> 就打在这次提交上（尚无 Release，Latest 仍 α.35）。cli 侧 <a href=\"https://github.com/cocos/cocos-cli/pull/998\" target=\"_blank\" rel=\"noopener\">#998</a> 把 <span class=\"mono\">repo.json</span> 引擎 tag 从 <span class=\"mono\">4.0.0-alpha.36</span> 改成 <span class=\"mono\">4.0.0-beta.0</span>（14:57 CST），一分钟后上期还 OPEN 的 <a href=\"https://github.com/cocos/cocos-cli/pull/994\" target=\"_blank\" rel=\"noopener\">#994</a> 合入，CLI 版本正式变成 <span class=\"mono\">0.2.0-beta.0</span>，并新出 <span class=\"mono\">v0.2.0-beta.0</span> 分支；中午还有 <a href=\"https://github.com/cocos/cocos-cli/pull/997\" target=\"_blank\" rel=\"noopener\">#997</a> 把 α.44 分支上的 #995（构建前重置资源缓存）回灌 main。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：OpenPaaS 上架冲刺季开跑 · 2.4.15 打包 30→5 分钟补丁 · Game Agent 0.4.1 叫板 MCP",
+      "body": "除了 .39，周一论坛还有三条线：官方拉人上架、老版本玩家自己动手修编辑器、第三方 Agent 继续抢 PinK 的地盘。<a href=\"https://forum.cocos.org/t/topic/177814\" target=\"_blank\" rel=\"noopener\">有奖活动｜OpenPaaS 上架冲刺季</a>（10-20～11-19）：10 月内正式上架前 50 名送鼠标垫，IAA / IAP 上架数与阿 / 英 / 俄多语种榜各取 Top 5，报名进 VIP 技术群，每周五 18:00 公布榜单；楼下有人反映更新 OpenPaaS 版 3.8.8 后安卓包的 Cocos 图标去不掉。<a href=\"https://forum.cocos.org/t/topic/177796\" target=\"_blank\" rel=\"noopener\">【一键补丁】creator 2.4.15 打包 30→5 分钟</a>：200+ bundle 项目让 AI 扒编辑器，瓶颈在自动图集 initTexturePacker，楼主已放补丁；楼下呼吁「官方还是开源编辑器吧」。<a href=\"https://forum.cocos.org/t/topic/177799\" target=\"_blank\" rel=\"noopener\">Game Agent 0.4.1</a> 长文对比 MCP / Codex，主打内置 CLI 让 Codex、Claude Code 委托它操作场景；<a href=\"https://forum.cocos.org/t/topic/177787\" target=\"_blank\" rel=\"noopener\">PinK 为何开发如此缓慢？</a> 一天从 7 楼涨到 24 楼。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.39 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177798",
+      "deep": true,
+      "summary": "10-19 16:26 CST，wanlai_sud 发，23 楼 / 540+。新增图形项目数据设置、资源及依赖导出 ZIP、API 构建打标、cocos4 Button 组件级事件 API；预览播放 / 暂停 / 单步逻辑调整（兼容性变更）；修 2D 网格、预览 Canvas 重复渲染、骨骼 GPU 缓冲、HDR、V8 / 音频迭代器等。仍需激活码，结尾称「本月转入 Beta 版」「开启公开测试，不再需要激活码」。楼下求码刷屏，有人引 .38 开头捉虫「这个月还剩两周」，官方回「火速杀虫」。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK 为何开发如此缓慢？",
+      "url": "https://forum.cocos.org/t/topic/177787",
+      "deep": true,
+      "summary": "上期 7 楼，周一涨到 24 楼 / 1370+。新增回复：「直接收编 Game agent 不就好了」「后面发现做不下去了吧」「Pink 你不出也就算了，CocosCreator 的 BUG 你也不修」「有 AI 加持都够重写一个引擎了」，也有人认为「路走一半就行，完善 mcp 就可以了」。.39 发布后楼里暂无官方回应。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "有奖活动｜OpenPaaS 上架冲刺季，接入游戏赢周边啦！",
+      "url": "https://forum.cocos.org/t/topic/177814",
+      "summary": "10-19 18:36 CST 官方发。活动期 10-20～11-19：10 月内正式上架前 50 名送 SUD 鼠标垫；IAA / IAP 上架数 Top 5、阿 / 英 / 俄多语种上架 Top 5 送文化衫 / 盲盒；报名后 1 个工作日拉 VIP 技术群，后台按上架时间戳自动统计。5 楼有人反映 OpenPaaS 版 3.8.8 打安卓包去不掉 Cocos 图标。"
+    },
+    {
+      "pill": "2.X",
+      "pill_class": "bug",
+      "title": "【一键补丁】creator 2.4.15 优化后打包速度从30分钟提速到5分钟",
+      "url": "https://forum.cocos.org/t/topic/177796",
+      "summary": "10-19 12:07 CST，16 楼 / 570+。200+ bundle 的 2.x 项目，空 bundle 跳过、.pac 查询缓存、无脚本 bundle 跳 browserify，最大开销在自动图集 initTexturePacker；补丁已放出，可让 AI 按帖子教程打。楼下：「官方还是开源编辑器吧，一堆要优化的东西只能绕着修」。"
+    },
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "Game Agent 0.4.1：让 AI 在 Cocos 里干活，和 MCP、Codex 有什么不同？",
+      "url": "https://forum.cocos.org/t/topic/177799",
+      "summary": "10-19 16:34 CST，1 楼。定位为装在 Creator 里的游戏开发智能体：建节点挂组件、生成素材与可编辑 UI Prefab、预览里点击拖拽自检；新增「开放 CLI」，Codex / Claude Code 可直接调用工具或整单委托。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "Cocos打包BUG",
+      "url": "https://forum.cocos.org/t/topic/177816",
+      "summary": "10-19 20:15 CST，0 回复。3.8.7 打安卓：场景引用资源被删后修好重打仍跳转失败，删源文件也无效，只有改构建项目名才恢复，疑似缓存未清——恰好和 cli #995「构建前重置资源缓存」是同一类病。"
+    },
+    {
+      "pill": "讨论",
+      "pill_class": "eng",
+      "title": "Cocos面试都面些什么",
+      "url": "https://forum.cocos.org/t/topic/177813",
+      "summary": "10-19 18:22 CST，8 楼。楼主「AI 用多了已经不懂怎么回答」；jsroads 列了一张清单：生命周期 / GC、bundle 拆分与加载优化、DrawCall 与 ASTC、包体与加密、多渠道打包、支付广告，外加「AI 的使用心得」。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "COCOS全版本更新（第二批）",
+      "url": "https://forum.cocos.org/t/topic/177789",
+      "summary": "7 楼 / 840+，周一中午后无新动静；下一批仍按 10-24、10-30 预告。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / 合入 / 新开 PR / 新 issue。",
+        "<span class=\"pill eng\">TALK</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19231\" target=\"_blank\" rel=\"noopener\">#19231</a> H5 小游戏 TTF Label 模糊：LinYunMo 10-19 14:11 CST 附 MaxDprTest 测试例（与 4.0 Web DPR 配置一脉）",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS overrides 仍 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29 条</a>（含 <a href=\"https://github.com/cocos/cocos-engine/pull/19272\" target=\"_blank\" rel=\"noopener\">#19272</a>、<a href=\"https://github.com/cocos/cocos-engine/pull/19273\" target=\"_blank\" rel=\"noopener\">#19273</a>）",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/369\" target=\"_blank\" rel=\"noopener\">#369</a> bump version to <span class=\"mono\">4.0.0-beta.0</span>（star-e，10-19 14:15 CST）· <a href=\"https://github.com/cocos/cocos4/pull/370\" target=\"_blank\" rel=\"noopener\">#370</a> 机器人生成代码（14:31 CST）",
+        "<span class=\"pill cli\">TAG</span> <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a> 打在 d0a696c，尚无 Release",
+        "<span class=\"pill eng\">TALK</span> <a href=\"https://github.com/cocos/cocos4/issues/362\" target=\"_blank\" rel=\"noopener\">#362</a> WebGL Context Lost 恢复链路缺失：新回复指出 webgl-swapchain.ts 加的是未 bind 函数、移除的是 bind 后函数，监听器移不掉 · <a href=\"https://github.com/cocos/cocos4/issues/319\" target=\"_blank\" rel=\"noopener\">#319</a> 开源 engine-pal / engine-platforms 呼声仍在",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> Web DPR 启动配置仍挂",
+        "Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>；<span class=\"mono\">4.0.0-alpha.36</span> 与 <span class=\"mono\">4.0.0-beta.0</span> 均仅 tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/994\" target=\"_blank\" rel=\"noopener\">#994</a> CLI 版本抬到 <span class=\"mono\">0.2.0-beta.0</span>（wuzhiming，10-19 14:58 CST）· 新分支 <span class=\"mono\">v0.2.0-beta.0</span>",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/998\" target=\"_blank\" rel=\"noopener\">#998</a> <span class=\"mono\">repo.json</span> 引擎 tag <span class=\"mono\">4.0.0-alpha.36</span> → <span class=\"mono\">4.0.0-beta.0</span>（star-e，14:57 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/997\" target=\"_blank\" rel=\"noopener\">#997</a> 把 α.44 分支的 #995 构建前重置资源缓存回灌 main（12:20 CST，+153）",
+        "<span class=\"pill cli\">RELEASE</span> <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.44</a> 10-19 17:32 CST 发布并转 Latest（收录 #961/#965/#960/#969/#967/#972/#977/#978/#976/#979/#995）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/996\" target=\"_blank\" rel=\"noopener\">#996</a> Windows asset-db 大小写 · <a href=\"https://github.com/cocos/cocos-cli/pull/987\" target=\"_blank\" rel=\"noopener\">#987</a>/<a href=\"https://github.com/cocos/cocos-cli/pull/988\" target=\"_blank\" rel=\"noopener\">#988</a>/<a href=\"https://github.com/cocos/cocos-cli/pull/989\" target=\"_blank\" rel=\"noopener\">#989</a> 落盘一致性三连 · <a href=\"https://github.com/cocos/cocos-cli/pull/983\" target=\"_blank\" rel=\"noopener\">#983</a> / <a href=\"https://github.com/cocos/cocos-cli/pull/985\" target=\"_blank\" rel=\"noopener\">#985</a> 仍挂；窗口内无新开 PR / issue"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3330\" target=\"_blank\" rel=\"noopener\">#3330</a> docs(4.0) Web DPR 启动配置文档仍挂"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.1.39 Alpha",
+      "status": "10-19 16:26 CST 论坛发布，仍需激活码；官方称本月转 Beta 公测、免码",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177798\" target=\"_blank\" rel=\"noopener\">公告 .39</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.44</span>（Release · Latest）",
+      "status": "10-19 17:32 CST 发布；main 已抬到 0.2.0-beta.0（#994），尚无 beta tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">Release .44</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（tag）",
+      "status": "10-19 打 tag，无 Release；Latest 仍 4.0.0-alpha.35",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">tag beta.0</a> · <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">Release .35</a>"
+    },
+    {
+      "artifact": "COCOS Creator 全版本更新",
+      "status": "第二批已于 10-17 推送；下两批 10-24 / 10-30",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177789\" target=\"_blank\" rel=\"noopener\">第二批公告</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "GitHub 无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "PinK .39 发布、本月转 Beta 免码 · cocos4 tag 4.0.0-beta.0 · cli #994 合入 0.2.0-beta.0 · α.44 转 Latest · OpenPaaS 上架冲刺季",
+  "home_tags": [
+    "PINK",
+    "COCOS4",
+    "CLI",
+    "FORUM"
+  ],
+  "archive_title": "PinK .39 · Beta 版本号三连 · cli α.44 转 Latest · OpenPaaS 冲刺季"
+}
