@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-21",
+  "date_mmdd": "10.21",
+  "year": "2026",
+  "window": "自上期（10-20 周二）早约 10:00 至今日（10-21 周三）早约 10:00 · 约 24h",
+  "deck": "Beta 分支开始收货的一天：cli 周二晚以 fork 合并的方式修了一个不小的本地安全口子——内置 HTTP 服务（MCP 端点、项目 API、socket.io）原本无鉴权还回 Access-Control-Allow-Origin: *，任意网页都可能借 localhost 或 DNS rebinding 调 MCP 工具；修复同时进了 main 与 v0.2.0-beta.0 分支（#1002）。beta 分支另收 #999 脚本模块诊断与 #1000 动画图变体保存修复，main 上新开 #1001 资源移动冲突预检（[break]），老 PR #745 被关。engine / cocos4 / docs 窗口内零动静；论坛 VberAI 连发两帖推 Cocos MCP、有人用 Codex 做水浒汉字塔防，3.8.8 抖音空包报错原来是抖音版本太低。",
+  "prev": {
+    "date": "2026-10-20",
+    "mmdd": "10.20"
+  },
+  "next": null,
+  "topics": [
+    "cocos4-cli",
+    "pink",
+    "creator-3x"
+  ],
+  "ticker": [
+    "CLI · #1002 SECURITY · Host/Origin 校验",
+    "CLI · v0.2.0-beta.0 · #999 #1000 MERGED",
+    "CLI · #1001 [break] 移动冲突预检",
+    "FORUM · Cocos MCP 双帖",
+    "ENGINE / COCOS4 / DOCS · QUIET"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cli 修本地服务跨域口子：拒绝跨站与 DNS rebinding 请求，默认只绑 127.0.0.1（#1002）",
+      "body": "这条值得每个开着 PinK / cocos-cli 又顺手逛网页的人看一眼，因为修的是本机服务谁都能调的问题。周二 20:06 CST main 上出现一条「Merge commit from fork」（<a href=\"https://github.com/cocos/cocos-cli/commit/e683ccc\" target=\"_blank\" rel=\"noopener\">e683ccc</a>），20:55 CST 同样内容以 <a href=\"https://github.com/cocos/cocos-cli/pull/1002\" target=\"_blank\" rel=\"noopener\">#1002</a>（star-e，+351 / −23）合进 <span class=\"mono\">v0.2.0-beta.0</span> 分支，这种 fork 合并形式通常对应私下处理的安全修复。说明写得很直白：HTTP 服务（MCP 端点、项目 API、socket.io）没有鉴权，却返回 <span class=\"mono\">Access-Control-Allow-Origin: *</span> 且接受任意 Host 头，用户访问的任何网页都可能直接或经 DNS rebinding 调用 localhost 上的全部 MCP 工具并读到结果。修复后校验 Host（回环、配置的 host、本机网卡 IP）与 Origin（回环、配置 host、vscode-webview: / vscode-file:），回显允许的 Origin 而非 *，未指定 host 时默认绑 127.0.0.1——<b>局域网预览今后要显式配 host</b>；LightFX 烘焙单独起的 Socket.IO 2.x 服务也补了同样的握手校验。不带 Origin 的 MCP 客户端与 CLI 不受影响。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "v0.2.0-beta.0 分支开始收修复：#999 脚本诊断 · #1000 动画图变体保存 · main 新开 #1001",
+      "body": "上期 cli 刚拉出 beta 分支，这一天它就领先 main 三条提交，看得出 Beta 前的修补是直接往分支上打。<a href=\"https://github.com/cocos/cocos-cli/pull/999\" target=\"_blank\" rel=\"noopener\">#999</a>（bofeng-song，14:16 CST 合入）让脚本模块解析失败时报出源文件、import 说明符与编译目标，不再只看到哈希 chunk 和 <span class=\"mono\">__unresolved_6</span> 占位符，还加了 no-store 的诊断端点反查原始 import。<a href=\"https://github.com/cocos/cocos-cli/pull/1000\" target=\"_blank\" rel=\"noopener\">#1000</a>（looopmax，20:02 CST）修动画图变体用模型内 AnimationClip 做覆盖时报「Expected cc.AnimationClip」存不了的问题。main 上新开 <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a>（doommm，[break]，+2129）：资源移动遇重名不再强制自动改名，新增 <span class=\"mono\">preflightMoveAsset</span> 预检与一次性 token，让宿主让用户选覆盖 / 改名 / 取消；七月的老 PR <a href=\"https://github.com/cocos/cocos-cli/pull/745\" target=\"_blank\" rel=\"noopener\">#745</a> 场景服务 lib 接口重构未合即关。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：VberAI 连发两帖推 Cocos MCP · Codex 做水浒汉字塔防 · 3.8.8 抖音空包报错已解",
+      "body": "周二论坛没有官方新公告，AI 工具帖继续占新帖大头，PinK .39 楼下还在求码。VberAI 团队同一分钟发了 <a href=\"https://forum.cocos.org/t/topic/177829\" target=\"_blank\" rel=\"noopener\">分享我们做的 Cocos MCP</a> 与 <a href=\"https://forum.cocos.org/t/topic/177830\" target=\"_blank\" rel=\"noopener\">聊聊 Cocos MCP 的工作流</a>：前者自称 1w+ 用户、2.x / 3.x 都有、商店付费购买，后者推 VberAI Studio 素材拆层换皮再经 MCP 进引擎——恰好撞上 cli 当天修的 MCP 端点跨域问题。今早 <a href=\"https://forum.cocos.org/t/topic/177834\" target=\"_blank\" rel=\"noopener\">用 Codex 两天做一个微信小游戏</a> 晒《哥哥我来救你》：剑戟弩斧汉字合成塔防，拼出「林冲」上阵。<a href=\"https://forum.cocos.org/t/topic/177824\" target=\"_blank\" rel=\"noopener\">3.8.8 空包构建抖音小游戏真机报 getReadyBeforeGameStart failed</a> 楼主自答：抖音版本需 35.0.0 以上。<a href=\"https://forum.cocos.org/t/topic/177813\" target=\"_blank\" rel=\"noopener\">Cocos面试都面些什么</a> 一天从 8 楼吵到 58 楼。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "分享我们做的 Cocos MCP：让 AI 直接操作 Cocos",
+      "url": "https://forum.cocos.org/t/topic/177829",
+      "summary": "10-20 18:22 CST，VberAI 团队发，0 回复 / 220+。接 Cursor、Claude Code 后让 AI 查场景、调节点、配组件、建预制体；Creator 2.x / 3.x 均有版本，自称 1w+ 用户，Cocos 商店付费购买。"
+    },
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "聊聊 Cocos MCP的工作流",
+      "url": "https://forum.cocos.org/t/topic/177830",
+      "summary": "10-20 18:23 CST，同团队姊妹帖，0 回复 / 240+。主打 VberAI Studio 做素材（原位拆层、复杂场景换皮、图片 / 视频特效 / 3D 模型与动作），再经 MCP 导入引擎和场景、代码衔接。"
+    },
+    {
+      "pill": "作品",
+      "pill_class": "eng",
+      "title": "用Codex两个做一个微信小游戏",
+      "url": "https://forum.cocos.org/t/topic/177834",
+      "summary": "10-21 09:39 CST 新帖。《哥哥我来救你》：剑 / 戟 / 弩 / 斧四种汉字基础兵，同级合成升级，按顺序摆出「林」「冲」即召唤好汉；宣纸水墨画风，开发主要靠 Codex。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "3.8.8 空包 构建抖音小游戏 ，用真机打开 报错“getReadyBeforeGameStart failded”",
+      "url": "https://forum.cocos.org/t/topic/177824",
+      "summary": "10-20 16:34 CST，3 楼。空项目构建抖音小游戏真机即报错；楼主 22:49 CST 自答已解决：测试机抖音版本过低，需 35.0.0 以上。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.39 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177798",
+      "summary": "23 → 29 楼 / 880+。新增回复多为「求个码 Pink」，也有「这个东西出来真的太方便了」与「还不出来，黄花菜都凉透了」；官方暂无新回复，Beta 免码仍按「本月」预告。"
+    },
+    {
+      "pill": "讨论",
+      "pill_class": "eng",
+      "title": "Cocos面试都面些什么",
+      "url": "https://forum.cocos.org/t/topic/177813",
+      "deep": true,
+      "summary": "8 → 58 楼 / 1150+，论坛今日最热。话题从面试清单歪到一场「实习生面试被问线上没日志怎么排查」的争论，有人坚持「后端不带日志上线本身就是设计缺陷」；也有人补实情：「面的大部分小公司都不会怎么问八股，上来就是会不会接各种渠道 sdk」。"
+    },
+    {
+      "pill": "2.X",
+      "pill_class": "bug",
+      "title": "【一键补丁】creator 2.4.15 优化后打包速度从30分钟提速到5分钟",
+      "url": "https://forum.cocos.org/t/topic/177796",
+      "summary": "16 → 17 楼 / 790+，今早仍有新回复，2.x 老项目玩家还在跟进。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / 合入 / 新开 PR / 新 issue，也无 issue / PR 更新。",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS overrides 仍挂（上期计 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29 条</a>）",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开。",
+        "<span class=\"pill cli\">TAG</span> <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a> 仍只有 tag，Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/367\" target=\"_blank\" rel=\"noopener\">#367</a> Web DPR 启动配置仍挂"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill bug\">SECURITY</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1002\" target=\"_blank\" rel=\"noopener\">#1002</a> 拒绝跨站 / DNS rebinding 请求、默认绑 127.0.0.1、LightFX Socket.IO 握手补校验（star-e，→ v0.2.0-beta.0，10-20 20:55 CST）；main 上同内容 <a href=\"https://github.com/cocos/cocos-cli/commit/e683ccc\" target=\"_blank\" rel=\"noopener\">e683ccc</a>（20:06 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/999\" target=\"_blank\" rel=\"noopener\">#999</a> 脚本模块解析失败报源文件 / import / 编译目标 + 诊断端点（bofeng-song，→ v0.2.0-beta.0，14:16 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1000\" target=\"_blank\" rel=\"noopener\">#1000</a> 动画图变体用模型内 Clip 覆盖时保存失败（looopmax，→ v0.2.0-beta.0，20:02 CST）",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a> [break] 资源移动冲突由宿主决定（preflightMoveAsset + 一次性 token，doommm，→ main，OPEN）",
+        "<span class=\"pill bug\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/745\" target=\"_blank\" rel=\"noopener\">#745</a> 场景服务 lib 接口重构（7 月开，未合即关，12:00 CST）",
+        "v0.2.0-beta.0 分支领先 main 3 条；Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.44</a>，尚无 beta tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3330\" target=\"_blank\" rel=\"noopener\">#3330</a> docs(4.0) Web DPR 启动配置文档仍挂"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.44</span>（Release · Latest）",
+      "status": "无新 Release；安全修复 #1002 已进 main 与 v0.2.0-beta.0 分支，尚未发版",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">Release .44</a>"
+    },
+    {
+      "artifact": "PinK 0.0.1.39 Alpha",
+      "status": "仍为最新，需激活码；官方称本月转 Beta 公测免码",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177798\" target=\"_blank\" rel=\"noopener\">公告 .39</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（tag）",
+      "status": "仍无 Release；Latest 仍 4.0.0-alpha.35",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">tag beta.0</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "无新正式版；3.8.8 仍为正式。全版本更新下一批预告 10-24",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a> · <a href=\"https://forum.cocos.org/t/topic/177789\" target=\"_blank\" rel=\"noopener\">第二批公告</a>"
+    }
+  ],
+  "home_blurb": "cli #1002 修本地服务跨域 / DNS rebinding · beta 分支收 #999 #1000 · #1001 移动冲突预检 · 论坛 Cocos MCP 双帖与 Codex 小游戏",
+  "home_tags": [
+    "CLI",
+    "SECURITY",
+    "FORUM"
+  ],
+  "archive_title": "cli 本地服务安全修复 · beta 分支收修复 · Cocos MCP 双帖"
+}
