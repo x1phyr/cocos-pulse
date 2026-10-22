@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-22",
+  "date_mmdd": "10.22",
+  "year": "2026",
+  "window": "自上期（10-21 周三）早约 10:00 至今日（10-22 周四）早约 10:00 · 约 24h",
+  "deck": "较平静的一天，活儿还是集中在 cli 的 v0.2.0-beta.0 分支上：周三晚合入 #1003，修多选删除同名节点后 undo 可能漏恢复的问题，分支领先 main 增至 4 条；DecviL 开了又关 #1004、随即重开为 #1005，修场景开着时新建脚本、浏览器端 import map 不刷新导致组件加载失败，PR 注明要配合 PinK 侧修复。cocos4 来了一条有料的 issue #371：3.8.8 里 Graphics 每个子模型固定吃约 2.25 MiB GPU 缓冲，小遮罩多了很浪费。engine / docs 静音，四仓无新 tag / Release。论坛是独立开发者的场子：SpineSlim 作者再更 Rive 预览与 3D 查看器、Cocos ai copilot 预告 v0.1.7 骨骼动画，PinK .39 楼下仍在求码。",
+  "prev": {
+    "date": "2026-10-21",
+    "mmdd": "10.21"
+  },
+  "next": null,
+  "topics": [
+    "cocos4-cli",
+    "pink",
+    "spine"
+  ],
+  "ticker": [
+    "CLI · v0.2.0-beta.0 · #1003 MERGED",
+    "CLI · #1005 import map 热重载修复",
+    "COCOS4 · #371 Graphics GPU 缓冲",
+    "FORUM · SpineSlim · copilot v0.1.7",
+    "ENGINE / DOCS · QUIET"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "beta 分支再收一修：#1003 修多选删同名节点后 undo 漏恢复，#1005 补脚本热重载 import map",
+      "body": "cli 的 Beta 前修补继续直接往 v0.2.0-beta.0 分支上打，这一天又收一条、再挂一条，分支领先 main 增至 4 条。<a href=\"https://github.com/cocos/cocos-cli/pull/1003\" target=\"_blank\" rel=\"noopener\">#1003</a>（YuchenWell，+163 / −5，wuzhiming 于 10-21 19:21 CST 合入）修的是多选删除同名节点后 undo 可能漏恢复：旧逻辑按快照路径（如 <span class=\"mono\">/Cube</span>）找到的却是另一个同名节点 A，上层误以为 B 已存在而跳过恢复；现在路径查询结果必须与快照 UUID 一致，也顺带避免删除时误删 A。DecviL 18:13 CST 开的 <a href=\"https://github.com/cocos/cocos-cli/pull/1004\" target=\"_blank\" rel=\"noopener\">#1004</a> 7 分钟后关闭，18:24 CST 以同内容重开为 <a href=\"https://github.com/cocos/cocos-cli/pull/1005\" target=\"_blank\" rel=\"noopener\">#1005</a>（+200 / −17，OPEN）：场景开着时新建脚本，浏览器场景包里的 Node 兼容 shim 让环境判断误以为在 Node 下、跳过 import map 刷新，于是新编译的 <span class=\"mono\">__unresolved_*</span> 依赖解析不了、组件加载失败；修复后以 no-store 拉最新 import map 再重载，PR 说明需与 <b>PinK 侧等待 preview 编译目标完成</b>的修复配套。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 #371：Graphics 每个子模型固定吃约 2.25 MiB GPU 缓冲，提议按需分配",
+      "body": "四仓里 cocos4 唯一的新动静是一条写得很扎实的需求 issue，做 UI 遮罩多的项目值得关注。<a href=\"https://github.com/cocos/cocos4/issues/371\" target=\"_blank\" rel=\"noopener\">#371</a>（llsansun，10-21 16:47 CST）指出 Cocos Creator 3.8.8 中 <span class=\"mono\">Graphics.activeSubModel()</span> 为每个子模型固定申请 65535 × vertexStride 的顶点缓冲与 131070 × 2 字节的索引缓冲，按当前 32 字节 stride 算约 2.25 MiB；矩形、椭圆 Mask 只需几个顶点，多个小遮罩同时存在时冗余累加。建议按实际顶点 / 索引数初始化、不足时翻倍扩容、<span class=\"mono\">clear()</span> 保留容量复用，并保留分块策略与 16 位索引限制、分别验证 Web 与原生。暂无官方回复。同一窗口 cocos-engine 零提交零新 PR，只有 <a href=\"https://github.com/cocos/cocos-engine/issues/19250\" target=\"_blank\" rel=\"noopener\">#19250</a>（asset-db 启动竞态）下多了一句网友在试 workaround；cocos-docs 完全静音。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：SpineSlim 再更 Rive / 3D 查看器 · copilot v0.1.7 预告骨骼动画 · PinK 仍在求码",
+      "body": "周三论坛依旧没有官方新公告，热度落在独立开发者自制工具上。「花了 10 亿 token」的作者又发 <a href=\"https://forum.cocos.org/t/topic/177835\" target=\"_blank\" rel=\"noopener\">继花了10亿token以后 我又继续迭代了两个核心大功能</a>：开源工具 <a href=\"https://github.com/Alone9898/SpineSlim\" target=\"_blank\" rel=\"noopener\">SpineSlim</a> 新增 Rive 动画与状态机预览、GLB / GLTF / FBX / OBJ / STL 模型查看器，一天 23 楼，楼下追问二进制 Spine 4.x 降到 3.8，作者答可做但可能丢贝塞尔曲线。<a href=\"https://forum.cocos.org/t/topic/177837\" target=\"_blank\" rel=\"noopener\">Cocos ai copilot v0.1.7 预告</a> 主打让 AI 做骨骼动画，作者坚持 GitHub 开源 + 商城 1 元。<a href=\"https://forum.cocos.org/t/topic/177798\" target=\"_blank\" rel=\"noopener\">PinK 0.0.1.39 Alpha</a> 29 → 35 楼仍以求码为主，有人吐槽「干嘛留着去抢 24 号 s 赛的流量」；<a href=\"https://forum.cocos.org/t/topic/177789\" target=\"_blank\" rel=\"noopener\">全版本更新第二批</a> 楼下新回复只有一句「真的有人需要这个功能吗？」。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "继花了10亿token以后 我又继续迭代了两个核心大功能",
+      "url": "https://forum.cocos.org/t/topic/177835",
+      "deep": true,
+      "summary": "10-21 11:02 CST，23 楼 / 520+。SpineSlim（GitHub 开源）新增 Rive 动画与状态机预览（可测点击 / 长按交互、看状态时间轴与事件日志）和 GLB / GLTF / FBX / OBJ / STL 本地模型查看器（材质、动画、骨骼、测距、FFmpeg 导出 MP4），并展示 Spine 升级 4.2.11 + 压缩前后对比。楼下有人求二进制 Spine 4.1 / 4.2 降 3.8，作者回：「做是可以做 可能会丢失曲线 风险大」，3.8 升 4.x 现已支持。"
+    },
+    {
+      "pill": "工具",
+      "pill_class": "cli",
+      "title": "Cocos ai copilot v0.1.7预告(新增骨骼动画功能！）",
+      "url": "https://forum.cocos.org/t/topic/177837",
+      "summary": "10-21 13:49 CST，3 楼。目标是让 copilot 产出高质量骨骼动画、减少人工修改；作者称插件「永远都是 github 开源 + 商城 1 元钱图个支持」，希望 Cocos 能有 Unity / Godot 那样活跃的开发者社区。回复里有人梳理插件收费模式，并为作者点赞。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.1.39 Alpha 版本发布",
+      "url": "https://forum.cocos.org/t/topic/177798",
+      "summary": "29 → 35 楼 / 1200+。新增回复几乎全是求码；有人吐槽「10月这个日子不发布,干嘛留着去抢24号s赛的流量吗」。官方暂无新回复，Beta 免码仍按「本月」预告。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "eng",
+      "title": "COCOS全版本更新（第二批）",
+      "url": "https://forum.cocos.org/t/topic/177789",
+      "summary": "14 → 15 楼 / 1570+。窗口内唯一新回复（10-21 20:16 CST）：「真的有人需要这个功能吗？」下一批仍按 10-24 推送。"
+    },
+    {
+      "pill": "OpenPaaS",
+      "pill_class": "eng",
+      "title": "OpenPaaS ｜关于 COCOS Dashboard 更新 OpenPaaS 入口的说明",
+      "url": "https://forum.cocos.org/t/topic/177423",
+      "summary": "80 楼 / 8700+。10-21 13:15 CST 新问：申请软著时有关 AI 开发的声明条款该怎么处理，「现在基本上不都是AI开发的吗」；暂无官方回复。"
+    },
+    {
+      "pill": "作品",
+      "pill_class": "eng",
+      "title": "AI+cocos creator开发的小游戏刚上线找运营合作",
+      "url": "https://forum.cocos.org/t/topic/177836",
+      "summary": "10-21 11:29 CST，2 楼。又一款 AI + Creator 做的小游戏上线后找运营合作，AI 开发小游戏帖连续第二天出现。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / 合入 / 新开 PR / 新 issue。",
+        "<span class=\"pill eng\">COMMENT</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19250\" target=\"_blank\" rel=\"noopener\">#19250</a> asset-db 启动竞态（3.8.8 macOS）下网友称正在试 workaround（10-21 14:38 CST）",
+        "<span class=\"pill bug\">OPEN</span> OpenPaaS 类 PR 仍 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29 条</a>（标题含 OpenPaaS 计）",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新 PR。",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos4/issues/371\" target=\"_blank\" rel=\"noopener\">#371</a> 按需分配 Graphics / Mask 的 GPU 缓冲，降低小型遮罩内存（llsansun，10-21 16:47 CST）",
+        "<span class=\"pill cli\">TAG</span> <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a> 仍只有 tag，Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1003\" target=\"_blank\" rel=\"noopener\">#1003</a> undo 按路径解析快照时校验节点 UUID，修多选删除同名节点后漏恢复（YuchenWell，→ v0.2.0-beta.0，10-21 19:21 CST）",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1005\" target=\"_blank\" rel=\"noopener\">#1005</a> 脚本热重载时刷新浏览器场景 import map（DecviL，→ v0.2.0-beta.0，18:24 CST，OPEN，需配合 PinK 侧修复）",
+        "<span class=\"pill bug\">CLOSED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1004\" target=\"_blank\" rel=\"noopener\">#1004</a> 同内容首版，18:13 开、18:20 CST 关，改由 #1005 重开",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a> [break] 资源移动冲突预检仍挂（main 窗口内无新提交）",
+        "v0.2.0-beta.0 分支领先 main 4 条；Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.44</a>，尚无 beta tag"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新提交 / 合入 / 新开 / issue 更新。",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3330\" target=\"_blank\" rel=\"noopener\">#3330</a> docs(4.0) Web DPR 启动配置文档仍挂"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.44</span>（Release · Latest）",
+      "status": "无新 Release；v0.2.0-beta.0 分支已累计 4 条修复（含 #1002 安全修复、#1003），尚未打 beta tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">Release .44</a>"
+    },
+    {
+      "artifact": "PinK 0.0.1.39 Alpha",
+      "status": "仍为最新，需激活码；官方称本月转 Beta 公测免码",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177798\" target=\"_blank\" rel=\"noopener\">公告 .39</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（tag）",
+      "status": "仍无 Release；Latest 仍 4.0.0-alpha.35",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">tag beta.0</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "无新正式版；3.8.8 仍为正式。全版本更新下一批预告 10-24（周六）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a> · <a href=\"https://forum.cocos.org/t/topic/177789\" target=\"_blank\" rel=\"noopener\">第二批公告</a>"
+    }
+  ],
+  "home_blurb": "cli beta 分支合 #1003 修 undo 漏恢复 · #1005 脚本热重载 import map · cocos4 #371 Graphics GPU 缓冲 · 论坛 SpineSlim 与 copilot 自制工具",
+  "home_tags": [
+    "CLI",
+    "COCOS4",
+    "FORUM"
+  ],
+  "archive_title": "beta 分支收 #1003 · #1005 import map 修复 · cocos4 #371 Graphics 缓冲"
+}
