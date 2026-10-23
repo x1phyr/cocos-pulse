@@ -45,6 +45,25 @@ def esc(s: str) -> str:
     )
 
 
+def ticker_html_from(data: dict) -> str:
+    """Build duplicated ticker spans from data['ticker'] (same shape as issue pages)."""
+    ticker_items = data.get("ticker") or []
+    spans = []
+    for t in ticker_items:
+        if "·" in t:
+            left, right = t.split("·", 1)
+            spans.append(f"<span><b>{esc(left.strip())}</b> {esc(right.strip())}</span>")
+        else:
+            spans.append(f"<span>{esc(t)}</span>")
+    if not spans:
+        # Fallback cadence line so the marquee is never empty
+        spans = [
+            "<span><b>CADENCE</b> WEEKDAYS 09:56 CST · NIGHT DISPATCH</span>",
+            "<span><b>SOURCES</b> FORUM · ENGINE · COCOS4 · CLI · DOCS</span>",
+        ]
+    return "\n        ".join(spans + spans)
+
+
 def render(data: dict) -> str:
     html = TPL.read_text(encoding="utf-8")
     date = data["date"]
@@ -72,15 +91,8 @@ def render(data: dict) -> str:
             chips.append(f'<a href="{href}">{label}</a>')
     topic_chips = "\n      ".join(chips)
 
-    ticker_items = data.get("ticker") or []
-    spans = []
-    for t in ticker_items:
-        if "·" in t:
-            left, right = t.split("·", 1)
-            spans.append(f"<span><b>{esc(left.strip())}</b> {esc(right.strip())}</span>")
-        else:
-            spans.append(f"<span>{esc(t)}</span>")
-    ticker_html = "\n        ".join(spans + spans)
+    ticker_html = ticker_html_from(data)
+
 
     heads = []
     for i, h in enumerate(data.get("headlines") or [], 1):
@@ -266,6 +278,8 @@ def sync_index(data: dict) -> None:
 
     t = replace_marked(t, "<!-- PULSE:TODAY_START -->", "<!-- PULSE:TODAY_END -->", today)
     t = replace_marked(t, "<!-- PULSE:RECENT_START -->", "<!-- PULSE:RECENT_END -->", recent)
+    ticker_body = "      <div class=\"ticker-track\">\n        " + ticker_html_from(data) + "\n      </div>"
+    t = replace_marked(t, "<!-- PULSE:TICKER_START -->", "<!-- PULSE:TICKER_END -->", ticker_body)
     # stamp latest on home
     t = re.sub(r'(<div class="big">)\d{2}\.\d{2}(</div>)', rf"\g<1>{mmdd}\2", t, count=1)
     path.write_text(t, encoding="utf-8")
