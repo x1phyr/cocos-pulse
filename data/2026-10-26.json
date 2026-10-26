@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-26",
+  "date_mmdd": "10.26",
+  "year": "2026",
+  "window": "自上期（10-23 周五）早约 10:00 至今日（10-26 周一）早约 10:00 · 约 3 天",
+  "deck": "周末合刊：周日凌晨官方终于兑现——PinK 0.0.2.0 Beta 公测免码上线（Chat 96 个原生工具、场景统一独立 runtime、激活码默认关闭），同步开「首席体验官×抓虫大赛」；周六按计划推全版本更新第三批 15 个版本（一键发布到全平台 + 构建历史调试入口）。仓库侧周五下午 cocos4 连收 #373 Graphics 按需缓冲、#379/#19275 索引缓冲泄漏、#381 微信触摸去重，周六再挂 #382 自定义字体；cli 新开 #1007 [break] 共享浏览器 runtime 与 main 上 #1008 动画/分辨率三连修，beta 仍领先 main 5 条、无新 Release。",
+  "prev": {
+    "date": "2026-10-23",
+    "mmdd": "10.23"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "PINK · 0.0.2.0 Beta 公测免码",
+    "FORUM · 全版本更新第三批 · 15 版本",
+    "COCOS4 · #373/#379 MERGED · #381 微信触摸",
+    "ENGINE · #19275 索引缓冲泄漏合入 v3.8.9",
+    "CLI · #1007 [break] runtime · #1008 动画三连",
+    "PINK · 首席体验官 × 抓虫大赛"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "PinK 0.0.2.0 Beta 公测免码上线：从「蹲码」到官网直下 · 首席体验官×抓虫大赛同步开",
+      "body": "周末最大新闻没有悬念：官方终于把本月转 Beta 的承诺落地了。<a href=\"https://forum.cocos.org/t/topic/177873\" target=\"_blank\" rel=\"noopener\">PinK Beta 版发布</a>（万籁@SUD，10-25 00:53 CST，置顶，26 楼 / 1020+）宣布 <span class=\"mono\">0.0.2.0 Beta</span> 进入公测，官网下载、不再需要激活码；macOS 因 Bundle ID 改为 <span class=\"mono\">global.sud.pink</span> 需卸载重装并备份，Windows 可覆盖。Changelog 亮点：Chat 新增 96 个 PinK 原生工具入口；会话可独立绑定场景、写入前确认与草稿冲突检查；BYOK Agent 接入会话级工具发现；Assets 支持 ZIP 资源包导入导出；场景编辑 / 编辑器内播放 / 资源预览 / Animation Graph Motion / 模拟器统一接入独立场景运行时；激活码校验默认关闭。楼下 yuphon 夸体验但喊 token 贵，worm 问是否还支持「手动挡」2.4/3.8 式开发，有人贴 3.8.8 项目「提示不支持」。同日开的 <a href=\"https://forum.cocos.org/t/topic/177872\" target=\"_blank\" rel=\"noopener\">首席体验官×抓虫大赛</a> 已收到 weijinda「Start failed」复现，官方 max 定位到 exFAT 盘、建议先换 NTFS。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cocos4 周五连收 #373/#379/#381，engine 镜像 #19275；cli 新挂 #1007 [break] 与 main #1008",
+      "body": "上期还 OPEN 的 Graphics 与索引缓冲两条线，周五下午就全部落地；cli 周末则一边在 beta 上拆 runtime，一边在 main 补动画三连修。cocos4：上期 OPEN 的 <a href=\"https://github.com/cocos/cocos4/pull/373\" target=\"_blank\" rel=\"noopener\">#373</a> 于 10-23 11:23 CST 由 llsansun 合入（→ v4.0.0），#371 随即关闭；MagicXHouse 同日 15:08 CST 合 <a href=\"https://github.com/cocos/cocos4/pull/379\" target=\"_blank\" rel=\"noopener\">#379</a>（+4），在 <span class=\"mono\">MeshRenderData.clear()</span> 销毁并置空漏掉的 <span class=\"mono\">_indexBuffer</span>，关闭 #374，并镜像合入 engine <a href=\"https://github.com/cocos/cocos-engine/pull/19275\" target=\"_blank\" rel=\"noopener\">#19275</a>（→ v3.8.9）。晚间 qiuguohua 合 <a href=\"https://github.com/cocos/cocos4/pull/381\" target=\"_blank\" rel=\"noopener\">#381</a> 避免微信触摸事件重复。周六 LinYunMo 新开 <a href=\"https://github.com/cocos/cocos4/pull/382\" target=\"_blank\" rel=\"noopener\">#382</a>（+1026/−207，OPEN）序列化自定义字体族、恢复原生字体别名。cli：周五傍晚 DecviL 开 <a href=\"https://github.com/cocos/cocos-cli/pull/1007\" target=\"_blank\" rel=\"noopener\">#1007</a> [break] 发布共享浏览器 runtime 与 host capabilities（→ v0.2.0-beta.0，+2154，OPEN）；周六 looopmax 在 main 开 <a href=\"https://github.com/cocos/cocos-cli/pull/1008\" target=\"_blank\" rel=\"noopener\">#1008</a> 修动画状态组件枚举、AnimationClip 引用退化与设计分辨率改写编辑视口（禅道 1464/1426/1361，OPEN，周一仍有更新）。#1006 粒子、#1001 [break] 仍挂；beta 领先 main 仍 5 条，无新 Release。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：全版本第三批 15 版本按点推送 · 微信 PC 按键卡住老问题 · Intel Mac 求 PinK",
+      "body": "除了 PinK Beta，Creator 全版本线也按预告推进，社区同时甩出一批真机坑。<a href=\"https://forum.cocos.org/t/topic/177867\" target=\"_blank\" rel=\"noopener\">COCOS 全版本更新（第三批）</a>（万籁@SUD，10-24 18:37 CST）共 15 个版本，继续加「一键发布到全平台」、构建历史新增「调试」扫码入口、构建开始支持超低版本；仍先行部分推送，下一批预告 10-30。楼下 PeterLee 反馈误升改版 3.8.7 后 web-mobile bundle 404。另有 <a href=\"https://forum.cocos.org/t/topic/177866\" target=\"_blank\" rel=\"noopener\">3.8.8 PC 微信小游戏 WASD 失焦后方向卡住</a>（老问题，wx.onHide / onWindowStateChange 均监听不到）、<a href=\"https://forum.cocos.org/t/topic/177857\" target=\"_blank\" rel=\"noopener\">2.4.15 + Xcode 27 / iOS 27 启动闪退</a>（有人让 AI 适配、有人直接回退），以及今早 <a href=\"https://forum.cocos.org/t/topic/177878\" target=\"_blank\" rel=\"noopener\">求 PinK Intel Mac 版</a>（官网目前仅 arm）。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK Beta 版发布！",
+      "url": "https://forum.cocos.org/t/topic/177873",
+      "deep": true,
+      "summary": "10-25 00:53 CST，万籁@SUD，置顶，26 楼 / 1020+。PinK 0.0.2.0 Beta 公测免码，官网直下；macOS Bundle ID 调整需卸载重装并备份。Chat 96 原生工具、会话绑定场景、BYOK 工具发现、ZIP 资源包、统一独立场景 runtime、激活码默认关。楼下：token 贵、HTTP 413、问是否支持 2.4/3.8「手动挡」、3.8.8 项目提示不支持。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "特别活动｜「PinK Beta 首席体验官」招募× 抓虫大赛",
+      "url": "https://forum.cocos.org/t/topic/177872",
+      "deep": true,
+      "summary": "10-25 00:52 CST 同步开，11 楼 / 470+。玩法一分享体验帖、玩法二按格式提可复现 Bug。weijinda 报「COCOS: Start failed」（0.0.2.0，删 temp/重装无效）；官方 max 查到 H 盘为 exFAT，回复后续修、可先换 NTFS。"
+    },
+    {
+      "pill": "官方",
+      "pill_class": "pink",
+      "title": "COCOS全版本更新（第三批）",
+      "url": "https://forum.cocos.org/t/topic/177867",
+      "deep": true,
+      "summary": "10-24 18:37 CST，万籁@SUD，4 楼 / 275+。第三批 15 个版本，新增一键发布到全平台；构建历史加「调试」扫码；构建支持超低版本（2.4.4 以下 Mac 须 Intel）。部分先行推送，下一批 10-30。PeterLee：误升改版 3.8.7 后 web-mobile 访问 bundle 404。"
+    },
+    {
+      "pill": "3.X",
+      "pill_class": "bug",
+      "title": "3.8.8 PC 微信小游戏 WASD 失焦后方向「卡住」",
+      "url": "https://forum.cocos.org/t/topic/177866",
+      "summary": "10-24 开，8 楼。窗口失焦听不到按键弹起；楼主称 wx.onWindowStateChange / onHide 均无效。多人蹲解，称「原始征途」等个别游戏规避了。"
+    },
+    {
+      "pill": "2.X",
+      "pill_class": "bug",
+      "title": "2.4.15 + Xcode 27 / iOS 27.0.1 启动闪退",
+      "url": "https://forum.cocos.org/t/topic/177857",
+      "summary": "10-23 开，7 楼。有人让 AI 适配先用，有人回退担心 SDK/渠道；最低系统有人改到 iOS 15。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "求一个 pink 的 mac 的 intel 版本",
+      "url": "https://forum.cocos.org/t/topic/177878",
+      "summary": "10-26 09:34 CST，2 楼。官网目前仅 arm；楼下回「苹果都抛弃 intel 了」。"
+    },
+    {
+      "pill": "Spine",
+      "pill_class": "cli",
+      "title": "【海量 Spine 合批】Spine同材质多纹理方案",
+      "url": "https://forum.cocos.org/t/topic/177869",
+      "summary": "10-24，1 楼 / 180+。基于 2.4.12 Web：同材质绑多纹理，用 UV.U 超出 [0,1] 选贴图，降上千 Spine 同屏 DrawCall。"
+    },
+    {
+      "pill": "Showcase",
+      "pill_class": "cli",
+      "title": "可以做游戏了",
+      "url": "https://forum.cocos.org/t/topic/177874",
+      "summary": "10-25，截图帖，320+ 阅——Beta 落地后的社区情绪表情包。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-engine/pull/19275\" target=\"_blank\" rel=\"noopener\">#19275</a> MeshRenderData.clear() 销毁漏掉的 index buffer（MagicXHouse，→ v3.8.9，llsansun 10-23 15:08 CST 合入；镜像 cocos4 #379）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-engine/issues/19274\" target=\"_blank\" rel=\"noopener\">#19274</a> tick 限速提案仍挂；OpenPaaS 类 PR 仍 <a href=\"https://github.com/cocos/cocos-engine/pulls?q=is%3Apr+is%3Aopen+openpaas\" target=\"_blank\" rel=\"noopener\">29 条</a>",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/373\" target=\"_blank\" rel=\"noopener\">#373</a> Graphics / Mask GPU 缓冲按需分配（Tianze-Chen，→ v4.0.0，llsansun 10-23 11:23 CST；关 #371）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/379\" target=\"_blank\" rel=\"noopener\">#379</a> MeshRenderData.clear() 销毁 index buffer 防泄漏（MagicXHouse，15:08 CST；关 #374）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/381\" target=\"_blank\" rel=\"noopener\">#381</a> 避免微信触摸事件重复（qiuguohua，19:11 CST）",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos4/pull/382\" target=\"_blank\" rel=\"noopener\">#382</a> 序列化自定义字体族并恢复原生字体别名（LinYunMo，+1026/−207，10-24，OPEN）",
+        "<span class=\"pill cli\">TAG</span> <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a> 仍只有 tag；Release Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-alpha.35\" target=\"_blank\" rel=\"noopener\">4.0.0-alpha.35</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1007\" target=\"_blank\" rel=\"noopener\">#1007</a> [break] 发布共享浏览器 runtime 与 host capabilities（DecviL，→ v0.2.0-beta.0，+2154/−14，10-23 18:21 CST，OPEN）",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1008\" target=\"_blank\" rel=\"noopener\">#1008</a> 修动画状态组件枚举 / Clip 引用 / 设计分辨率同步编辑视口（looopmax，→ main，禅道 1464·1426·1361，10-24，OPEN）",
+        "<span class=\"pill bug\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1006\" target=\"_blank\" rel=\"noopener\">#1006</a> 首次选中启动 idle 2D 粒子 · <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a> [break] 移动冲突预检仍挂",
+        "窗口内 main / beta 均无新合入；v0.2.0-beta.0 仍领先 main 5 条；Release Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">0.0.1-alpha.44</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无新 commit / 合入 / 新开 PR。"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.2.0 Beta",
+      "status": "窗口内新发；公测免码，官网直下；macOS 需卸载重装备份",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177873\" target=\"_blank\" rel=\"noopener\">Beta 公告</a>"
+    },
+    {
+      "artifact": "COCOS Creator 全版本更新 · 第三批",
+      "status": "10-24 推送 15 个版本；一键发布到全平台 + 构建历史调试；下一批 10-30",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177867\" target=\"_blank\" rel=\"noopener\">第三批公告</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.0.1-alpha.44</span>（Release · Latest）",
+      "status": "无新 Release；v0.2.0-beta.0 仍领先 main 5、尚无 beta tag",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.0.1-alpha.44\" target=\"_blank\" rel=\"noopener\">Release .44</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（tag）",
+      "status": "仍无 Release；Latest 仍 4.0.0-alpha.35；窗口内合 #373/#379/#381",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">tag beta.0</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "无新正式版；3.8.8 仍为正式；#19275 合入 v3.8.9 分支",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "PinK 0.0.2.0 Beta 公测免码 · 全版本第三批 15 版 · cocos4 #373/#379/#381 · cli #1007/#1008",
+  "home_tags": [
+    "PINK",
+    "BETA",
+    "COCOS4",
+    "CLI"
+  ],
+  "archive_title": "周末合刊 · PinK Beta 公测免码 · 全版本第三批 · cocos4 连收三修"
+}
