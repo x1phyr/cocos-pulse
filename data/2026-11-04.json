@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-04",
+  "date_mmdd": "11.04",
+  "year": "2026",
+  "window": "自上期（11-03 周二）早约 10:00 至今日（11-04 周三）早约 10:00 · 约 24h",
+  "deck": "双 beta 落地次日：cli 合 #1027/#1028 并打上 0.2.0-beta.1 标签（尚无 Release 页，main≡该 tag，相对 beta.0 仍 +16）；cocos4 合 #394 AlignToDirection，新开 #396 SpriteRenderer / #397 Android frame pacing / #398 CI ubuntu-24.04。论坛 PinK 区继续吵——「草台班子」怒帖官方回「关代理」、WorkBuddy/ZCode 订阅插件自救、求体验金与 Linux 版呼声并存；engine/docs 静音。",
+  "prev": {
+    "date": "2026-11-03",
+    "mmdd": "11.03"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "cocos4-cli",
+    "creator-3x",
+    "spine"
+  ],
+  "ticker": [
+    "CLI · tag 0.2.0-beta.1 · main≡",
+    "CLI · 合 #1027/#1028",
+    "COCOS4 · 合 #394 AlignToDirection",
+    "COCOS4 · 新开 #396/#397/#398",
+    "PINK · 草台班子帖 · 关代理",
+    "ENGINE 3.x · 仍 3.8.8 静音"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "cli 钉 0.2.0-beta.1 标签 · 合 #1027/#1028；cocos4 合 #394 AlignToDirection",
+      "body": "双 beta 挂牌次日，仓库没歇着。cli 窗内合 <a href=\"https://github.com/cocos/cocos-cli/pull/1027\" target=\"_blank\" rel=\"noopener\">#1027</a> web run 阶段本地化标签、<a href=\"https://github.com/cocos/cocos-cli/pull/1028\" target=\"_blank\" rel=\"noopener\">#1028</a> SpriteFrame 选中中心区域渲染；当晚打上 annotated tag <span class=\"mono\">0.2.0-beta.1</span>（指向 #1028 merge），但<strong>尚无 GitHub Release 对象</strong>——Latest 发布页仍是 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>；main 相对 beta.1 已 0 领先，相对 beta.0 仍 +16。上期还 OPEN 的 <a href=\"https://github.com/cocos/cocos-cli/pull/1026\" target=\"_blank\" rel=\"noopener\">#1026</a> Prefab 跨 runtime 仍挂。cocos4 把昨刊新开的 <a href=\"https://github.com/cocos/cocos4/pull/394\" target=\"_blank\" rel=\"noopener\">#394</a> AlignToDirection 合进 v4.0.0；同窗新开 <a href=\"https://github.com/cocos/cocos4/pull/396\" target=\"_blank\" rel=\"noopener\">#396</a> SpriteRenderer 一阶段、<a href=\"https://github.com/cocos/cocos4/pull/397\" target=\"_blank\" rel=\"noopener\">#397</a> Android 可选 deadline frame pacing、<a href=\"https://github.com/cocos/cocos4/pull/398\" target=\"_blank\" rel=\"noopener\">#398</a> CI 迁 ubuntu-24.04。engine / docs 窗内零合入。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "版本面：Published 仍停在双 beta.0 · 标签已悄悄抬到 beta.1",
+      "body": "GitHub Release 层：cocos4 Latest 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a>，cli Latest 仍 0.2.0-beta.0。但两侧都已有 beta.1 <em>tag</em>——cocos4 的 <span class=\"mono\">4.0.0-beta.1</span> 在上窗外（11-02，对应 #395）就打了、本窗 HEAD 再超它 1 条（#394）；cli 的 <span class=\"mono\">0.2.0-beta.1</span> 是本窗新打、与 main 对齐。铁粉盯「下一份正式 Release 页何时现身」即可。Creator 3.x / engine 正式版仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "PinK 第三天：草台班子怒帖 · 订阅插件自救 · 求体验金",
+      "body": "公测情绪继续两极。<a href=\"https://forum.cocos.org/t/topic/178029\" target=\"_blank\" rel=\"noopener\">关于Pink，你们就这么草台班子的吗</a>（约 6 楼 / 九百阅）楼主吐槽装中文插件后强制邀请码；万籁@SUD 回「关掉代理/VPN」——官方再次强调当前 Beta 不支持代理。社区自救线从 Magpie 网关延伸到插件：<a href=\"https://forum.cocos.org/t/topic/178031\" target=\"_blank\" rel=\"noopener\">PinK插件-支持workbuddy、zcode订阅</a>读本机客户端登录态接入模型。另有求体验金、问 Linux 版、OpenPaaS「试水」与编辑器开文件弹新窗求助。官帖 PinK Beta / 抓虫窗内静音（仍约 112 / 71）。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PinK",
+      "pill_class": "bug",
+      "title": "关于Pink，你们就这么草台班子的吗",
+      "url": "https://forum.cocos.org/t/topic/178029",
+      "deep": true,
+      "summary": "约 6 楼 / 九百阅。楼主：装中文插件后每次打开强制邀请码。万籁@SUD：关掉代理/VPN；官方重申 Beta 不支持 Proxy。跟帖有人夸官方回得快，也有人说「开发基本一直开着梯子」。"
+    },
+    {
+      "pill": "教程",
+      "pill_class": "cli",
+      "title": "PinK插件-支持workbuddy、zcode订阅",
+      "url": "https://forum.cocos.org/t/topic/178031",
+      "deep": true,
+      "summary": "约 3 楼。楼主自用插件：读本机 WorkBuddy/ZCode 客户端授权信息，把模型注册进 PinK；对话仍由 PinK 执行。提醒封号风险未明、重要源码建议走官方 API。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "mood",
+      "title": "【Pink】求体验金",
+      "url": "https://forum.cocos.org/t/topic/178039",
+      "summary": "约 4 楼。5 年开发者求体验金；跟帖建议接 OpenCode 白嫖或调侃「你在做梦」。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "eng",
+      "title": "[求助] pink 怎么设置让打开文件时不是新的窗口",
+      "url": "https://forum.cocos.org/t/topic/178037",
+      "summary": "约 5 楼。楼主嫌开文件总弹新窗，仿 VSCode 改配置无效；跟帖教拖合并，但仍会再弹。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "mood",
+      "title": "以后会出LINUX版本么",
+      "url": "https://forum.cocos.org/t/topic/178027",
+      "summary": "约 4 楼。问 PinK/Creator 是否出 Linux；有人回「不是给你 cli 了」，也有人提 Linux 上 obj 解析未支持。"
+    },
+    {
+      "pill": "OpenPaaS",
+      "pill_class": "eng",
+      "title": "我来给你们试试openpaas的水",
+      "url": "https://forum.cocos.org/t/topic/178030",
+      "summary": "约 3 楼。楼主晒 OpenPaaS 提交流程截图；跟帖问是否需软著——答「只有国内需要」。"
+    },
+    {
+      "pill": "OpenPaaS",
+      "pill_class": "eng",
+      "title": "openpaas目前只有hellpink调试预览么？提审时不能查看么？",
+      "url": "https://forum.cocos.org/t/topic/178040",
+      "summary": "1 楼。问 PinK 发布后能否像微信小游戏审核预览那样看正式包；目前未见回复。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK Beta 版发布！ / 抓虫大赛",
+      "url": "https://forum.cocos.org/t/topic/177873",
+      "summary": "官帖窗内静音：Beta 公告仍约 112 楼，<a href=\"https://forum.cocos.org/t/topic/177872\" target=\"_blank\" rel=\"noopener\">抓虫</a>仍 71；热度主场在独立吐槽与插件帖。"
+    },
+    {
+      "pill": "教程",
+      "pill_class": "cli",
+      "title": "香，实在是太香了。这免费的token它用起来真不烧心",
+      "url": "https://forum.cocos.org/t/topic/178006",
+      "summary": "Magpie 白嫖帖续热，约 14 楼 / 两千阅；窗内仍有跟帖。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无合并、无新 issue / PR / Release。",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos4/pull/394\" target=\"_blank\" rel=\"noopener\">#394</a> add AlignToDirection implement（昨刊新开 → 本窗 11-03 11:45 CST 合入 v4.0.0）",
+        "<span class=\"pill eng\">NEW</span> <a href=\"https://github.com/cocos/cocos4/pull/396\" target=\"_blank\" rel=\"noopener\">#396</a> feat(2d): SpriteRenderer phase-one · <a href=\"https://github.com/cocos/cocos4/pull/397\" target=\"_blank\" rel=\"noopener\">#397</a> fix(android): opt-in deadline frame pacing · <a href=\"https://github.com/cocos/cocos4/pull/398\" target=\"_blank\" rel=\"noopener\">#398</a> ci: Linux/OpenHarmony/ClangTidy → ubuntu-24.04",
+        "<span class=\"pill eng\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/393\" target=\"_blank\" rel=\"noopener\">#393</a> UI 文本纹理释放/上传失败恢复仍挂",
+        "Latest published 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a>；tag <span class=\"mono\">4.0.0-beta.1</span> 窗外已有（无 Release）；HEAD 相对 beta.1 +1（#394）"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1027\" target=\"_blank\" rel=\"noopener\">#1027</a> fix(builder): web run 阶段本地化标签（11-03 19:01 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1028\" target=\"_blank\" rel=\"noopener\">#1028</a> fix(assets): 渲染 SpriteFrame 选中中心区域（11-03 20:44 CST）",
+        "<span class=\"pill cli\">TAG</span> annotated <span class=\"mono\">0.2.0-beta.1</span> 11-03 22:09 CST 钉在 #1028 merge；<strong>无 GitHub Release 对象</strong>，Latest 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>",
+        "<span class=\"pill eng\">OPEN</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1026\" target=\"_blank\" rel=\"noopener\">#1026</a> Prefab 跨 runtime 源同步仍挂（上期新开）",
+        "main ≡ <span class=\"mono\">0.2.0-beta.1</span>；相对 <span class=\"mono\">0.2.0-beta.0</span> 仍 +16"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无合并、无新 PR / issue。",
+        "<span class=\"pill eng\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3334\" target=\"_blank\" rel=\"noopener\">#3334</a> / <a href=\"https://github.com/cocos/cocos-docs/pull/3332\" target=\"_blank\" rel=\"noopener\">#3332</a> 2D 入门教程澄清仍挂（窗外）"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.2.0-beta.1</span>（tag · 无 Release 页）",
+      "status": "本窗新打 tag，钉在 #1028；Latest published 仍 beta.0；main≡beta.1",
+      "link_html": "tag <span class=\"mono\">0.2.0-beta.1</span> · Latest <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（Release · Latest）",
+      "status": "无新 published Release；tag beta.1 窗外已有；HEAD 再超 beta.1 一条（#394）",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a>"
+    },
+    {
+      "artifact": "PinK 0.0.2.0 Beta",
+      "status": "无新版本号；公告约 112 楼；抓虫 71（窗内静音）",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/177873\" target=\"_blank\" rel=\"noopener\">Beta 公告</a> · <a href=\"https://forum.cocos.org/t/topic/177872\" target=\"_blank\" rel=\"noopener\">抓虫大赛</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "cli tag 0.2.0-beta.1（无 Release）· cocos4 合 #394 · PinK 草台班子帖",
+  "home_tags": [
+    "CLI",
+    "COCOS4",
+    "BETA",
+    "PINK"
+  ],
+  "archive_title": "cli 钉 beta.1 标签 · cocos4 #394 · PinK 怒帖关代理"
+}
