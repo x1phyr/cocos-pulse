@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-06",
+  "date_mmdd": "11.06",
+  "year": "2026",
+  "window": "自上期（11-05 周四）早约 10:00 至今日（11-06 周五）早约 10:00 · 约 24h",
+  "deck": "官方晚间挂出 PinK 0.0.2.1 Beta：Agent 自然语言触发发布、AI Chat 加 LightFX/反射探针工具、取消产品激活码；同日 HelloPinK iOS 1.0.6.6 / Android 1.0.5。cli 窗内连合 #1001 资源移动冲突交还宿主、#1031 空 UUID、#1032 引擎模块裁剪同步——main 相对 0.2.0-beta.1 已 +3（相对 beta.0 +19），Published 仍双 beta.0。cocos4 零合入但新开 #401 MeshBuffer 类型与 #402 optimize trail；engine 静提交却新开 #19276 iOS/Xcode 27 闪退等三单。论坛另有 500 万开发者喜报与微信小游戏留存热议。",
+  "prev": {
+    "date": "2026-11-05",
+    "mmdd": "11.05"
+  },
+  "next": null,
+  "topics": [
+    "pink",
+    "spine",
+    "cocos4-cli",
+    "creator-3x"
+  ],
+  "ticker": [
+    "PINK · 0.0.2.1 Beta 官宣",
+    "CLI · 合 #1001/#1031/#1032",
+    "CLI · HEAD 超 beta.1 +3",
+    "COCOS4 · 新开 #401/#402",
+    "ENGINE · 新开 iOS/Xcode 27 单",
+    "FORUM · 500 万开发者喜报"
+  ],
+  "headlines": [
+    {
+      "role": "HEADLINE",
+      "feature": true,
+      "title": "PinK 挂 0.0.2.1 Beta · Agent 可自然语言发布；HelloPinK 移动端同更",
+      "body": "昨晚约 22:38（沪）官方 <a href=\"https://forum.cocos.org/t/topic/178059\" target=\"_blank\" rel=\"noopener\">PinK 0.0.2.1 Beta</a> 上线：AI Chat 新增 LightFX / 反射探针工具（查、烘、清、进度），PinK Agent 支持自然语言触发发布流程；音频预览上真分声道波形与滤波试听；<strong>取消产品激活码</strong>（体验金兑换入口仍按设置）。一长串 fix 覆盖 Chat 断流/超时、Animation Graph、模拟器、构建（含 3.8.8 图集、OpenPaaS 混淆、3.8.7 Web Mobile 404）、场景框选卡死与 Play 全黑等。同窗稍早还有 <a href=\"https://forum.cocos.org/t/topic/178052\" target=\"_blank\" rel=\"noopener\">HelloPinK iOS 1.0.6.6 / Android 1.0.5</a>（调试模式、模拟海外支付、Fake 广告）。旧 Beta 公告仍约 112 楼；抓虫约 72。"
+    },
+    {
+      "role": "SIGNAL",
+      "feature": false,
+      "glow": "rgba(61,231,255,.3)",
+      "title": "cli 连合三单 · main 超 beta.1 +3；cocos4 静合入开 #401/#402",
+      "body": "cli 本窗<strong>三合入</strong>：约 10:56 CST 合 <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a> [break] 资源移动冲突交还宿主决策、同刻合昨刊新开的 <a href=\"https://github.com/cocos/cocos-cli/pull/1031\" target=\"_blank\" rel=\"noopener\">#1031</a> 排除 JS asset 空 UUID；傍晚合 <a href=\"https://github.com/cocos/cocos-cli/pull/1032\" target=\"_blank\" rel=\"noopener\">#1032</a> 修 syncConfig 数组 merge 导致取消勾选引擎模块仍被打进包。HEAD 相对 tag <span class=\"mono\">0.2.0-beta.1</span> <strong>+3</strong>（相对 beta.0 +19）；Latest published 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>。#1029 双屏弹窗 / #1030 MCP×GLM / #1026 Prefab 跨 runtime 仍 OPEN。cocos4 窗内<strong>零提交</strong>（HEAD 仍超 beta.1 +4），新开 issue <a href=\"https://github.com/cocos/cocos4/issues/401\" target=\"_blank\" rel=\"noopener\">#401</a> MeshBuffer 类型错误与 PR <a href=\"https://github.com/cocos/cocos4/pull/402\" target=\"_blank\" rel=\"noopener\">#402</a> optimize trail；#399/#400/#396/#397/#393 继续挂。engine 默认分支无提交，但新开 <a href=\"https://github.com/cocos/cocos-engine/issues/19276\" target=\"_blank\" rel=\"noopener\">#19276</a> iOS/Xcode 27 启动即杀、<a href=\"https://github.com/cocos/cocos-engine/issues/19278\" target=\"_blank\" rel=\"noopener\">#19278</a> 暴露 box2d 参数、<a href=\"https://github.com/cocos/cocos-engine/issues/19279\" target=\"_blank\" rel=\"noopener\">#19279</a> macOS 27 偶发无 importer，以及 PR <a href=\"https://github.com/cocos/cocos-engine/pull/19277\" target=\"_blank\" rel=\"noopener\">#19277</a> 设计分辨率下保 UI 布局。"
+    },
+    {
+      "role": "FORUM",
+      "feature": false,
+      "glow": "rgba(255,200,87,.28)",
+      "title": "论坛：500 万开发者喜报 · 微信小游戏留存吵 · AI 零代码上线续",
+      "body": "官号同晚发 <a href=\"https://forum.cocos.org/t/topic/178058\" target=\"_blank\" rel=\"noopener\">开发者数量突破 500 万</a>（约 10 楼，盲盒征故事）。运营向热帖 <a href=\"https://forum.cocos.org/t/topic/178056\" target=\"_blank\" rel=\"noopener\">你们的微信小游戏，留存都是多少？</a> 约 10 楼互晒数据；创作向 <a href=\"https://forum.cocos.org/t/topic/178054\" target=\"_blank\" rel=\"noopener\">全程 AI 不写一行代码上线末世塔防</a>、昨刊 <a href=\"https://forum.cocos.org/t/topic/178043\" target=\"_blank\" rel=\"noopener\">纯 AI 心得</a> 续到约 16 楼。副业情绪帖 <a href=\"https://forum.cocos.org/t/topic/178022\" target=\"_blank\" rel=\"noopener\">把开发游戏作为副业真的好难啊</a> 已约 45 楼 / 两千阅。另有 openpaas 自动构建求助、iOS 上架静默等。"
+    }
+  ],
+  "forum": [
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK 0.0.2.1 Beta 版本发布",
+      "url": "https://forum.cocos.org/t/topic/178059",
+      "deep": true,
+      "summary": "约 3 楼 / 近二百阅（11-05 晚官宣）。楼主 wanlai_sud：Agent 自然语言发布、LightFX/反射探针工具、取消激活码、音频真波形试听 + 一长串 Chat/AnimGraph/构建/场景 fix；跟帖已有人追问「3.8.9 何时发」。"
+    },
+    {
+      "pill": "官宣",
+      "pill_class": "pink",
+      "title": "【喜报】开发者数量突破500万！|内含福利",
+      "url": "https://forum.cocos.org/t/topic/178058",
+      "deep": true,
+      "summary": "约 10 楼。官号征「与 Cocos 的故事」送 500 份盲盒；跟帖刷 D、问盲盒内容。与 0.0.2.1 同晚连发，情绪面偏庆典。"
+    },
+    {
+      "pill": "HelloPinK",
+      "pill_class": "cli",
+      "title": "HelloPinK iOS 1.0.6.6 / Android 1.0.5 版本发布",
+      "url": "https://forum.cocos.org/t/topic/178052",
+      "summary": "约 2 楼。调试模式开关、模拟服务器/海外支付回调、Fake 广告模式；扫码预览教程链官网。"
+    },
+    {
+      "pill": "运营",
+      "pill_class": "mood",
+      "title": "你们的微信小游戏，留存都是多少？",
+      "url": "https://forum.cocos.org/t/topic/178056",
+      "deep": true,
+      "summary": "约 10 楼 / 近四百阅。楼主晒留存惨淡求参照；跟帖互贴截图，有人吐槽「从没见过三日留存高于次留」，也有人说「用户基数小，一切皆有可能」。"
+    },
+    {
+      "pill": "AI",
+      "pill_class": "mood",
+      "title": "【重磅】小游戏从0到上线，全程AI开发不写一行代码",
+      "url": "https://forum.cocos.org/t/topic/178054",
+      "summary": "约 3 楼。末世塔防：大白话→AI 生成→截图修 bug→微信上架；踩过 OpenPaaS 劫持构建面板，改命令行原生导出。跟帖追问工期与 token 成本。"
+    },
+    {
+      "pill": "心得",
+      "pill_class": "mood",
+      "title": "纯AI开发小游戏的一些心得（续）",
+      "url": "https://forum.cocos.org/t/topic/178043",
+      "summary": "约 16 楼 / 千阅。窗内续热：问提示词、动画是 Codex 帧动画还是 Spine；楼主同场互推自己的 AI 塔防帖。"
+    },
+    {
+      "pill": "情绪",
+      "pill_class": "bug",
+      "title": "把开发游戏作为副业真的好难啊",
+      "url": "https://forum.cocos.org/t/topic/178022",
+      "summary": "约 45 楼 / 两千阅。连连看+猫养成上线无自然量；跟帖劝找发行、或「换皮一万款」。"
+    },
+    {
+      "pill": "OpenPaaS",
+      "pill_class": "eng",
+      "title": "openpaas编辑器更新后 怎么还会自动构建的",
+      "url": "https://forum.cocos.org/t/topic/178055",
+      "summary": "约 2 楼。每次新产物触发 3000+ 平台自动构建；跟帖指「构建历史里可单独构建」。"
+    },
+    {
+      "pill": "PinK",
+      "pill_class": "pink",
+      "title": "PinK Beta 版发布！ / 抓虫大赛",
+      "url": "https://forum.cocos.org/t/topic/177873",
+      "summary": "旧 0.0.2.0 公告仍约 112 楼（窗内静音）；<a href=\"https://forum.cocos.org/t/topic/177872\" target=\"_blank\" rel=\"noopener\">抓虫</a>约 72（窗内有轻量更新）。热度主场已切到 0.0.2.1 新帖。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "cocos/cocos-engine",
+      "status": "ACTIVE",
+      "items_html": [
+        "默认分支窗口内无提交（仍停在窗外 #19275）。",
+        "<span class=\"pill eng\">NEW</span> issue <a href=\"https://github.com/cocos/cocos-engine/issues/19276\" target=\"_blank\" rel=\"noopener\">#19276</a> iOS：Xcode 27 / iOS 27 构建启动即杀（原生模板缺 UIScene lifecycle）",
+        "<span class=\"pill eng\">NEW</span> issue <a href=\"https://github.com/cocos/cocos-engine/issues/19278\" target=\"_blank\" rel=\"noopener\">#19278</a> 暴露 box2d 的 b2 / b2_velocityThreshold 等参数",
+        "<span class=\"pill eng\">NEW</span> issue <a href=\"https://github.com/cocos/cocos-engine/issues/19279\" target=\"_blank\" rel=\"noopener\">#19279</a> macOS 27.0.1 上 3.8.8 偶发启动无 asset importers",
+        "<span class=\"pill eng\">NEW</span> PR <a href=\"https://github.com/cocos/cocos-engine/pull/19277\" target=\"_blank\" rel=\"noopener\">#19277</a> [fix] Keep editor UI layout in design resolution",
+        "正式 Release 仍 <a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos4",
+      "status": "ACTIVE",
+      "items_html": [
+        "窗口内无合并、无提交（HEAD 仍相对 <span class=\"mono\">4.0.0-beta.1</span> <strong>+4</strong>）",
+        "<span class=\"pill eng\">NEW</span> issue <a href=\"https://github.com/cocos/cocos4/issues/401\" target=\"_blank\" rel=\"noopener\">#401</a> MeshBuffer 类代码存在类型错误（需 as unknown as ArrayBuffer）",
+        "<span class=\"pill eng\">NEW</span> PR <a href=\"https://github.com/cocos/cocos4/pull/402\" target=\"_blank\" rel=\"noopener\">#402</a> optimize trail（环形队列清理 / 按需扩 buffer / 防 16-bit 索引溢出）",
+        "<span class=\"pill eng\">OPEN</span> <a href=\"https://github.com/cocos/cocos4/pull/399\" target=\"_blank\" rel=\"noopener\">#399</a> fix get angle · <a href=\"https://github.com/cocos/cocos4/pull/400\" target=\"_blank\" rel=\"noopener\">#400</a> AUTO 生成码 · <a href=\"https://github.com/cocos/cocos4/pull/396\" target=\"_blank\" rel=\"noopener\">#396</a> SpriteRenderer · <a href=\"https://github.com/cocos/cocos4/pull/397\" target=\"_blank\" rel=\"noopener\">#397</a> Android frame pacing · <a href=\"https://github.com/cocos/cocos4/pull/393\" target=\"_blank\" rel=\"noopener\">#393</a> UI 纹理释放仍挂",
+        "Latest published 仍 <a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a>；tag beta.1 无 Release 页"
+      ]
+    },
+    {
+      "name": "cocos/cocos-cli",
+      "status": "ACTIVE",
+      "items_html": [
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1001\" target=\"_blank\" rel=\"noopener\">#1001</a> [break] feat(assets): host-controlled move conflict handling（约 11-05 10:56 CST）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1031\" target=\"_blank\" rel=\"noopener\">#1031</a> [fix] Exclude empty UUIDs from JavaScript asset user queries（昨刊新开 → 本窗合）",
+        "<span class=\"pill cli\">MERGED</span> <a href=\"https://github.com/cocos/cocos-cli/pull/1032\" target=\"_blank\" rel=\"noopener\">#1032</a> Fix engine module cropping when syncing project configuration（约 11-05 18:51 CST；修 lodash merge 数组尾部）",
+        "<span class=\"pill eng\">OPEN</span> issue <a href=\"https://github.com/cocos/cocos-cli/issues/1029\" target=\"_blank\" rel=\"noopener\">#1029</a> 双屏弹窗 · <a href=\"https://github.com/cocos/cocos-cli/issues/1030\" target=\"_blank\" rel=\"noopener\">#1030</a> MCP×GLM Schema · PR <a href=\"https://github.com/cocos/cocos-cli/pull/1026\" target=\"_blank\" rel=\"noopener\">#1026</a> Prefab 跨 runtime · <a href=\"https://github.com/cocos/cocos-cli/pull/944\" target=\"_blank\" rel=\"noopener\">#944</a> Engine SDK 解耦仍挂",
+        "HEAD 相对 tag <span class=\"mono\">0.2.0-beta.1</span> <strong>+3</strong>（相对 beta.0 +19）；Latest published 仍 <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>"
+      ]
+    },
+    {
+      "name": "cocos/cocos-docs",
+      "status": "QUIET",
+      "items_html": [
+        "窗口内无提交。",
+        "<span class=\"pill eng\">OPEN</span> <a href=\"https://github.com/cocos/cocos-docs/pull/3334\" target=\"_blank\" rel=\"noopener\">#3334</a> / <a href=\"https://github.com/cocos/cocos-docs/pull/3332\" target=\"_blank\" rel=\"noopener\">#3332</a> 2D 入门教程澄清仍挂（窗外）"
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "artifact": "PinK 0.0.2.1 Beta",
+      "status": "本窗新挂；相对 0.0.2.0 增 Agent 自然语言发布 / LightFX·探针工具 / 取消激活码等",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/178059\" target=\"_blank\" rel=\"noopener\">0.0.2.1 公告</a> · <a href=\"https://forum.cocos.org/t/topic/177872\" target=\"_blank\" rel=\"noopener\">抓虫大赛</a>"
+    },
+    {
+      "artifact": "HelloPinK iOS 1.0.6.6 / Android 1.0.5",
+      "status": "本窗新挂；调试模式 / 模拟支付 / Fake 广告",
+      "link_html": "<a href=\"https://forum.cocos.org/t/topic/178052\" target=\"_blank\" rel=\"noopener\">HelloPinK 公告</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos-cli 0.2.0-beta.1</span>（tag · 无 Release 页）",
+      "status": "无新 tag/Release；main 再超 beta.1 三条（#1001/#1031/#1032）；Latest published 仍 beta.0",
+      "link_html": "tag <span class=\"mono\">0.2.0-beta.1</span> · Latest <a href=\"https://github.com/cocos/cocos-cli/releases/tag/0.2.0-beta.0\" target=\"_blank\" rel=\"noopener\">0.2.0-beta.0</a>"
+    },
+    {
+      "artifact": "<span class=\"mono\">cocos4 4.0.0-beta.0</span>（Release · Latest）",
+      "status": "无新 published Release；tag beta.1 窗外已有；HEAD 仍超 beta.1 四条",
+      "link_html": "<a href=\"https://github.com/cocos/cocos4/releases/tag/4.0.0-beta.0\" target=\"_blank\" rel=\"noopener\">4.0.0-beta.0</a>"
+    },
+    {
+      "artifact": "Creator 3.x / engine（GitHub）",
+      "status": "无新正式版；3.8.8 仍为正式",
+      "link_html": "<a href=\"https://github.com/cocos/cocos-engine/releases/tag/3.8.8\" target=\"_blank\" rel=\"noopener\">3.8.8</a>"
+    }
+  ],
+  "home_blurb": "PinK 0.0.2.1 Beta · cli 合 #1001/#1031/#1032 · HEAD 超 beta.1 +3",
+  "home_tags": [
+    "PINK",
+    "CLI",
+    "COCOS4",
+    "3.X"
+  ],
+  "archive_title": "PinK 0.0.2.1 · cli 三合入 · engine 新开 iOS 单"
+}
